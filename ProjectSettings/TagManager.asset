@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Bot
+  - MapProps
+  - Interactable prop
+  - EnemyBullet
+  - MeleeProjectileBot
+  - EnemyMeleeProjectile
+  - Trophie
+  - DEATHBARRIER
+  - Enemy
+  - PlayerBulletBot
+  - PlayerBullet
+  - PlayerMissileBot
+  - EnemyMissile
+  - BossHitbox
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Objects
+  - Water
+  - UI
+  - Overlay
+  - Ground
+  - ObjectsColor
+  - Enemy
+  - Player
+  - EnemyProjectile
+  - PlayerProjectileBot
+  - WorldBarrier
+  - MeleePlayer
+  - MeleeEnemy
+  - PlayerCollision
+  - Triggers
+  - Bubbles
+  - DEATHBARRIER
+  - EnemyBarrier
+  - EnemyRadar
+  - Boss
+  - EnemyProjectileCollision
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Overlay
+    uniqueID: 2645893727
+    locked: 0
+  - name: UI
+    uniqueID: 1109936313
+    locked: 0

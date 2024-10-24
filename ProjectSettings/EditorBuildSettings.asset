@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/1 WaterMarkStuff/KonstakWaterMark 1.unity
+    guid: f095102e56655844e8cc342310f65b20
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/Story mode content/Tutorial cutscene.unity
+    guid: 1c8a2145c39523a4296c972c8ccee1a4
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/Story mode content/tutorial level stuff/Tutorial
+      Level.unity
+    guid: b874f94905400b0498b424ad847c8107
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/2 PressStartMenu/PressStartMenu.unity
+    guid: 992d3b5bedbb04047ae60d2dc9d644c7
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/3 MainMenu/MainMenu.unity
+    guid: 11f78284b851a0741a6747cf1024a877
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/5 Play Menu/BotBouncerMenu.unity
+    guid: 65258e87149f0c944814b20c94a68681
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/6 S. scenes/StoryChapter1.unity
+    guid: 3a0447ece8559264ebb63bde426500cc
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/4 Settings Menu/SettingsMenu.unity
+    guid: f34131c3519d378489d7943372b94ab5
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/PlayerStuff/Player.unity
+    guid: 7e6d3f623f7379145b2c0e23595f3df0
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/5 Play Menu/1 Grasslandclassic.unity
+    guid: 9b77c38af995d984cafe49046af1c491
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/6 S. scenes/FreemodeMap.unity
+    guid: 396af76982544744e8075d55fcd5903b
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/6 S. scenes/BBgrass.unity
+    guid: e8ee088157f4ba54bb3828f9f72bf2a9
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/6 S. scenes/Saphire maps/Blueten Sandbox.unity
+    guid: c3c3cb7bdbbfe0544abf7372d8cb0811
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/6 S. scenes/Desert.unity
+    guid: f237d4c35a4bf114d9337e3c9b26d30c
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/6 S. scenes/Snow.unity
+    guid: 986ef13568250424481f57985fb051fc
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/6 S. scenes/Saphire maps/Saph002.unity
+    guid: 15ac74283b8ec1246a8044c658e886a0
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/Story mode content/tutorial level stuff/0-2.unity
+    guid: 6e0bd946c2da78a45a5e521ac064f841
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/5 Play Menu/2 Space invaders.unity
+    guid: 4d5d9da8cbad6a74ba5307874cf5cc12
+  - enabled: 1
+    path: Assets/Bot Mania gamefiles/Story mode content/tutorial level stuff/0-3.unity
+    guid: 1e7c5317a4624d143850fa2c90879287
+  m_configObjects: {}

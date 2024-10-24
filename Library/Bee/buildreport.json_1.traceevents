@@ -1,0 +1,664 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1725895902693189, "dur": 178395, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1725895902693388, "dur": 2203, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1725895902695592, "dur": 173917, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1725895902869511, "dur": 2073, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1725895902872290, "dur": 6, "ph": "X", "name": "", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1725895902721585, "dur":1652, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902723244, "dur":962, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1725895902724247, "dur":22, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1725895902724270, "dur":542, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1725895902724845, "dur":636, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902725481, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902847661, "dur":282, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902847943, "dur":48, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902847991, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902847994, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848003, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848006, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848019, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848020, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848024, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848026, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848030, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848031, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848035, "dur":45, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848080, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848083, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848085, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848089, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848090, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848093, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848094, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848097, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848099, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848102, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848103, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848108, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848118, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902848138, "dur":1257, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1725895902724817, "dur":670, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902725489, "dur":4772, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902730272, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1725895902730274, "dur":742, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902731022, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1725895902731024, "dur":335, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902731360, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1725895902731430, "dur":1139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902732570, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1725895902732646, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902732683, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1725895902732762, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902732823, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1725895902732908, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902732945, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1725895902733015, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902733055, "dur":564, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1725895902733619, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902733658, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1725895902733809, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902733864, "dur":4282, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1725895902738146, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902738182, "dur":1599, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
+,{ "pid":12345, "tid":1, "ts":1725895902739781, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902739827, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets8.resource" }}
+,{ "pid":12345, "tid":1, "ts":1725895902739875, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902740898, "dur":5030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets8.resource" }}
+,{ "pid":12345, "tid":1, "ts":1725895902745970, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets5.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1725895902746031, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902746038, "dur":3847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets5.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1725895902749920, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets18.assets" }}
+,{ "pid":12345, "tid":1, "ts":1725895902749950, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902749953, "dur":4060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets18.assets" }}
+,{ "pid":12345, "tid":1, "ts":1725895902754056, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets15.assets" }}
+,{ "pid":12345, "tid":1, "ts":1725895902754110, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902754114, "dur":18370, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets15.assets" }}
+,{ "pid":12345, "tid":1, "ts":1725895902772557, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":1, "ts":1725895902772608, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902772614, "dur":3921, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":1, "ts":1725895902776581, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level9" }}
+,{ "pid":12345, "tid":1, "ts":1725895902776628, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902776632, "dur":9640, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level9" }}
+,{ "pid":12345, "tid":1, "ts":1725895902786305, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level4.resS" }}
+,{ "pid":12345, "tid":1, "ts":1725895902786340, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902786343, "dur":10091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level4.resS" }}
+,{ "pid":12345, "tid":1, "ts":1725895902796481, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level15" }}
+,{ "pid":12345, "tid":1, "ts":1725895902796540, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902796544, "dur":4347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level15" }}
+,{ "pid":12345, "tid":1, "ts":1725895902800974, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level11" }}
+,{ "pid":12345, "tid":1, "ts":1725895902801039, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902801046, "dur":4115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level11" }}
+,{ "pid":12345, "tid":1, "ts":1725895902805296, "dur":166, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1725895902805467, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1725895902805472, "dur":3506, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1725895902809024, "dur":38677, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902724839, "dur":657, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902725496, "dur":4771, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902730271, "dur":488, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1725895902730760, "dur":1471, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902732232, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":2, "ts":1725895902732298, "dur":291, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902732590, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1725895902732684, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902732730, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1725895902732821, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902732876, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1725895902732950, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902732995, "dur":549, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1725895902733544, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902733585, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1725895902733646, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902733676, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1725895902733806, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902733870, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1725895902733952, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902734009, "dur":3791, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1725895902737800, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902737835, "dur":985, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.ProGrids.dll" }}
+,{ "pid":12345, "tid":2, "ts":1725895902738820, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902738874, "dur":1842, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":2, "ts":1725895902740716, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902740764, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets7.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1725895902740810, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902740814, "dur":5547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets7.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1725895902746409, "dur":232, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":2, "ts":1725895902746648, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902746654, "dur":2541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":2, "ts":1725895902749222, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets18.resource" }}
+,{ "pid":12345, "tid":2, "ts":1725895902749254, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902749258, "dur":17474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets18.resource" }}
+,{ "pid":12345, "tid":2, "ts":1725895902766779, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets10.resource" }}
+,{ "pid":12345, "tid":2, "ts":1725895902766824, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902766829, "dur":8370, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets10.resource" }}
+,{ "pid":12345, "tid":2, "ts":1725895902775261, "dur":651, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":2, "ts":1725895902775918, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902775924, "dur":10604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":2, "ts":1725895902786567, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level3" }}
+,{ "pid":12345, "tid":2, "ts":1725895902786616, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902786619, "dur":10126, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level3" }}
+,{ "pid":12345, "tid":2, "ts":1725895902796796, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level14.resS" }}
+,{ "pid":12345, "tid":2, "ts":1725895902796845, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902796850, "dur":6092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level14.resS" }}
+,{ "pid":12345, "tid":2, "ts":1725895902802988, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1725895902803045, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1725895902803053, "dur":2923, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1725895902806023, "dur":41634, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902724873, "dur":629, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902725502, "dur":4764, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902730272, "dur":408, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1725895902730680, "dur":1586, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902732267, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1725895902732365, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902732395, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1725895902732449, "dur":233, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902732683, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1725895902732760, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902732820, "dur":1046, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1725895902733867, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902733908, "dur":739, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.TerrainTools.dll" }}
+,{ "pid":12345, "tid":3, "ts":1725895902734648, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902734683, "dur":2653, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":3, "ts":1725895902737336, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902737369, "dur":2164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Services.Analytics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1725895902739533, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902739578, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1725895902739641, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902739668, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":3, "ts":1725895902739709, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902739742, "dur":974, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":3, "ts":1725895902740717, "dur":1856, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902742574, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets6.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1725895902742634, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902742638, "dur":5215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets6.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1725895902747996, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1725895902748100, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902748105, "dur":3556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1725895902751733, "dur":207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets16.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1725895902751945, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902751950, "dur":5715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets16.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1725895902757707, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets12.resource" }}
+,{ "pid":12345, "tid":3, "ts":1725895902757752, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902757759, "dur":14001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets12.resource" }}
+,{ "pid":12345, "tid":3, "ts":1725895902771811, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":3, "ts":1725895902771864, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902771871, "dur":8893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":3, "ts":1725895902780799, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level6.resS" }}
+,{ "pid":12345, "tid":3, "ts":1725895902780835, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902780838, "dur":5688, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level6.resS" }}
+,{ "pid":12345, "tid":3, "ts":1725895902786567, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level2.resS" }}
+,{ "pid":12345, "tid":3, "ts":1725895902786619, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902786622, "dur":10372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level2.resS" }}
+,{ "pid":12345, "tid":3, "ts":1725895902797035, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level12.resS" }}
+,{ "pid":12345, "tid":3, "ts":1725895902797076, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902797079, "dur":7050, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level12.resS" }}
+,{ "pid":12345, "tid":3, "ts":1725895902804168, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1725895902804233, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1725895902804238, "dur":3301, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1725895902807586, "dur":40101, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902724894, "dur":615, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902725509, "dur":4760, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902730272, "dur":177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1725895902730449, "dur":1667, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902732117, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1725895902732204, "dur":427, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902732632, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1725895902732703, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902732740, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1725895902732818, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902732866, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1725895902732929, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902732964, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1725895902733032, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902733085, "dur":489, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1725895902733574, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902733607, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1725895902733680, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902733718, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1725895902733821, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902733880, "dur":4877, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":4, "ts":1725895902738757, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902738809, "dur":1657, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.ProBuilder.Csg.dll" }}
+,{ "pid":12345, "tid":4, "ts":1725895902740467, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902740503, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets8.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1725895902740537, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902740540, "dur":7322, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets8.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1725895902747915, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets4.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1725895902747966, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902747970, "dur":7535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets4.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1725895902755545, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets14.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1725895902755594, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902755598, "dur":10376, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets14.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1725895902766034, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets11.assets" }}
+,{ "pid":12345, "tid":4, "ts":1725895902766093, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902766099, "dur":14487, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets11.assets" }}
+,{ "pid":12345, "tid":4, "ts":1725895902780643, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level7" }}
+,{ "pid":12345, "tid":4, "ts":1725895902780717, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902780720, "dur":5861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level7" }}
+,{ "pid":12345, "tid":4, "ts":1725895902786625, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level2" }}
+,{ "pid":12345, "tid":4, "ts":1725895902786687, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902786690, "dur":10119, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level2" }}
+,{ "pid":12345, "tid":4, "ts":1725895902796855, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level13.resS" }}
+,{ "pid":12345, "tid":4, "ts":1725895902796902, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1725895902796906, "dur":12875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level13.resS" }}
+,{ "pid":12345, "tid":4, "ts":1725895902809810, "dur":37860, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1725895902724921, "dur":593, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1725895902725514, "dur":4751, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1725895902730271, "dur":638, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1725895902730910, "dur":1372, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1725895902732282, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1725895902732353, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1725895902732383, "dur":8717, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!.exe" }}
+,{ "pid":12345, "tid":5, "ts":1725895902741100, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1725895902741133, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets7.assets" }}
+,{ "pid":12345, "tid":5, "ts":1725895902741166, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1725895902741169, "dur":6825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets7.assets" }}
+,{ "pid":12345, "tid":5, "ts":1725895902748063, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":5, "ts":1725895902748111, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1725895902748115, "dur":3258, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":5, "ts":1725895902751420, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets16.resource" }}
+,{ "pid":12345, "tid":5, "ts":1725895902751476, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1725895902751480, "dur":11384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets16.resource" }}
+,{ "pid":12345, "tid":5, "ts":1725895902762931, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets12.assets" }}
+,{ "pid":12345, "tid":5, "ts":1725895902762994, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1725895902763011, "dur":17555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets12.assets" }}
+,{ "pid":12345, "tid":5, "ts":1725895902780610, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level7.resS" }}
+,{ "pid":12345, "tid":5, "ts":1725895902780659, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1725895902780663, "dur":6108, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level7.resS" }}
+,{ "pid":12345, "tid":5, "ts":1725895902786799, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level18.resS" }}
+,{ "pid":12345, "tid":5, "ts":1725895902786828, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1725895902786831, "dur":9957, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level18.resS" }}
+,{ "pid":12345, "tid":5, "ts":1725895902796840, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level14" }}
+,{ "pid":12345, "tid":5, "ts":1725895902796898, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1725895902796903, "dur":8794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level14" }}
+,{ "pid":12345, "tid":5, "ts":1725895902805744, "dur":291, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1725895902806036, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1725895902806138, "dur":41518, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902724954, "dur":567, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902725521, "dur":4743, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902730271, "dur":186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1725895902730458, "dur":1760, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902732219, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":6, "ts":1725895902732294, "dur":289, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902732584, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1725895902732734, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902732816, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1725895902732897, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902732931, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1725895902732993, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902733033, "dur":311, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1725895902733344, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902733375, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1725895902733430, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902733462, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1725895902733506, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902733542, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1725895902733603, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902733642, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1725895902733703, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902733814, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1725895902733896, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902733969, "dur":2754, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":6, "ts":1725895902736723, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902736757, "dur":1383, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1725895902738141, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902738183, "dur":3370, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.ProBuilder.dll" }}
+,{ "pid":12345, "tid":6, "ts":1725895902741553, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902741587, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets6.resource" }}
+,{ "pid":12345, "tid":6, "ts":1725895902741618, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902741621, "dur":6256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets6.resource" }}
+,{ "pid":12345, "tid":6, "ts":1725895902747925, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":6, "ts":1725895902747983, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902747987, "dur":2977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":6, "ts":1725895902751019, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets17.assets" }}
+,{ "pid":12345, "tid":6, "ts":1725895902751102, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902751106, "dur":4628, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets17.assets" }}
+,{ "pid":12345, "tid":6, "ts":1725895902755776, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets14.assets" }}
+,{ "pid":12345, "tid":6, "ts":1725895902755820, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902755824, "dur":16330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets14.assets" }}
+,{ "pid":12345, "tid":6, "ts":1725895902772361, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1725895902772421, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902772476, "dur":3509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1725895902776035, "dur":225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":6, "ts":1725895902776261, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902776326, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/resources.assets" }}
+,{ "pid":12345, "tid":6, "ts":1725895902776392, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902776398, "dur":9706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/resources.assets" }}
+,{ "pid":12345, "tid":6, "ts":1725895902786154, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level5" }}
+,{ "pid":12345, "tid":6, "ts":1725895902786206, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902786210, "dur":8308, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level5" }}
+,{ "pid":12345, "tid":6, "ts":1725895902794581, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level16" }}
+,{ "pid":12345, "tid":6, "ts":1725895902794784, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902794790, "dur":7895, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level16" }}
+,{ "pid":12345, "tid":6, "ts":1725895902802732, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level1.resS" }}
+,{ "pid":12345, "tid":6, "ts":1725895902802786, "dur":9, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1725895902802799, "dur":3636, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level1.resS" }}
+,{ "pid":12345, "tid":6, "ts":1725895902806476, "dur":41232, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902724985, "dur":541, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902725526, "dur":4736, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902730270, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":7, "ts":1725895902730441, "dur":1310, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902731752, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1725895902731818, "dur":777, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902732596, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902732680, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902732735, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902732823, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902732878, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902732952, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902732996, "dur":693, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902733689, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902733814, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902733890, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902733933, "dur":2547, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902736480, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902736515, "dur":2306, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902738821, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902738886, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902738954, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739032, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739105, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739141, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739182, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739211, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739270, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739299, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739350, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739384, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739437, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739461, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739505, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739530, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739571, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739595, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739638, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739661, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739698, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902739721, "dur":1847, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902741572, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902741606, "dur":4175, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":7, "ts":1725895902745844, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets6.assets" }}
+,{ "pid":12345, "tid":7, "ts":1725895902745907, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902745914, "dur":3846, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets6.assets" }}
+,{ "pid":12345, "tid":7, "ts":1725895902749791, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets18.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1725895902749830, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902749833, "dur":4195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets18.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1725895902754606, "dur":197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets14.resource" }}
+,{ "pid":12345, "tid":7, "ts":1725895902754808, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902754813, "dur":10810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets14.resource" }}
+,{ "pid":12345, "tid":7, "ts":1725895902765672, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets11.resource" }}
+,{ "pid":12345, "tid":7, "ts":1725895902765729, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902765738, "dur":9988, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets11.resource" }}
+,{ "pid":12345, "tid":7, "ts":1725895902775778, "dur":168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":7, "ts":1725895902775946, "dur":304, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902776252, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1725895902776352, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902776386, "dur":10087, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1725895902786511, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level3.resS" }}
+,{ "pid":12345, "tid":7, "ts":1725895902786549, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902786553, "dur":6680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level3.resS" }}
+,{ "pid":12345, "tid":7, "ts":1725895902793271, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level16.resS" }}
+,{ "pid":12345, "tid":7, "ts":1725895902793313, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902793317, "dur":8511, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level16.resS" }}
+,{ "pid":12345, "tid":7, "ts":1725895902801960, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level10" }}
+,{ "pid":12345, "tid":7, "ts":1725895902802089, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1725895902802095, "dur":7288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level10" }}
+,{ "pid":12345, "tid":7, "ts":1725895902809417, "dur":38262, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902725083, "dur":450, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902725533, "dur":4746, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902730279, "dur":211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1725895902730490, "dur":2111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902732602, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1725895902732717, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902732759, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1725895902732824, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902732876, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1725895902732943, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902732990, "dur":454, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1725895902733445, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902733485, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1725895902733533, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902733559, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1725895902733618, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902733656, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1725895902733798, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902733860, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1725895902733955, "dur":153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902734108, "dur":1494, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":8, "ts":1725895902735602, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902735636, "dur":2318, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":8, "ts":1725895902737954, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902737991, "dur":1518, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.ProBuilder.Stl.dll" }}
+,{ "pid":12345, "tid":8, "ts":1725895902739509, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902739545, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":8, "ts":1725895902739599, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902739624, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":8, "ts":1725895902739654, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902739680, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":8, "ts":1725895902739744, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902739772, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":8, "ts":1725895902739815, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902740275, "dur":6786, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":8, "ts":1725895902747222, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets4.resource" }}
+,{ "pid":12345, "tid":8, "ts":1725895902747274, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902747278, "dur":3051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets4.resource" }}
+,{ "pid":12345, "tid":8, "ts":1725895902750366, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets17.resource" }}
+,{ "pid":12345, "tid":8, "ts":1725895902750409, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902750412, "dur":5662, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets17.resource" }}
+,{ "pid":12345, "tid":8, "ts":1725895902756117, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets13.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1725895902756172, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902756176, "dur":11082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets13.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1725895902767342, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets10.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1725895902767412, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902767417, "dur":6907, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets10.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1725895902774370, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1725895902774430, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902774436, "dur":11632, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1725895902786114, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level5.resS" }}
+,{ "pid":12345, "tid":8, "ts":1725895902786166, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902786171, "dur":5961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level5.resS" }}
+,{ "pid":12345, "tid":8, "ts":1725895902792179, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level17.resS" }}
+,{ "pid":12345, "tid":8, "ts":1725895902792216, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902792219, "dur":4750, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level17.resS" }}
+,{ "pid":12345, "tid":8, "ts":1725895902797012, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level13" }}
+,{ "pid":12345, "tid":8, "ts":1725895902797054, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1725895902797057, "dur":14484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level13" }}
+,{ "pid":12345, "tid":8, "ts":1725895902811583, "dur":36079, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902725119, "dur":420, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902725539, "dur":4737, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902730276, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1725895902730445, "dur":1673, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902732119, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":9, "ts":1725895902732196, "dur":462, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902732659, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1725895902732748, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902732790, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1725895902732848, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902732886, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1725895902732951, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902732998, "dur":496, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1725895902733494, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902733533, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1725895902733605, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902733645, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1725895902733713, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902733811, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1725895902733891, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902733932, "dur":703, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":9, "ts":1725895902734635, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902734669, "dur":4131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":9, "ts":1725895902738800, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902738854, "dur":895, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.PlayerPrefsEditor.Samples.SampleScene.dll" }}
+,{ "pid":12345, "tid":9, "ts":1725895902739749, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902739785, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets9.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1725895902739831, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902740652, "dur":7443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets9.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1725895902748138, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":9, "ts":1725895902748169, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902748172, "dur":25690, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":9, "ts":1725895902773933, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":9, "ts":1725895902773979, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902773983, "dur":2372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":9, "ts":1725895902776405, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level9.resS" }}
+,{ "pid":12345, "tid":9, "ts":1725895902776457, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902776461, "dur":9365, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level9.resS" }}
+,{ "pid":12345, "tid":9, "ts":1725895902785882, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level6" }}
+,{ "pid":12345, "tid":9, "ts":1725895902785948, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902785952, "dur":6473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level6" }}
+,{ "pid":12345, "tid":9, "ts":1725895902792461, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level17" }}
+,{ "pid":12345, "tid":9, "ts":1725895902792493, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902792497, "dur":6574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level17" }}
+,{ "pid":12345, "tid":9, "ts":1725895902799104, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level11.resS" }}
+,{ "pid":12345, "tid":9, "ts":1725895902799154, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902799158, "dur":4216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level11.resS" }}
+,{ "pid":12345, "tid":9, "ts":1725895902803453, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level0.resS" }}
+,{ "pid":12345, "tid":9, "ts":1725895902803590, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1725895902803597, "dur":2682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level0.resS" }}
+,{ "pid":12345, "tid":9, "ts":1725895902806322, "dur":41393, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902725146, "dur":395, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902725541, "dur":4740, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902730281, "dur":730, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1725895902731011, "dur":809, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902731821, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1725895902731890, "dur":765, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902732655, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1725895902732748, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902732821, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1725895902732903, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902732939, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1725895902733011, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902733054, "dur":499, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1725895902733553, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902733594, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1725895902733657, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902733698, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1725895902733819, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902733877, "dur":2332, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":10, "ts":1725895902736209, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902736244, "dur":2554, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1725895902738798, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902738840, "dur":1877, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":10, "ts":1725895902740718, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902740757, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets8.assets" }}
+,{ "pid":12345, "tid":10, "ts":1725895902740805, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902740808, "dur":8137, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets8.assets" }}
+,{ "pid":12345, "tid":10, "ts":1725895902748988, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":10, "ts":1725895902749037, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1725895902749041, "dur":98511, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":10, "ts":1725895902847611, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":10, "ts":1725895902847614, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902725168, "dur":380, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902725548, "dur":4723, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902730272, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":11, "ts":1725895902730495, "dur":2079, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902732575, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1725895902732679, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902732733, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1725895902732817, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902732871, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1725895902732940, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902732988, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1725895902733058, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902733095, "dur":551, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1725895902733646, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902733687, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1725895902733818, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902733866, "dur":5132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":11, "ts":1725895902738999, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739068, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739141, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739211, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739255, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739290, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739348, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739387, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739447, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739498, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739541, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739577, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739646, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739681, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739739, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739776, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets9.resource" }}
+,{ "pid":12345, "tid":11, "ts":1725895902739830, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902740389, "dur":8614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets9.resource" }}
+,{ "pid":12345, "tid":11, "ts":1725895902749046, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":11, "ts":1725895902749101, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902749105, "dur":4152, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":11, "ts":1725895902753337, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets16.assets" }}
+,{ "pid":12345, "tid":11, "ts":1725895902753439, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902753444, "dur":3387, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets16.assets" }}
+,{ "pid":12345, "tid":11, "ts":1725895902756885, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets13.assets" }}
+,{ "pid":12345, "tid":11, "ts":1725895902756929, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902756933, "dur":19935, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets13.assets" }}
+,{ "pid":12345, "tid":11, "ts":1725895902776915, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level8.resS" }}
+,{ "pid":12345, "tid":11, "ts":1725895902776971, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902776977, "dur":9317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level8.resS" }}
+,{ "pid":12345, "tid":11, "ts":1725895902786338, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level4" }}
+,{ "pid":12345, "tid":11, "ts":1725895902786377, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902786402, "dur":8740, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level4" }}
+,{ "pid":12345, "tid":11, "ts":1725895902795188, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level15.resS" }}
+,{ "pid":12345, "tid":11, "ts":1725895902795239, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902795244, "dur":5922, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level15.resS" }}
+,{ "pid":12345, "tid":11, "ts":1725895902801209, "dur":202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level10.resS" }}
+,{ "pid":12345, "tid":11, "ts":1725895902801416, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1725895902801422, "dur":4666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level10.resS" }}
+,{ "pid":12345, "tid":11, "ts":1725895902806135, "dur":41519, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902725189, "dur":364, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902725553, "dur":4715, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902730277, "dur":549, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1725895902730826, "dur":1424, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902732251, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":12, "ts":1725895902732346, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902732376, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":12, "ts":1725895902732447, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902732472, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1725895902732537, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902732575, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1725895902732672, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902732716, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1725895902732783, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902732819, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1725895902732900, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902732936, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1725895902733000, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902733040, "dur":582, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1725895902733622, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902733659, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1725895902733810, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902733861, "dur":2350, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":12, "ts":1725895902736211, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902736247, "dur":1728, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":12, "ts":1725895902737976, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902738011, "dur":1764, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
+,{ "pid":12345, "tid":12, "ts":1725895902739776, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902739823, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets9.assets" }}
+,{ "pid":12345, "tid":12, "ts":1725895902739884, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902741164, "dur":6747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets9.assets" }}
+,{ "pid":12345, "tid":12, "ts":1725895902747963, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets3.resource" }}
+,{ "pid":12345, "tid":12, "ts":1725895902748013, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902748097, "dur":7652, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets3.resource" }}
+,{ "pid":12345, "tid":12, "ts":1725895902755790, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets13.resource" }}
+,{ "pid":12345, "tid":12, "ts":1725895902755859, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902755874, "dur":15734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets13.resource" }}
+,{ "pid":12345, "tid":12, "ts":1725895902771672, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets10.assets" }}
+,{ "pid":12345, "tid":12, "ts":1725895902771725, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902771736, "dur":8820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/sharedassets10.assets" }}
+,{ "pid":12345, "tid":12, "ts":1725895902780595, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level8" }}
+,{ "pid":12345, "tid":12, "ts":1725895902780648, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902780652, "dur":6245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level8" }}
+,{ "pid":12345, "tid":12, "ts":1725895902786924, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level18" }}
+,{ "pid":12345, "tid":12, "ts":1725895902786953, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902786956, "dur":10115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level18" }}
+,{ "pid":12345, "tid":12, "ts":1725895902797118, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level12" }}
+,{ "pid":12345, "tid":12, "ts":1725895902797162, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902797167, "dur":6805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level12" }}
+,{ "pid":12345, "tid":12, "ts":1725895902804021, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level0" }}
+,{ "pid":12345, "tid":12, "ts":1725895902804069, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1725895902804073, "dur":3665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/zkons/Downloads/bm stuff/Bot Mania!_Data/level0" }}
+,{ "pid":12345, "tid":12, "ts":1725895902807786, "dur":39908, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1725895902850396, "dur":1438, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1725895902873219, "dur": 765, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1725895902872279, "dur": 1725, "ph": "X", "name": "Write chrome-trace events", "args": {} },

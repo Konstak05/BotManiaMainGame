@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Bot Mania gamefiles/6 S. scenes/FreemodeMap.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
