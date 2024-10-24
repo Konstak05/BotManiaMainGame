@@ -4,7 +4,7 @@ Bot Mania! is an indie game with intentional 2000s graphics that blends the sand
 
 ## Installation
 
-1. Download all of the files and place them in a folder. Preferably called "Bot Mania! Source Code. 
+1. Download all of the files and move them in a folder. Preferably called "Bot Mania! Source Code. Make sure to delete the .github and README file after moving all of the files
 
 2. Download Unity Hub and Unity 2021.3.16f1
 
