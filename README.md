@@ -16,7 +16,7 @@ Bot Mania! is an indie game with intentional 2000s graphics that blends the sand
 
 1. Konstak
 
-Any future contributors will be selected based on 
+Any future contributors will be selected if they are willing to help with the project to finish
 
 ## License
 
