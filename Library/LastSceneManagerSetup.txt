@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/Bot Mania gamefiles/Story mode content/tutorial level stuff/0-3.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
