@@ -1,6 +1,6 @@
 # Introduction
 
-Bot Mania! is an indie game with intentional 2000s graphics that blends the sandbox and first-person shooter genres. With a focus on creativity and imagination. You're a little Bot and your objective is to escape your planet. This is the source code of the game to allow the user to unleash their creativity.
+Bot Mania! is an indie game with intentional 2000s graphics that blends the sandbox and first-person shooter genres. With a focus on creativity and imagination. You're a little Bot and your objective is to escape your planet. This is the source code of the game to allow the user to edit the game however they want!
 
 ## Installation
 
@@ -15,6 +15,8 @@ Bot Mania! is an indie game with intentional 2000s graphics that blends the sand
 ## Contributors
 
 1. Konstak
+
+Any future contributors will be selected based on 
 
 ## License
 
