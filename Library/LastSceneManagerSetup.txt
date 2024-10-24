@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Bot Mania gamefiles/6 S. scenes/FreemodeMap.unity
+- path: Assets/Bot Mania gamefiles/Story mode content/tutorial level stuff/0-3.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
