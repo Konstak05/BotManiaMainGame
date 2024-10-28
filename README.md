@@ -20,5 +20,5 @@ Any future contributors will be selected if they are willing to help with the pr
 
 ## Social links
 
-https://www.youtube.com/@konstak05
-https://discord.gg/kCy5PhkJ5N
+1. https://www.youtube.com/@konstak05 (Youtube channel)
+2. https://discord.gg/kCy5PhkJ5N (Bot Mania discord server)
