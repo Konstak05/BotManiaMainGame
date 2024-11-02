@@ -160,7 +160,7 @@ public class EnemybotAI : MonoBehaviour
              HP = HPMAX;
              sightRange = sightRangeWhenCaught;
              hascounted = 2;
-             if(IsDead == 0){
+             if(IsDead == 0 && GlobalData.GetEnemyCount() >= 0){
              GlobalData.SetEnemyCount(GlobalData.GetEnemyCount() + 1);
              }
             }
@@ -184,7 +184,7 @@ public class EnemybotAI : MonoBehaviour
                     IsSearching = 1;
                     sightRange = sightRangeWhenLost;
                     
-                    if(hascounted == 2){
+                    if(hascounted == 2 && GlobalData.GetEnemyCount() > 0){
                     GlobalData.SetEnemyCount(GlobalData.GetEnemyCount() - 1);
                     }
                 }

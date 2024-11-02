@@ -30,7 +30,7 @@ public class storymodeteleporter : MonoBehaviour
     {
     transition.SetTrigger("Start"); 
     PlayerPrefs.SetInt(Playerprefname,Playerprefvalue);
-    Invoke("StartGame2", 3);
+    Invoke("StartGame2", 2);
         
     }
 

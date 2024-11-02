@@ -220,7 +220,7 @@ public class EnemySentryBoss : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
 
             //MainStarter
-            if(playerInSightRange && HP > 0){
+            if(playerInSightRange && HP > 0 && IsDead == 0){
             Vector3 GunDirection = Player.transform.position - Gun.transform.position;
             Gun.transform.rotation = Quaternion.LookRotation(GunDirection);
             
@@ -249,7 +249,7 @@ public class EnemySentryBoss : MonoBehaviour
 
              //EnemyCountstuff
              hascounted = 2;
-             if(IsDead == 0){
+             if(IsDead == 0 && GlobalData.GetEnemyCount() >= 0){
              GlobalData.SetEnemyCount(GlobalData.GetEnemyCount() + 1);
              }
 
@@ -279,7 +279,7 @@ public class EnemySentryBoss : MonoBehaviour
                     sightRange = sightRangeWhenLost;
 
                     //EnemyCountstuff
-                    if(hascounted == 2){
+                    if(hascounted == 2 && GlobalData.GetEnemyCount() > 0){
                     CannonMode = 1;
                     GlobalData.SetEnemyCount(GlobalData.GetEnemyCount() - 1);
                     }

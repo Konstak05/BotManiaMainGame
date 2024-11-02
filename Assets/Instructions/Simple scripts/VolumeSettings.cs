@@ -23,6 +23,12 @@ public class VolumeSettings : MonoBehaviour
     PlayerPrefs.SetFloat("MusicVolume", musicSlider.value);
     PlayerPrefs.SetFloat("MasterVolume", masterSlider.value);
     }
+    public void ToMainMenu()
+    {
+    PlayerPrefs.SetFloat("AudioVolume", audioSlider.value);
+    PlayerPrefs.SetFloat("MusicVolume", musicSlider.value);
+    PlayerPrefs.SetFloat("MasterVolume", masterSlider.value);
+    }
     public void SetAudioLevel(float volume)
     {
        PlayerPrefs.SetFloat("AudioVolume", audioSlider.value);

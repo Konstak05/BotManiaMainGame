@@ -16180,10 +16180,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5c2ffaa07dbf2a448ca82bf7c64983f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 300
+  speed: 200
   Max: 1000
   Min: 1
-  Turn: 0.05
+  Turn: 0.01
   target: {fileID: 0}
   KaboomParticle: {fileID: 1336971780940278444}
   SmokeParticle: {fileID: 3606092338257078697}

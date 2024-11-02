@@ -157,7 +157,7 @@ public class EnemySentrybot : MonoBehaviour
              HP = HPMAX;
              sightRange = sightRangeWhenCaught;
              hascounted = 2;
-             if(IsDead == 0){
+             if(IsDead == 0 && GlobalData.GetEnemyCount() >= 0){
              GlobalData.SetEnemyCount(GlobalData.GetEnemyCount() + 1);
              }
             }
@@ -175,7 +175,7 @@ public class EnemySentrybot : MonoBehaviour
                     IsPatrolling = 1;
                     IsSearching = 1;
                     sightRange = sightRangeWhenLost;
-                    if(hascounted == 2){
+                    if(hascounted == 2 && GlobalData.GetEnemyCount() > 0){
                     GlobalData.SetEnemyCount(GlobalData.GetEnemyCount() - 1);
                     }
                 }
