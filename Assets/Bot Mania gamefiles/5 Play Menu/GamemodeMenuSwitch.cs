@@ -53,7 +53,7 @@ public class GamemodeMenuSwitch : MonoBehaviour
         uiElements[3].SetActive(false);
         uiElements[4].SetActive(false);
         Soundreset = 0f;
-        TVscreen.text = "Still under construction. You cannot access it on this version.Please try again later!";
+        TVscreen.text = "The main content of this game! You can earn rewards while exploring the world of the Bots!";
         RenderSettings.skybox = skyboxMaterial1;
         }
     }

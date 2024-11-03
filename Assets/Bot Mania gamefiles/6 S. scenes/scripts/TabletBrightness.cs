@@ -14,10 +14,14 @@ public class TabletBrightness : MonoBehaviour
     void Start()
     {
         if(PlayerPrefs.GetFloat(PlayerPref) == 0){
-        BounceMul.value = 1;
+          if(BounceMul != null){
+            BounceMul.value = 1;
+          }
         }
         else{
-        BounceMul.value = PlayerPrefs.GetFloat(PlayerPref);
+          if(BounceMul != null){
+            BounceMul.value = PlayerPrefs.GetFloat(PlayerPref);
+          }
         }
     }
 
