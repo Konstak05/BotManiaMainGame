@@ -46239,8 +46239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0c1f809b3a7cc4bad4e879203f85aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Location: 'Current Location: 0-3'
-  Goal: 'Current Goal: Reach the next elevator'
+  Location: 'Current Location: 0-5'
+  Goal: 'Current Goal: Escape'
   IsCreativeMode: 0
   IsTutorialMode: 0
   IsFromTeleporter: 1
