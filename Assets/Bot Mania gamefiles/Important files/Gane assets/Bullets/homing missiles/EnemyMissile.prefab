@@ -15026,7 +15026,7 @@ MonoBehaviour:
   speed: 150
   Max: 1000
   Min: 1
-  Turn: 0.05
+  Turn: 0.02
   target: {fileID: 0}
   KaboomParticle: {fileID: 1336971780940278444}
   SmokeParticle: {fileID: 3606092338257078697}

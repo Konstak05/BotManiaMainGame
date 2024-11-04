@@ -26,6 +26,7 @@ public class MissileTargeting : MonoBehaviour
 
     void Start(){
         Invoke("DeleteMissile", ExplodesAfter);
+        Invoke("MissileInterval", 0.01f);
     }
 
     void Update()
@@ -36,10 +37,11 @@ public class MissileTargeting : MonoBehaviour
         else{
         targets = GameObject.FindGameObjectsWithTag("Player");
         }
+    }
 
+    private void MissileInterval(){
         if (targets.Length > 0)
         {
-
             float closestDistance = Mathf.Infinity;
             foreach (GameObject t in targets)
             {
@@ -60,7 +62,9 @@ public class MissileTargeting : MonoBehaviour
                 GetComponent<Rigidbody>().velocity = transform.forward * speed;
             }
         }
+        Invoke("MissileInterval", 0.01f);
     }
+
 
     void OnCollisionEnter(Collision other)
     {
@@ -69,6 +73,7 @@ public class MissileTargeting : MonoBehaviour
      if(HasExploded == 0){
      HasExploded = 1;
      CancelInvoke("DeleteMissile");
+     CancelInvoke("MissileInterval");
      DeleteMissile();
      }
     }
@@ -77,6 +82,7 @@ public class MissileTargeting : MonoBehaviour
      if(HasExploded == 0){
      HasExploded = 1;
      CancelInvoke("DeleteMissile");
+     CancelInvoke("MissileInterval");
      DeleteMissile();
      }
     }

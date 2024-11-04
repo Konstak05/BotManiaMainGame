@@ -22,15 +22,15 @@ public class Grabbingtool : MonoBehaviour
     } 
 
 
-    void Update()
+    void FixedUpdate()
     {
         if (objPickup2.Grabbing == 1)
         {
-            SpinFaster = Mathf.Min(SpinFaster + Time.deltaTime * SpinSpeed, 15f);
+            SpinFaster = Mathf.Min(SpinFaster + Time.fixedDeltaTime * SpinSpeed, 15f);
         }
         else
         {
-            SpinFaster = Mathf.Max(SpinFaster - Time.deltaTime * SpinSpeed, 0f);
+            SpinFaster = Mathf.Max(SpinFaster - Time.fixedDeltaTime * SpinSpeed, 0f);
         }
 
         GunSpin.transform.Rotate(0f, 0f, SpinFaster);
