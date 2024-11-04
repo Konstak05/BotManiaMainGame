@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class WeaponScript : MonoBehaviour
 {
+    public PlayerInput PlayerInputStarter;
+    public InputAction FireAction;
+    public bool FireKey;
+
     public GameObject Player;
     public KeyboardControlMk2 PlayerScript;
     public Gunscript Gunscript;
@@ -51,6 +56,7 @@ public class WeaponScript : MonoBehaviour
 
     void Start()
     {
+        FireAction = PlayerInputStarter.actions["Fire"];
         Player = GameObject.Find("Player");
         PlayerScript = Player.GetComponent<KeyboardControlMk2>();
 
@@ -64,17 +70,18 @@ public class WeaponScript : MonoBehaviour
 
     void FixedUpdate()
     {
+        FireKey = FireAction.IsPressed();
         if(Shoot < 500){Shoot += 1;}
         if(Shoot2 < 500){Shoot2 += 1;}
 
-        if (Input.GetMouseButton(0) && Gunscript.GunEquipped == 7 && ToggleUI.PauseMenu == 0)
+        if (FireKey && Gunscript.GunEquipped == 7 && ToggleUI.PauseMenu == 0)
         {
         ShieldAnim.SetFloat("Guard", Guarding);
         if(Guarding < 45){Guarding = Guarding + 1f;}
         if(Guarding >= 45){GuardingBot = 1; GuardingMode = 1;}
         }
 
-        else if (Gunscript.GunEquipped == 7 && !Input.GetMouseButton(0) | ToggleUI.PauseMenu == 1){
+        else if (Gunscript.GunEquipped == 7 && !FireKey | ToggleUI.PauseMenu == 1){
         ShieldAnim.SetFloat("Guard", Guarding);
         if(Guarding > 0){Guarding = Guarding - 1f;}
         else if(Guarding <= 0){GuardingMode = 0;}
@@ -84,7 +91,7 @@ public class WeaponScript : MonoBehaviour
     
 
 
-        if (Input.GetMouseButton(0) && Gunscript.GunEquipped == 1 && ToggleUI.PauseMenu == 0 && Shoot >= 25 && PlayerScript.HP > 0)
+        if (FireKey && Gunscript.GunEquipped == 1 && ToggleUI.PauseMenu == 0 && Shoot >= 25 && PlayerScript.HP > 0)
         {
             bulletSpeed = 800;
             SpawnBullet();
@@ -99,7 +106,7 @@ public class WeaponScript : MonoBehaviour
 
 
 
-        if (Input.GetMouseButton(0) && Gunscript.GunEquipped == 8 && ToggleUI.PauseMenu == 0 && Shoot2 >= 400 && PlayerScript.HP > 0)
+        if (FireKey && Gunscript.GunEquipped == 8 && ToggleUI.PauseMenu == 0 && Shoot2 >= 400 && PlayerScript.HP > 0)
         {
         MeleeAttack1();
         Shoot2 = 0;
@@ -119,7 +126,7 @@ public class WeaponScript : MonoBehaviour
 
 
 
-        if (Input.GetMouseButton(0) && Gunscript.GunEquipped == 10 && ToggleUI.PauseMenu == 0 && PlayerScript.HP > 0)
+        if (FireKey && Gunscript.GunEquipped == 10 && ToggleUI.PauseMenu == 0 && PlayerScript.HP > 0)
         {
         if(Healmode >= 45 && HealAnim == 1f){HealingParticle.Play(); HealAnim = 0f; IsHealingPlayer = 1;}
         if(Healmode < 45){Healmode = Healmode + 0.75f; HealAnim = 1f;}
@@ -136,7 +143,7 @@ public class WeaponScript : MonoBehaviour
 
 
 
-        if (Input.GetMouseButton(0) && Gunscript.GunEquipped == 11 && ToggleUI.PauseMenu == 0 && PlayerScript.HP > 0 && HomingMissileCharged == 1)
+        if (FireKey && Gunscript.GunEquipped == 11 && ToggleUI.PauseMenu == 0 && PlayerScript.HP > 0 && HomingMissileCharged == 1)
         {
         float audioVolume = PlayerPrefs.GetFloat("AudioVolume");
         float masterVolume = PlayerPrefs.GetFloat("MasterVolume");

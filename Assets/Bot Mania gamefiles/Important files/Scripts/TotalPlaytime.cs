@@ -1,15 +1,21 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class TotalPlaytime : MonoBehaviour
 {
-     private static TotalPlaytime instance;
+    public PlayerInput PlayerInputStarter;
+    public InputAction Fullscreenaction;
+    public bool FullscreenKey;
+
+    private static TotalPlaytime instance;
     private float interval = 60f;
     private int timerValue;
 
     private void Start()
     {
+        Fullscreenaction = PlayerInputStarter.actions["Fullscreen"];
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
@@ -36,7 +42,8 @@ public class TotalPlaytime : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F11))
+        FullscreenKey = Fullscreenaction.WasPressedThisFrame();
+        if (FullscreenKey)
         {
             Screen.fullScreen = !Screen.fullScreen;
             PlayerPrefs.SetInt("Windowed", PlayerPrefs.GetInt("Windowed") == 0 ? 1 : 0);
