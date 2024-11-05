@@ -193,7 +193,6 @@ GameObject:
   - component: {fileID: 1449126933057951223}
   - component: {fileID: 9010754916319022358}
   - component: {fileID: 1120289163263122533}
-  - component: {fileID: 7935044637811914150}
   m_Layer: 9
   m_Name: Helmet inside
   m_TagString: Untagged
@@ -4529,7 +4528,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1035
+  m_VersionIndex: 1038
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -4614,20 +4613,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523273363953066409}
-  m_Mesh: {fileID: 0}
---- !u!64 &7935044637811914150
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 523273363953066409}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!1 &657889479702422537
 GameObject:
@@ -6454,7 +6439,6 @@ GameObject:
   - component: {fileID: 8835861192164328152}
   - component: {fileID: 527840256028432505}
   - component: {fileID: 1072377426691739920}
-  - component: {fileID: 7118644043695847226}
   m_Layer: 9
   m_Name: Helmet inside_1
   m_TagString: Untagged
@@ -8714,20 +8698,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111007236498932918}
-  m_Mesh: {fileID: 0}
---- !u!64 &7118644043695847226
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111007236498932918}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!1 &1216067970253070494
 GameObject:
@@ -24644,7 +24614,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 13468
+  m_VersionIndex: 13471
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -24831,7 +24801,6 @@ GameObject:
   - component: {fileID: 67548061072471608}
   - component: {fileID: 7254642737149106849}
   - component: {fileID: 569657066211208871}
-  - component: {fileID: 7652237317593238649}
   m_Layer: 9
   m_Name: Helmet inside_1
   m_TagString: Untagged
@@ -27006,7 +26975,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 397
+  m_VersionIndex: 400
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -27091,20 +27060,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2183928048812531429}
-  m_Mesh: {fileID: 0}
---- !u!64 &7652237317593238649
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2183928048812531429}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!1 &2253243485258788486
 GameObject:
@@ -43028,7 +42983,6 @@ GameObject:
   - component: {fileID: 3505403422629613235}
   - component: {fileID: 6420048242502344427}
   - component: {fileID: 760878341873093222}
-  - component: {fileID: 691752628900069575}
   m_Layer: 9
   m_Name: Helmet inside
   m_TagString: Untagged
@@ -47449,20 +47403,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5304055610240802979}
-  m_Mesh: {fileID: 0}
---- !u!64 &691752628900069575
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5304055610240802979}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!1 &5345887125732469334
 GameObject:
