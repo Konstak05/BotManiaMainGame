@@ -32,6 +32,7 @@ public class KeyboardControlMk2 : MonoBehaviour
     public Rigidbody FallingRigidBody;
     public GameObject CameraUI;
     public GameObject CameraUI2;
+    public GameObject ScreenEffect;
     public MouseLook scriptA;
     public HPbar HeartbeatStarter;
     public AudioClip Clip;
@@ -122,6 +123,7 @@ public class KeyboardControlMk2 : MonoBehaviour
     FallingRigidBody.isKinematic = true;
     CameraUI.SetActive(true);
     CameraUI2.SetActive(false);
+    ScreenEffect.SetActive(true);
     RechargedSound = 1;
 
      
