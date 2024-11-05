@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class ToggleUI : MonoBehaviour
 {
@@ -13,7 +14,6 @@ public class ToggleUI : MonoBehaviour
   public float volume;
   public GameObject uiPanel;
   public GameObject uiPanel2;
-  public GameObject EscSign;
   public Light Light1;
   public Light Light2;
   public float Soundreset = 1f;
@@ -21,8 +21,13 @@ public class ToggleUI : MonoBehaviour
   public GameObject Player;
   public int PauseMenu;
 
+  //Escforspawnlist stuff
+  public GameObject EscSign;
+  public TextMeshProUGUI EscText;
+
   void Start(){
     EscAction = PlayerInputStarter.actions["OpenCreateMenu"];
+    EscText.text = EscAction.GetBindingDisplayString() + " for Spawnlist";
     uiPanel.SetActive(false);
     uiPanel2.SetActive(false);
     PauseMenu = 0;
