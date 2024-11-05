@@ -80,7 +80,6 @@ public class PlayerSpawner : MonoBehaviour
     if(IsTutorialMode){
     UnlockObject2 = GameObject.Find("CameraArea223").GetComponent<Gunscript>();
     UnlockObject2.IsTutorialMode2 = true;
-    UnlockObject2.GunEquipped = 999;
     }
 
     }
