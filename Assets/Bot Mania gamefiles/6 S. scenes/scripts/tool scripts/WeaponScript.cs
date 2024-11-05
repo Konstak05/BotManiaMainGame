@@ -17,17 +17,21 @@ public class WeaponScript : MonoBehaviour
     public GameObject bulletPrefab;
     public int bulletSpeed;
     public int Shoot,Shoot2;
-    public AudioClip Clip1;
-    public AudioClip Clip2;
-    public AudioClip Clip3;
-    public AudioSource Sound;
-    public AudioSource Sound2;
     public AudioSource HomingMissileAudioSource;
     public ParticleSystem Bulletthrow;
     public GameObject Flash;
     public GameObject Gun1;
 
+    //Sounds
+    public float masterVolume;
+    public float audioVolume;
+    public AudioClip Clip1;
+    public AudioClip Clip2;
+    public AudioClip Clip3;
+    public AudioSource Sound;
+    public AudioSource Sound2;
 
+    //Shield
     public Animator ShieldAnim;
     public float Guarding;
     public int GuardingMode;
@@ -106,16 +110,15 @@ public class WeaponScript : MonoBehaviour
 
 
 
-        if (FireKey && Gunscript.GunEquipped == 8 && ToggleUI.PauseMenu == 0 && Shoot2 >= 400 && PlayerScript.HP > 0)
+        if (FireKey && Gunscript.GunEquipped == 8 && ToggleUI.PauseMenu == 0 && Shoot2 >= 200 && PlayerScript.HP > 0)
         {
         MeleeAttack1();
         Shoot2 = 0;
         MeleeChargedSound = 1;
         }
 
-        if(Shoot2 >= 400 && PlayerScript.HP > 0 && MeleeChargedSound == 1){
-        float audioVolume = PlayerPrefs.GetFloat("AudioVolume");
-        float masterVolume = PlayerPrefs.GetFloat("MasterVolume");
+        if(Shoot2 >= 200 && PlayerScript.HP > 0 && MeleeChargedSound == 1){
+        SoundVolumeUpdater();
         Sound2.volume = audioVolume * masterVolume;
         Sound2.PlayOneShot(Clip3);
 
@@ -145,8 +148,7 @@ public class WeaponScript : MonoBehaviour
 
         if (FireKey && Gunscript.GunEquipped == 11 && ToggleUI.PauseMenu == 0 && PlayerScript.HP > 0 && HomingMissileCharged == 1)
         {
-        float audioVolume = PlayerPrefs.GetFloat("AudioVolume");
-        float masterVolume = PlayerPrefs.GetFloat("MasterVolume");
+        SoundVolumeUpdater();
         HomingMissileAudioSource.volume = audioVolume * masterVolume;
         HomingMissileAudioSource.Play();
         HomingMissileObject.transform.Rotate(-3.5f, 0f, 0f);
@@ -167,8 +169,7 @@ public class WeaponScript : MonoBehaviour
     }
 
     void SpawnBullet(){
-        float audioVolume = PlayerPrefs.GetFloat("AudioVolume");
-        float masterVolume = PlayerPrefs.GetFloat("MasterVolume");
+        SoundVolumeUpdater();
         Sound.volume = audioVolume * masterVolume;
         Sound.PlayOneShot(Clip1);
         GameObject bullet = Instantiate(bulletPrefab, Spawner.position, transform.rotation);
@@ -184,24 +185,24 @@ public class WeaponScript : MonoBehaviour
 
 
     void MeleeAttack1(){
-        float audioVolume = PlayerPrefs.GetFloat("AudioVolume");
-        float masterVolume = PlayerPrefs.GetFloat("MasterVolume");
+        SoundVolumeUpdater();
         Sound.volume = audioVolume * masterVolume;
         Sound.PlayOneShot(Clip2);
         Melee1.transform.Rotate(24f, 0f, 0f);
         Instantiate(MeleePrefab1, MeleeSpawner.position , transform.rotation);
-        Invoke("Goback", 0.01f);}
+        Invoke("Goback", 0.005f);
+    }
 
 
     void Goback(){
 
     if(MeleeFix < 120){
-    Melee1.transform.Rotate(-0.2f, 0f, 0f);
-    MeleeFix += 1;
-    Invoke("Goback", 0.01f);}
+        Melee1.transform.Rotate(-0.2f, 0f, 0f);
+        MeleeFix += 1;
+        Invoke("Goback", 0.005f);}
     if(MeleeFix >= 120){
-    MeleeFix = 0;
-    CancelInvoke("Goback");}
+        MeleeFix = 0;
+        CancelInvoke("Goback");}
     }
 
     void HomingMissileGoback1(){HomingMissileObject.transform.Rotate(-3.5f, 0f, 0f); HMsmoke.SetActive(false); HMsmoke2.SetActive(true); Invoke("HomingMissileGoback1a",0.1f);}
@@ -210,12 +211,17 @@ public class WeaponScript : MonoBehaviour
     void HomingMissileGoback2(){
     
     if(HomingMissileLauncherFix > 80 && HasLaunchedMissile == 0){
-     HomingMissileLauncherFix = HomingMissileLauncherFix - 0.5f;
-     HomingMissileObject.transform.Rotate(-0.025f, 0f, 0f);
-     Invoke("HomingMissileGoback2",0.01f);
+        HomingMissileLauncherFix = HomingMissileLauncherFix - 0.5f;
+        HomingMissileObject.transform.Rotate(-0.025f, 0f, 0f);
+        Invoke("HomingMissileGoback2",0.01f);
     }
     if(HomingMissileLauncherFix <= 80 && HasLaunchedMissile == 0){HasLaunchedMissile = 1;}
     if(HomingMissileLauncherFix > 0 && HasLaunchedMissile == 1){HomingMissileLauncherFix = HomingMissileLauncherFix - 1f; HomingMissileObject.transform.Rotate(0.1f, 0f, 0f); Invoke("HomingMissileGoback2",0.01f);}}
 
     void HomingMissileHasCharged(){HomingMissileCharged = 1;}
+
+    void SoundVolumeUpdater(){
+        audioVolume = PlayerPrefs.GetFloat("AudioVolume");
+        masterVolume = PlayerPrefs.GetFloat("MasterVolume");
+    }
 }
