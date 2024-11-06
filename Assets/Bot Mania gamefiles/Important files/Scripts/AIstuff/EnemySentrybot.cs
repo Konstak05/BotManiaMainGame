@@ -42,7 +42,7 @@ public class EnemySentrybot : MonoBehaviour
     public int Shoot;
     public float FrameImmunity;
     public bool playerInSightRange;
-    public int IsDead,IsSearching,IsPatrolling,InPatrolMode,LIFE,BotType,hascounted;
+    public int IsDead,IsSearching,IsPatrolling,InPatrolMode,LIFE,BotType,hascounted,EnemyStartDelay;
 
     private int ATTACKSMAX,ATTACKSMIN;
     public float sightrangeStart = 150;
@@ -67,6 +67,7 @@ public class EnemySentrybot : MonoBehaviour
 
     private void Start()
     {
+        Invoke("EnemyStarter",0.2f);
         HPMAX = HPMAX * Mag;
         HPslider.maxValue = HPMAX;
         HP = HPMAX;
@@ -137,7 +138,7 @@ public class EnemySentrybot : MonoBehaviour
 
 
             //MainStarter
-            if(playerInSightRange && HP > 0){
+            if(playerInSightRange && HP > 0 && EnemyStartDelay == 1){
             if(IsSearching == 1){
 
              if(GlobalData.GetEnemyCount() < 1){
@@ -163,7 +164,7 @@ public class EnemySentrybot : MonoBehaviour
             }
             }
             else{
-                if(IsPatrolling == 0){
+                if(IsPatrolling == 0 && EnemyStartDelay == 1){
                     CancelInvoke("StartEnemy");
                     CancelInvoke("Attack2A");
                     CancelInvoke("ChasePlayer");
@@ -222,7 +223,7 @@ public class EnemySentrybot : MonoBehaviour
 
     }
 
-
+    private void EnemyStarter(){EnemyStartDelay = 1;}
 
     void StartEnemy()
     {

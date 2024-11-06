@@ -59,7 +59,7 @@ public class EnemySentryBoss : MonoBehaviour
     public int Shoot;
     public float FrameImmunity;
     public bool playerInSightRange;
-    public int IsDead,IsSearching,IsPatrolling,LIFE,hascounted;
+    public int IsDead,IsSearching,IsPatrolling,LIFE,hascounted,EnemyStartDelay;
 
     private int ATTACKSMAX,ATTACKSMIN,CannonMode;
     public float sightrangeStart = 150;
@@ -82,7 +82,7 @@ public class EnemySentryBoss : MonoBehaviour
 
     private void Start()
     {
-
+        Invoke("EnemyStarter",0.2f);
         HPMAX = HPMAX*Mag;
         HPslider.maxValue = HPMAX;
         HP = HPMAX;
@@ -220,7 +220,7 @@ public class EnemySentryBoss : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
 
             //MainStarter
-            if(playerInSightRange && HP > 0 && IsDead == 0){
+            if(playerInSightRange && HP > 0 && IsDead == 0 && EnemyStartDelay == 1){
             Vector3 GunDirection = Player.transform.position - Gun.transform.position;
             Gun.transform.rotation = Quaternion.LookRotation(GunDirection);
             
@@ -258,7 +258,7 @@ public class EnemySentryBoss : MonoBehaviour
             }
             }
             else{
-                if(IsPatrolling == 0){
+                if(IsPatrolling == 0 && EnemyStartDelay == 1){
                     BossBodyColor2.materials[1].color = Color.blue;
                     BossBodyCeilingColor.material.color = Color.blue;
                     BossEyes.materials[1].color = Color.blue;
@@ -318,7 +318,7 @@ public class EnemySentryBoss : MonoBehaviour
 
     }
 
-
+    private void EnemyStarter(){EnemyStartDelay = 1;}
 
     void StartEnemy()
     {

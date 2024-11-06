@@ -47,7 +47,7 @@ public class EnemybotAI : MonoBehaviour
     public bool playerInSightRange;
     public bool playerInMeleeRange;
     public float HealingRandomDistance = 50f;
-    public int IsDead,IsSearching,IsPatrolling,InPatrolMode,IsHealing,LIFE,BotType,hascounted;
+    public int IsDead,IsSearching,IsPatrolling,InPatrolMode,IsHealing,LIFE,BotType,hascounted,EnemyStartDelay;
 
     private int ATTACKSMAX,ATTACKSMIN;
     public float sightrangeStart = 150;
@@ -73,7 +73,7 @@ public class EnemybotAI : MonoBehaviour
 
     private void Start()
     {
-
+        Invoke("EnemyStarter",0.2f);
         HPMAX = HPMAX * Mag;
         HPslider.maxValue = HPMAX;
         HP = HPMAX;
@@ -139,7 +139,7 @@ public class EnemybotAI : MonoBehaviour
 
 
             //MainStarter
-            if(playerInSightRange && HP > 0){
+            if(playerInSightRange && HP > 0 && EnemyStartDelay == 1){
             animator.SetFloat("Speed", navMeshAgent.velocity.magnitude);
             if(IsSearching == 1){
 
@@ -166,7 +166,7 @@ public class EnemybotAI : MonoBehaviour
             }
             }
             else{
-                if(IsPatrolling == 0){
+                if(IsPatrolling == 0 && EnemyStartDelay == 1){
                     CancelInvoke("StartEnemy");
                     CancelInvoke("Attack1A");
                     CancelInvoke("Attack1B");
@@ -243,7 +243,7 @@ public class EnemybotAI : MonoBehaviour
 
     }
 
-
+    private void EnemyStarter(){EnemyStartDelay = 1;}
 
     void StartEnemy()
     {
