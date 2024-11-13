@@ -39897,6 +39897,7 @@ MonoBehaviour:
   LIFE: 0
   BotType: 0
   hascounted: 0
+  EnemyStartDelay: 0
   sightrangeStart: 150
   sightRange: 150
   MeleeRange: 0

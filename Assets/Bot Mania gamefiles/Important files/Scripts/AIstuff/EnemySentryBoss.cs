@@ -7,25 +7,13 @@ using TMPro;
 public class EnemySentryBoss : MonoBehaviour
 {
     public NavMeshAgent navMeshAgent;
-    public AudioClip Clip1;
-    public AudioClip Clip2;
-    public AudioClip Clip3;
-    public AudioClip EnemyAlertSound;
-    public AudioClip BossDeathExplosion1;
-    public AudioSource Sound;
-    public AudioSource Sound2;
-    public AudioSource DeathSource;
+    public AudioClip Clip1,Clip2,Clip3,EnemyAlertSound,BossDeathExplosion1;
+    public AudioSource Sound,Sound2,DeathSource;
     public TextMeshPro MagText;
-    public ParticleSystem SpawnAnimation;
-    public ParticleSystem DeathAnimation1;
-    public ParticleSystem DeathAnimation2;
-    public ParticleSystem DeathAnimation3;
-    public ParticleSystem Cannon1SpawnParticle;
+    public ParticleSystem SpawnAnimation,DeathAnimation1,DeathAnimation2,DeathAnimation3,Cannon1SpawnParticle;
     public GameObject[] ColorHPBar;
     public GameObject[] objectsToActivate;
-    public Renderer BossBodyColor2;
-    public Renderer BossBodyCeilingColor;
-    public Renderer BossEyes;
+    public Renderer BossBodyColor2,BossBodyCeilingColor,BossEyes;
     private float MagtoText = 1;
     public Slider HPslider;
     public Color HPcolor;
@@ -35,21 +23,8 @@ public class EnemySentryBoss : MonoBehaviour
     public GameObject PlayerCamera;
     public WeaponScript WeaponScript;
     public KeyboardControlMk2 PlayerScript;
-    public GameObject Bot;
-    public GameObject MainObject;
-    public GameObject Gun;
-    public GameObject Cannon1;
-    public GameObject Cannon2;
-    public GameObject Cannon3;
-    public GameObject AlertSign;
-    public GameObject HealthBar;
-    public GameObject bulletPrefab;
-    public GameObject MissilePrefab;
-    public GameObject TurretGrenadePrefab;
-    public GameObject AntiCheeseMissile;
-    public Transform bulletSpawnPoint;
-    public Transform bulletSpawnPoint2;
-    public Transform bulletSpawnPoint3;
+    public GameObject Bot,MainObject,Gun,Cannon1,Cannon2,Cannon3,AlertSign,HealthBar,bulletPrefab,MissilePrefab,TurretGrenadePrefab,AntiCheeseMissile;
+    public Transform bulletSpawnPoint,bulletSpawnPoint2,bulletSpawnPoint3;
     public Transform Cannontransformleft,Cannontransformleftspin,Cannontransformright,Cannontransformrightspin,Cannontransformtop,Cannontransformbehind,Cannontransformbehindspin,SpinOrigin,Cannontransformfront,Cannontransformfrontleft,Cannontransformfrontright;
     public Transform MissileSpawner1,MissileSpawner2;
     public GameObject Cannon1Prefab;
@@ -57,7 +32,6 @@ public class EnemySentryBoss : MonoBehaviour
 
     public int PatrolChance = 20;
     public int Shoot;
-    public float FrameImmunity;
     public bool playerInSightRange;
     public int IsDead,IsSearching,IsPatrolling,LIFE,hascounted,EnemyStartDelay;
 
@@ -69,7 +43,7 @@ public class EnemySentryBoss : MonoBehaviour
     public float CannonSpinning = 0.5f;
     public float CannonSpinning2 = 0.7f;
 
-    private Vector3 destination;
+    //private Vector3 destination;
 
     //EnemyStats
     public float HPMAX = 100;
@@ -78,7 +52,13 @@ public class EnemySentryBoss : MonoBehaviour
     public float DamageReduction = 5f;
     public float bulletSpeed = 10;
     public float DMG;
+    public float FrameImmunity;
     public int ShootingSpeed;
+
+    //TriggersforBossBattle
+    public bool IsStoryBoss;
+    public PlayerSpawner PlayerSpawner;
+    public AudioClip BossSoundBeginning,BossSoundLoop;
 
     private void Start()
     {
@@ -105,20 +85,12 @@ public class EnemySentryBoss : MonoBehaviour
         ATTACKSMIN = 0;
         ATTACKSMAX = 2;
 
-    BossBodyColor2.materials[1].color = Color.blue;
-    BossBodyCeilingColor.material.color = Color.blue;
-    BossEyes.materials[1].color = Color.blue;
+        BossBodyColor2.materials[1].color = Color.blue;
+        BossBodyCeilingColor.material.color = Color.blue;
+        BossEyes.materials[1].color = Color.blue;
 
-    for (int i = 0; i < ColorHPBar.Length; i++) 
-    {
-    Renderer renderer = ColorHPBar[i].GetComponent<Renderer>();
-    if (renderer != null)
-    {
-        renderer.material.color = HPcolor;
-    }
-    }
-
-    Gun.SetActive(false);
+        for (int i = 0; i < ColorHPBar.Length; i++){Renderer renderer = ColorHPBar[i].GetComponent<Renderer>(); if (renderer != null){renderer.material.color = HPcolor;}}
+        Gun.SetActive(false);
     }
 
 
@@ -219,87 +191,66 @@ public class EnemySentryBoss : MonoBehaviour
         //CheckPlayerDistance
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
 
-            //MainStarter
-            if(playerInSightRange && HP > 0 && IsDead == 0 && EnemyStartDelay == 1){
-            Vector3 GunDirection = Player.transform.position - Gun.transform.position;
-            Gun.transform.rotation = Quaternion.LookRotation(GunDirection);
+        //MainStarter
+        if(playerInSightRange && HP > 0 && IsDead == 0 && EnemyStartDelay == 1){
+        Vector3 GunDirection = Player.transform.position - Gun.transform.position;
+        Gun.transform.rotation = Quaternion.LookRotation(GunDirection);
             
-            if(IsSearching == 1){
+        if(IsSearching == 1){
             
             //HeadSpawn
-            if(Gun.activeSelf == false){
-            SpawnAnimation.Play();
-            Gun.SetActive(true);
-            }
+            if(Gun.activeSelf == false){SpawnAnimation.Play(); Gun.SetActive(true);}
 
              //Alert sound
-             if(GlobalData.GetEnemyCount() < 1){ float audioVolume = PlayerPrefs.GetFloat("AudioVolume"); float masterVolume = PlayerPrefs.GetFloat("MasterVolume"); Sound2.volume = audioVolume * masterVolume;
-             Sound2.PlayOneShot(EnemyAlertSound);}
+            if(GlobalData.GetEnemyCount() < 1){ float audioVolume = PlayerPrefs.GetFloat("AudioVolume"); float masterVolume = PlayerPrefs.GetFloat("MasterVolume"); Sound2.volume = audioVolume * masterVolume;
+            Sound2.PlayOneShot(EnemyAlertSound);}
 
-             AlertSign.SetActive(true);
-             HealthBar.SetActive(true);
-             LIFE = 1;
-             IsSearching = 0;
-             IsPatrolling = 0;
-             HP = HPMAX;
-             sightRange = sightRangeWhenCaught;
+            AlertSign.SetActive(true);
+            HealthBar.SetActive(true);
+            LIFE = 1;
+            IsSearching = 0;
+            IsPatrolling = 0;
+            HP = HPMAX;
+            sightRange = sightRangeWhenCaught;
 
-             ATTACKSMIN = 0;
-             ATTACKSMAX = 2;
+            ATTACKSMIN = 0;
+            ATTACKSMAX = 2;
 
-             //EnemyCountstuff
-             hascounted = 2;
-             if(IsDead == 0 && GlobalData.GetEnemyCount() >= 0){
-             GlobalData.SetEnemyCount(GlobalData.GetEnemyCount() + 1);
-             }
+            //EnemyCountstuff
+            hascounted = 2;
+            if(IsDead == 0 && GlobalData.GetEnemyCount() >= 0){GlobalData.SetEnemyCount(GlobalData.GetEnemyCount() + 1);}
 
-             Invoke("StartEnemy", 1f);
-             Invoke("AlertSignLeave", 1f);
+            if(IsStoryBoss){Invoke("StartBossBattleSequence", 0.1f);}
+
+            Invoke("StartEnemy", 1f);
+            Invoke("AlertSignLeave", 1f);
+        }
+        }
+        else{
+            if(IsPatrolling == 0 && EnemyStartDelay == 1){
+                BossBodyColor2.materials[1].color = Color.blue;
+                BossBodyCeilingColor.material.color = Color.blue;
+                BossEyes.materials[1].color = Color.blue;
+                if(Cannon1.activeSelf == false){Cannon1.SetActive(true); Cannon1SpawnParticle.Play();}
+                CancelInvoke("StartEnemy"); CancelInvoke("Attack1A"); CancelInvoke("Attack2A"); CancelInvoke("Attack2B"); CancelInvoke("Attack3A"); CancelInvoke("Attack3B"); CancelInvoke("Attack4A"); CancelInvoke("Attack5A");
+                AlertSign.SetActive(false);
+                HealthBar.SetActive(false);
+                LIFE = 0;
+                IsPatrolling = 1;
+                IsSearching = 1;
+                sightRange = sightRangeWhenLost;
+
+                //EnemyCountstuff
+                if(hascounted == 2 && GlobalData.GetEnemyCount() > 0){CannonMode = 1; GlobalData.SetEnemyCount(GlobalData.GetEnemyCount() - 1);}
             }
-            }
-            else{
-                if(IsPatrolling == 0 && EnemyStartDelay == 1){
-                    BossBodyColor2.materials[1].color = Color.blue;
-                    BossBodyCeilingColor.material.color = Color.blue;
-                    BossEyes.materials[1].color = Color.blue;
-                    if(Cannon1.activeSelf == false){Cannon1.SetActive(true); Cannon1SpawnParticle.Play();}
-                    CancelInvoke("StartEnemy");
-                    CancelInvoke("Attack1A");
-                    CancelInvoke("Attack2A");
-                    CancelInvoke("Attack2B");
-                    CancelInvoke("Attack3A");
-                    CancelInvoke("Attack3B");
-                    CancelInvoke("Attack4A");
-                    CancelInvoke("Attack5A");
-                    AlertSign.SetActive(false);
-                    HealthBar.SetActive(false);
-                    LIFE = 0;
-                    IsPatrolling = 1;
-                    IsSearching = 1;
-                    sightRange = sightRangeWhenLost;
+        }
 
-                    //EnemyCountstuff
-                    if(hascounted == 2 && GlobalData.GetEnemyCount() > 0){
-                    CannonMode = 1;
-                    GlobalData.SetEnemyCount(GlobalData.GetEnemyCount() - 1);
-                    }
-                }
-            }
-
-            //Deathcode
-            if(HP <= 0){
+        //Deathcode
+        if(HP <= 0){
 
                 if(IsDead == 0){
                 if(Cannon1.activeSelf == false){Cannon1.SetActive(true); Cannon1SpawnParticle.Play();}
-                CancelInvoke("StartEnemy");
-                CancelInvoke("Attack1A");
-                CancelInvoke("Attack2A");
-                CancelInvoke("Attack3A");
-                CancelInvoke("Attack3B");
-                CancelInvoke("Attack4A");
-                CancelInvoke("Attack5A");
-                CancelInvoke("Attack2B");
-                CancelInvoke("ChasePlayer");
+                CancelInvoke("StartEnemy"); CancelInvoke("Attack1A"); CancelInvoke("Attack2A"); CancelInvoke("Attack2B"); CancelInvoke("Attack3A"); CancelInvoke("Attack3B"); CancelInvoke("Attack4A"); CancelInvoke("Attack5A"); CancelInvoke("ChasePlayer");
                 CannonMode = 1;
 
                 LIFE = 0;
@@ -323,112 +274,89 @@ public class EnemySentryBoss : MonoBehaviour
     void StartEnemy()
     {
 
-        if(HP <= HPMAX*1 && HP > HPMAX*0.7){
-        ATTACKSMIN = 0;
-        ATTACKSMAX = 2;
+        if(HP <= HPMAX*1 && HP > HPMAX*0.7){ATTACKSMIN = 0; ATTACKSMAX = 2;}
+        if(HP <= HPMAX*0.7 && HP > HPMAX*0.5){ATTACKSMIN = 1;ATTACKSMAX = 3;}
+        if(HP <= HPMAX*0.5 && HP > HPMAX*0.3){ATTACKSMIN = 0; ATTACKSMAX = 4;}
+        if(HP <= HPMAX*0.3 && HP > HPMAX*0){ATTACKSMIN = 0; ATTACKSMAX = 5;}
+
+        int ATT = UnityEngine.Random.Range(ATTACKSMIN,ATTACKSMAX);
+        AlertSign.SetActive(false);
+        CancelInvoke("Attack1A"); CancelInvoke("Attack2A"); CancelInvoke("Attack2B"); CancelInvoke("ChasePlayer");
+
+        if(Cannon1.activeSelf == false){Cannon1.SetActive(true); Cannon1SpawnParticle.Play();}
+
+        if(ATT == 0){
+            BossBodyColor2.materials[1].color = Color.cyan;
+            BossBodyCeilingColor.material.color = Color.cyan;
+            BossEyes.materials[1].color = Color.blue;
+            CannonMode = 1;
+            Invoke("Attack1A", 0.1f);
+            int StartEnemyAgain = UnityEngine.Random.Range(2,6);
+            Invoke("StartEnemy", StartEnemyAgain);
         }
-        if(HP <= HPMAX*0.7 && HP > HPMAX*0.5){
-        ATTACKSMIN = 1;
-        ATTACKSMAX = 3;
+        else if(ATT == 1){
+            BossBodyColor2.materials[1].color = Color.magenta;
+            BossBodyCeilingColor.material.color = Color.magenta;
+            BossEyes.materials[1].color = Color.blue;
+            CannonMode = 2;
+            Invoke("Attack2A", 0.7f);
+            Invoke("StartEnemy", 2f);
         }
-        if(HP <= HPMAX*0.5 && HP > HPMAX*0.3){
-        ATTACKSMIN = 0;
-        ATTACKSMAX = 4;
+        else if(ATT == 2){
+            BossBodyColor2.materials[1].color = Color.red;
+            BossBodyCeilingColor.material.color = Color.red;
+            BossEyes.materials[1].color = Color.blue;
+            CannonMode = 5;
+            Invoke("Attack3A", 1f);
+            Invoke("StartEnemy", 5f);
         }
-        if(HP <= HPMAX*0.3 && HP > HPMAX*0){
-        ATTACKSMIN = 0;
-        ATTACKSMAX = 5;
+        else if(ATT == 3){
+            BossBodyColor2.materials[1].color = Color.green;
+            BossBodyCeilingColor.material.color = Color.green;
+            BossEyes.materials[1].color = Color.blue;
+            CannonMode = 6;
+            Invoke("Attack4A", 0.5f); 
+            Invoke("StartEnemy", 2.5f);
         }
-
-    int ATT = UnityEngine.Random.Range(ATTACKSMIN,ATTACKSMAX);
-    AlertSign.SetActive(false);
-     CancelInvoke("Attack1A");
-     CancelInvoke("Attack2A");
-     CancelInvoke("Attack2B");
-     CancelInvoke("ChasePlayer");
-
-
-     if(Cannon1.activeSelf == false){Cannon1.SetActive(true); Cannon1SpawnParticle.Play();}
-
-    if(ATT == 0){
-    BossBodyColor2.materials[1].color = Color.cyan;
-    BossBodyCeilingColor.material.color = Color.cyan;
-    BossEyes.materials[1].color = Color.blue;
-        CannonMode = 1;
-        Invoke("Attack1A", 0.1f);
-        int StartEnemyAgain = UnityEngine.Random.Range(2,6);
-        Invoke("StartEnemy", StartEnemyAgain);
-
+        else if(ATT == 4){
+            BossBodyColor2.materials[1].color = Color.blue;
+            BossBodyCeilingColor.material.color = Color.blue;
+            BossEyes.materials[1].color = Color.blue;
+            CannonMode = 7;
+            Invoke("Attack5A", 0.5f); 
+            Invoke("StartEnemy", 5f);
+        }
     }
-    else if(ATT == 1){
-    BossBodyColor2.materials[1].color = Color.magenta;
-    BossBodyCeilingColor.material.color = Color.magenta;
-    BossEyes.materials[1].color = Color.blue;
-       CannonMode = 2;
-       Invoke("Attack2A", 0.7f);
-       Invoke("StartEnemy", 2f);
-
-    }
-    else if(ATT == 2){
-    BossBodyColor2.materials[1].color = Color.red;
-    BossBodyCeilingColor.material.color = Color.red;
-    BossEyes.materials[1].color = Color.blue;
-       CannonMode = 5;
-       Invoke("Attack3A", 1f);
-       Invoke("StartEnemy", 5f);
-
-    }
-    else if(ATT == 3){
-    BossBodyColor2.materials[1].color = Color.green;
-    BossBodyCeilingColor.material.color = Color.green;
-    BossEyes.materials[1].color = Color.blue;
-       CannonMode = 6;
-       Invoke("Attack4A", 0.5f); 
-       Invoke("StartEnemy", 2.5f);
-
-    }
-    else if(ATT == 4){
-    BossBodyColor2.materials[1].color = Color.blue;
-    BossBodyCeilingColor.material.color = Color.blue;
-    BossEyes.materials[1].color = Color.blue;
-    CannonMode = 7;
-       Invoke("Attack5A", 0.5f); 
-       Invoke("StartEnemy", 5f);
-
-    }
-    }
-
 
 
     //Attack1
     void Attack1A()
     {
-    if(Shoot < ShootingSpeed/1.5){Shoot += 1;}
-    if(Shoot >= ShootingSpeed/1.5 && WeaponScript.GuardingBot == 0){Shoot = 0;}
+        if(Shoot < ShootingSpeed/1.5){Shoot += 1;}
+        if(Shoot >= ShootingSpeed/1.5 && WeaponScript.GuardingBot == 0){Shoot = 0;}
 
+        if(Shoot == 1){
+            float audioVolume = PlayerPrefs.GetFloat("AudioVolume");
+            float masterVolume = PlayerPrefs.GetFloat("MasterVolume");
+            Sound.volume = audioVolume * masterVolume;
+            Sound.PlayOneShot(Clip2);
+            var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+            bullet.GetComponent<Rigidbody>().useGravity = false;
+            bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
+            bullet.GetComponent<BulletScript>().Damage = DMG;
 
-    if(Shoot == 1){
-        float audioVolume = PlayerPrefs.GetFloat("AudioVolume");
-        float masterVolume = PlayerPrefs.GetFloat("MasterVolume");
-        Sound.volume = audioVolume * masterVolume;
-        Sound.PlayOneShot(Clip2);
-        var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        bullet.GetComponent<Rigidbody>().useGravity = false;
-        bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
-        bullet.GetComponent<BulletScript>().Damage = DMG;
+            var bullet2 = Instantiate(bulletPrefab, bulletSpawnPoint2.position, bulletSpawnPoint2.rotation);
+            bullet2.GetComponent<Rigidbody>().useGravity = false;
+            bullet2.GetComponent<Rigidbody>().velocity = bulletSpawnPoint2.forward * bulletSpeed;
+            bullet2.GetComponent<BulletScript>().Damage = DMG;
 
-        var bullet2 = Instantiate(bulletPrefab, bulletSpawnPoint2.position, bulletSpawnPoint2.rotation);
-        bullet2.GetComponent<Rigidbody>().useGravity = false;
-        bullet2.GetComponent<Rigidbody>().velocity = bulletSpawnPoint2.forward * bulletSpeed;
-        bullet2.GetComponent<BulletScript>().Damage = DMG;
+            var bullet3 = Instantiate(bulletPrefab, bulletSpawnPoint3.position, bulletSpawnPoint3.rotation);
+            bullet3.GetComponent<Rigidbody>().useGravity = false;
+            bullet3.GetComponent<Rigidbody>().velocity = bulletSpawnPoint3.forward * bulletSpeed;
+            bullet3.GetComponent<BulletScript>().Damage = DMG;
+        }
 
-        var bullet3 = Instantiate(bulletPrefab, bulletSpawnPoint3.position, bulletSpawnPoint3.rotation);
-        bullet3.GetComponent<Rigidbody>().useGravity = false;
-        bullet3.GetComponent<Rigidbody>().velocity = bulletSpawnPoint3.forward * bulletSpeed;
-        bullet3.GetComponent<BulletScript>().Damage = DMG;
-    }
-
-    Invoke("Attack1A", 0.05f);
+        Invoke("Attack1A", 0.05f);
     }
 
 
@@ -449,13 +377,13 @@ public class EnemySentryBoss : MonoBehaviour
     //Attack3
     void Attack3A()
     {
-    Invoke("Attack3B", 1f);
+        Invoke("Attack3B", 1f);
     }
     void Attack3B()
     {
-    Cannon1.SetActive(false);
-    var Cannonthrow = Instantiate(Cannon1Prefab, Cannon1.transform.position, Cannon1.transform.rotation);
-    Cannonthrow.GetComponent<Enemydamagegiver>().Damage = DMG*1.5f;
+        Cannon1.SetActive(false);
+        var Cannonthrow = Instantiate(Cannon1Prefab, Cannon1.transform.position, Cannon1.transform.rotation);
+        Cannonthrow.GetComponent<Enemydamagegiver>().Damage = DMG*1.5f;
     }
     //Attack4
     void Attack4A()
@@ -482,68 +410,64 @@ public class EnemySentryBoss : MonoBehaviour
 
     void AlertSignLeave(){AlertSign.SetActive(false);}
 
-void DyingAnimationStart(){
-    float audioVolume = PlayerPrefs.GetFloat("AudioVolume"); 
-    float masterVolume = PlayerPrefs.GetFloat("MasterVolume"); 
-    DeathSource.volume = audioVolume * masterVolume; 
-    DeathSource.PlayOneShot(BossDeathExplosion1); 
-    DeathAnimation1.Play();
-    CannonSpinning += 0.2f;
-    CannonSpinning2 += 0.2f;
-    Invoke("DyingAnimationStart2",0.5f);
+    void DyingAnimationStart(){
+        float audioVolume = PlayerPrefs.GetFloat("AudioVolume"); 
+        float masterVolume = PlayerPrefs.GetFloat("MasterVolume"); 
+        DeathSource.volume = audioVolume * masterVolume; 
+        DeathSource.PlayOneShot(BossDeathExplosion1); 
+        DeathAnimation1.Play();
+        CannonSpinning += 0.2f;
+        CannonSpinning2 += 0.2f;
+        Invoke("DyingAnimationStart2",0.5f);
+    }
 
-}
+    void DyingAnimationStart2(){
+        float audioVolume = PlayerPrefs.GetFloat("AudioVolume"); 
+        float masterVolume = PlayerPrefs.GetFloat("MasterVolume"); 
+        DeathSource.volume = audioVolume * masterVolume; 
+        DeathSource.PlayOneShot(BossDeathExplosion1); 
+        DeathAnimation2.Play();
+        CannonSpinning += 0.2f;
+        CannonSpinning2 += 0.2f;
+        Invoke("DyingAnimationStart3",0.5f);
+    }
 
-void DyingAnimationStart2(){
-    float audioVolume = PlayerPrefs.GetFloat("AudioVolume"); 
-    float masterVolume = PlayerPrefs.GetFloat("MasterVolume"); 
-    DeathSource.volume = audioVolume * masterVolume; 
-    DeathSource.PlayOneShot(BossDeathExplosion1); 
-    DeathAnimation2.Play();
-    CannonSpinning += 0.2f;
-    CannonSpinning2 += 0.2f;
-    Invoke("DyingAnimationStart3",0.5f);
-}
+    void DyingAnimationStart3(){
+        float audioVolume = PlayerPrefs.GetFloat("AudioVolume"); 
+        float masterVolume = PlayerPrefs.GetFloat("MasterVolume"); 
+        DeathSource.volume = audioVolume * masterVolume; 
+        DeathSource.PlayOneShot(BossDeathExplosion1); 
+        DeathAnimation3.Play();
+        CannonSpinning += 0.2f;
+        CannonSpinning2 += 0.2f;
+        Invoke("DyingAnimationStart",0.5f);
+    }
 
-void DyingAnimationStart3(){
-    float audioVolume = PlayerPrefs.GetFloat("AudioVolume"); 
-    float masterVolume = PlayerPrefs.GetFloat("MasterVolume"); 
-    DeathSource.volume = audioVolume * masterVolume; 
-    DeathSource.PlayOneShot(BossDeathExplosion1); 
-    DeathAnimation3.Play();
-    CannonSpinning += 0.2f;
-    CannonSpinning2 += 0.2f;
-    Invoke("DyingAnimationStart",0.5f);
-}
     void Remove(){
-    float audioVolume = PlayerPrefs.GetFloat("AudioVolume"); 
-    float masterVolume = PlayerPrefs.GetFloat("MasterVolume"); 
-    DeathSource.volume = audioVolume * masterVolume; 
-    DeathSource.PlayOneShot(BossDeathExplosion1); 
-    gameObject.GetComponent<Collider>().enabled = false;
-    CancelInvoke("DyingAnimationStart");
-    CancelInvoke("DyingAnimationStart2");
-    CancelInvoke("DyingAnimationStart3");
-    SpawnAnimation.Play();
+        float audioVolume = PlayerPrefs.GetFloat("AudioVolume"); 
+        float masterVolume = PlayerPrefs.GetFloat("MasterVolume"); 
+        DeathSource.volume = audioVolume * masterVolume; 
+        DeathSource.PlayOneShot(BossDeathExplosion1); 
+        gameObject.GetComponent<Collider>().enabled = false;
+        CancelInvoke("DyingAnimationStart"); CancelInvoke("DyingAnimationStart2"); CancelInvoke("DyingAnimationStart3");
+        SpawnAnimation.Play();
 
-    Cannon1.SetActive(false);
-    Cannon2.SetActive(false);
-    Cannon3.SetActive(false);
+        Cannon1.SetActive(false); Cannon2.SetActive(false); Cannon3.SetActive(false);
 
-    foreach (GameObject obj in objectsToActivate){obj.GetComponent<Renderer>().enabled = false;}
+        foreach (GameObject obj in objectsToActivate){obj.GetComponent<Renderer>().enabled = false;}
 
-    Invoke("Remove2",3f);
+        //BossBattleDisableMusic
+        Invoke("EndBossBattleSequence", 0.01f);
+
+        Invoke("Remove2",3f);
     }
 
     void Remove2(){Destroy(MainObject);}
 
 
-
-
-
-
-
-
+    void StartBossBattleSequence(){PlayerSpawner.Combat.clip = BossSoundBeginning; PlayerSpawner.Ambient.Play(); PlayerSpawner.Combat.Play(); Invoke("StartBossBattleSequence2", 12.8f);}
+    void StartBossBattleSequence2(){PlayerSpawner.Combat.clip = BossSoundLoop; PlayerSpawner.Combat.Play();}
+    void EndBossBattleSequence(){PlayerSpawner.Ambient.clip = null; PlayerSpawner.Ambient.Play();}
 
 void OnCollisionEnter(Collision other)
 {
@@ -569,14 +493,14 @@ void OnCollisionEnter(Collision other)
             
             MeleeChecker = other.gameObject.GetComponent<Enemydamagegiver>();
             if(MeleeChecker != null){
-            Debug.Log("Test Damage = " + MeleeChecker.Damage);
-            HP -= MeleeChecker.Damage;
-            MeleeChecker = null;
+                Debug.Log("Test Damage = " + MeleeChecker.Damage);
+                HP -= MeleeChecker.Damage;
+                MeleeChecker = null;
             }
             else if(MeleeChecker == null){
-            Debug.Log("Test2");
-            HP -=  100/DamageReduction/1;
-            MeleeChecker = null;
+                Debug.Log("Test2");
+                HP -=  100/DamageReduction/1;
+                MeleeChecker = null;
             }
             FrameImmunity = 0;
     }

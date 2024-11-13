@@ -11,7 +11,7 @@ public class ButtonForMainMenu : MonoBehaviour
     public bool CanPress;
 
     void Start(){
-
+    Application.targetFrameRate = 60;
     Invoke("CanPress2", 1);
     }
 
