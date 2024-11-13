@@ -16,23 +16,19 @@ public class timespawner : MonoBehaviour
 
     void SpawnTurret()
     {
-     var TurretEnemy = Instantiate(Turret, gameObject.transform.position, gameObject.transform.rotation);
-     ActiveTurret = TurretEnemy.transform.Find("Sentry");
-     ActiveTurret.GetComponent<EnemySentrybot>().Mag = MAG;
-     Destroy(gameObject);
+        var TurretEnemy = Instantiate(Turret, gameObject.transform.position, gameObject.transform.rotation);
+        ActiveTurret = TurretEnemy.transform.Find("Sentry");
+        ActiveTurret.GetComponent<EnemySentrybot>().Mag = MAG;
+        Destroy(gameObject);
     }
-
 
     void OnCollisionEnter(Collision other)
     {
 
-    if (Ground == (Ground | (1 << other.gameObject.layer)))
-    {
-      Invoke("SpawnTurret",SpawnTimer);
-    }
+        if (Ground == (Ground | (1 << other.gameObject.layer))){Invoke("SpawnTurret",SpawnTimer);}
 
-    if (other.gameObject.CompareTag("PlayerBulletBot") | other.gameObject.CompareTag("MeleeProjectileBot") | other.gameObject.CompareTag("PlayerMissileBot"))
-    {
+        if (other.gameObject.CompareTag("PlayerBulletBot") | other.gameObject.CompareTag("MeleeProjectileBot") | other.gameObject.CompareTag("PlayerMissileBot"))
+        {
             if(Hasexploded == 0){
             gameObject.GetComponent<Collider>().enabled = false;
             Hasexploded = 1;
@@ -40,13 +36,8 @@ public class timespawner : MonoBehaviour
             CancelInvoke("SpawnTurret");
             GrenadahModel.SetActive(false);
             Invoke("Delete",0.5f);
-            }
-            
+            }        
+        }
     }
-}
-    void Delete()
-    {
-    Destroy(gameObject);
-    }
-
+    void Delete(){Destroy(gameObject);}
 }

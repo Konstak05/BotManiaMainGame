@@ -68,6 +68,7 @@ public class EnemybotAI : MonoBehaviour
     public float DMG;
     public bool IsSmart;
     public bool CanHeal;
+    public bool IsSupportBot;
     public int ShootingSpeed;
     public float StoppingDistanceStart;
 
@@ -345,16 +346,22 @@ public class EnemybotAI : MonoBehaviour
         Sound.volume = audioVolume * masterVolume;
         Sound.PlayOneShot(Clip2);
         if(BotType == 0){
-        var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        bullet.GetComponent<Rigidbody>().useGravity = false;
-        bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
-        bullet.GetComponent<BulletScript>().Damage = DMG;
+            var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+            bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
+            if(IsSupportBot){bullet.GetComponent<timespawner>().MAG = Mag;}
+            if(!IsSupportBot){
+                bullet.GetComponent<Rigidbody>().useGravity = false;
+                bullet.GetComponent<BulletScript>().Damage = DMG;
+            }
         }
         if(BotType == 2){
-        var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        bullet.GetComponent<Rigidbody>().useGravity = false;
-        bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
-        bullet.GetComponent<Enemydamagegiver>().Damage = DMG;
+            var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+            bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
+            if(IsSupportBot){bullet.GetComponent<timespawner>().MAG = Mag;}
+            if(!IsSupportBot){
+            bullet.GetComponent<Rigidbody>().useGravity = false;
+                bullet.GetComponent<Enemydamagegiver>().Damage = DMG;
+            }
         }
     }
 

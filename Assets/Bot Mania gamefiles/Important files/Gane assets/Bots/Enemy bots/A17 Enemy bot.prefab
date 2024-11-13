@@ -42534,7 +42534,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 79a15212d0e90f1448b0cb65c2b88a25, type: 2}
+  - {fileID: 2100000, guid: 52cba6d34a40ac542af324e20024247e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42679,8 +42679,8 @@ MonoBehaviour:
   DamageReduction: 5
   bulletSpeed: 175
   MeleeReload: 1
-  DMG: 20
-  IsSmart: 0
+  DMG: 25
+  IsSmart: 1
   CanHeal: 1
   ShootingSpeed: 8
   StoppingDistanceStart: 25
