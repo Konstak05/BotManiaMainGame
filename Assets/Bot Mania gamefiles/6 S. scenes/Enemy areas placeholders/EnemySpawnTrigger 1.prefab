@@ -460,6 +460,9 @@ MonoBehaviour:
   - 1
   - 1
   - 1
+  EnemyType: 000000000000000000000000
+  prefab2: {fileID: 0}
+  ActiveEnemy: {fileID: 0}
 --- !u!135 &3348939253079642150
 SphereCollider:
   m_ObjectHideFlags: 0

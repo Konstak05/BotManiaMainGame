@@ -457,7 +457,7 @@ public class EnemySentryBoss : MonoBehaviour
         foreach (GameObject obj in objectsToActivate){obj.GetComponent<Renderer>().enabled = false;}
 
         //BossBattleDisableMusic
-        Invoke("EndBossBattleSequence", 0.01f);
+        if(IsStoryBoss){Invoke("EndBossBattleSequence", 0.01f);}
 
         Invoke("Remove2",3f);
     }

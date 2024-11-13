@@ -33982,19 +33982,20 @@ MonoBehaviour:
   LIFE: 0
   BotType: 0
   hascounted: 0
+  EnemyStartDelay: 0
   sightrangeStart: 200
   sightRange: 200
   MeleeRange: 0
   sightRangeWhenCaught: 0
   sightRangeWhenLost: 0
-  HPMAX: 30
+  HPMAX: 80
   HP: 0
   Mag: 1
   StartEnemyAndRefresh: 1
   DamageReduction: 5
   bulletSpeed: 175
   MeleeReload: 1
-  DMG: 10
+  DMG: 20
   IsSmart: 0
   CanHeal: 0
   ShootingSpeed: 4
