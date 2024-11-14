@@ -29,14 +29,9 @@ public class MissileTargeting : MonoBehaviour
         Invoke("MissileInterval", 0.01f);
     }
 
-    void Update()
-    {
-        if(IsEnemy == 0){
-        targets = GameObject.FindGameObjectsWithTag("Enemy");
-        }
-        else{
-        targets = GameObject.FindGameObjectsWithTag("Player");
-        }
+    void Update(){
+        if(IsEnemy == 0){targets = GameObject.FindGameObjectsWithTag("Enemy");}
+        else{targets = GameObject.FindGameObjectsWithTag("Player");}
     }
 
     private void MissileInterval(){
@@ -45,11 +40,13 @@ public class MissileTargeting : MonoBehaviour
             float closestDistance = Mathf.Infinity;
             foreach (GameObject t in targets)
             {
-                float distance = Vector3.Distance(transform.position, t.transform.position);
-                if (distance < closestDistance && distance <= Max && distance >= Min)
-                {
-                    closestDistance = distance;
-                    target = t.transform;
+                if(t != null){
+                    float distance = Vector3.Distance(transform.position, t.transform.position);
+                    if (distance < closestDistance && distance <= Max && distance >= Min)
+                    {
+                        closestDistance = distance;
+                        target = t.transform;
+                    }
                 }
             }
 
@@ -68,47 +65,40 @@ public class MissileTargeting : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-    if (Ground == (Ground | (1 << other.gameObject.layer)))
-    {
-     if(HasExploded == 0){
-     HasExploded = 1;
-     CancelInvoke("DeleteMissile");
-     CancelInvoke("MissileInterval");
-     DeleteMissile();
-     }
-    }
-    if (PlayerAttack == (PlayerAttack | (1 << other.gameObject.layer)) && CanBeParried == 1)
-    {
-     if(HasExploded == 0){
-     HasExploded = 1;
-     CancelInvoke("DeleteMissile");
-     CancelInvoke("MissileInterval");
-     DeleteMissile();
-     }
-    }
+        if (Ground == (Ground | (1 << other.gameObject.layer)))
+        {
+            if(HasExploded == 0){
+                HasExploded = 1;
+                CancelInvoke("DeleteMissile");
+                CancelInvoke("MissileInterval");
+                DeleteMissile();
+            }
+        }
+        if (PlayerAttack == (PlayerAttack | (1 << other.gameObject.layer)) && CanBeParried == 1)
+        {
+            if(HasExploded == 0){
+                HasExploded = 1;
+                CancelInvoke("DeleteMissile");
+                CancelInvoke("MissileInterval");
+                DeleteMissile();
+            }
+        }
     }
 
     void DeleteMissile()
     {
-     GameObject Missilehitbox = Instantiate(HitboxMissile, gameObject.transform.position, gameObject.transform.rotation);
-     gameObject.GetComponent<Collider>().enabled = false;
-     if(IsEnemy == 1){
-     Missilehitbox.GetComponent<Enemydamagegiver>().Damage = MissileDamage.Damage;
-     }
-
-     SmokeParticle.Stop();
-     KaboomParticle.Play();
-     float audioVolume = PlayerPrefs.GetFloat("AudioVolume");
-     float masterVolume = PlayerPrefs.GetFloat("MasterVolume");
-     ExplosionSound.volume = audioVolume * masterVolume;
-     ExplosionSound.Play();
-     MissileObject.SetActive(false);
-     Invoke("DeleteMissile2", 5f);
+        GameObject Missilehitbox = Instantiate(HitboxMissile, gameObject.transform.position, gameObject.transform.rotation);
+        gameObject.GetComponent<Collider>().enabled = false;
+        if(IsEnemy == 1){Missilehitbox.GetComponent<Enemydamagegiver>().Damage = MissileDamage.Damage;}
+        SmokeParticle.Stop();
+        KaboomParticle.Play();
+        float audioVolume = PlayerPrefs.GetFloat("AudioVolume");
+        float masterVolume = PlayerPrefs.GetFloat("MasterVolume");
+        ExplosionSound.volume = audioVolume * masterVolume;
+        ExplosionSound.Play();
+        MissileObject.SetActive(false);
+        Invoke("DeleteMissile2", 5f);
     }
 
-    void DeleteMissile2()
-    {
-
-     Destroy(gameObject);
-    }
+    void DeleteMissile2(){Destroy(gameObject);}
 }

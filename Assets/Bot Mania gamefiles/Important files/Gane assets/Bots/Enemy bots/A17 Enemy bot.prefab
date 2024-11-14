@@ -8704,7 +8704,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a19009a24b4df3b4d8f877544cdf811b, type: 2}
+  - {fileID: 2100000, guid: 52cba6d34a40ac542af324e20024247e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8787,7 +8787,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a19009a24b4df3b4d8f877544cdf811b, type: 2}
+  - {fileID: 2100000, guid: 52cba6d34a40ac542af324e20024247e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42682,6 +42682,7 @@ MonoBehaviour:
   DMG: 25
   IsSmart: 1
   CanHeal: 1
+  IsSupportBot: 0
   ShootingSpeed: 8
   StoppingDistanceStart: 25
 --- !u!82 &7313668672835429614
