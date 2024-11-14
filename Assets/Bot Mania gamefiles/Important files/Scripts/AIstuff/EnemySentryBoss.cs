@@ -99,82 +99,81 @@ public class EnemySentryBoss : MonoBehaviour
     {
         ///Cannon modes
         if(CannonMode == 1){
-        SpinOrigin.eulerAngles = SpinOrigin.eulerAngles + new Vector3(0,CannonSpinning,0);
-        Vector3 Cannon1vector = (Cannontransformleftspin.position - Cannon1.transform.position).normalized;
-        Vector3 Cannon2vector = (Cannontransformrightspin.position - Cannon2.transform.position).normalized;
-        Vector3 Cannon3vector = (Cannontransformbehindspin.position - Cannon3.transform.position).normalized;
-        Cannon1.transform.position += Cannon1vector * CannonSpinning2;
-        Cannon2.transform.position += Cannon2vector * CannonSpinning2;
-        Cannon3.transform.position += Cannon3vector * CannonSpinning2;
+            SpinOrigin.eulerAngles = SpinOrigin.eulerAngles + new Vector3(0,CannonSpinning,0);
+            Vector3 Cannon1vector = (Cannontransformleftspin.position - Cannon1.transform.position).normalized;
+            Vector3 Cannon2vector = (Cannontransformrightspin.position - Cannon2.transform.position).normalized;
+            Vector3 Cannon3vector = (Cannontransformbehindspin.position - Cannon3.transform.position).normalized;
+            Cannon1.transform.position += Cannon1vector * CannonSpinning2;
+            Cannon2.transform.position += Cannon2vector * CannonSpinning2;
+            Cannon3.transform.position += Cannon3vector * CannonSpinning2;
         }
         else if(CannonMode == 2){
-        SpinOrigin.eulerAngles = SpinOrigin.eulerAngles + new Vector3(0,-CannonSpinning,0);
-        Vector3 Cannon1vector = (Cannontransformleftspin.position - Cannon1.transform.position).normalized;
-        Vector3 Cannon2vector = (Cannontransformrightspin.position - Cannon2.transform.position).normalized;
-        Vector3 Cannon3vector = (Cannontransformbehindspin.position - Cannon3.transform.position).normalized;
-        Cannon1.transform.position += Cannon1vector * CannonSpinning2;
-        Cannon2.transform.position += Cannon2vector * CannonSpinning2;
-        Cannon3.transform.position += Cannon3vector * CannonSpinning2;
+            SpinOrigin.eulerAngles = SpinOrigin.eulerAngles + new Vector3(0,-CannonSpinning,0);
+            Vector3 Cannon1vector = (Cannontransformleftspin.position - Cannon1.transform.position).normalized;
+            Vector3 Cannon2vector = (Cannontransformrightspin.position - Cannon2.transform.position).normalized;
+            Vector3 Cannon3vector = (Cannontransformbehindspin.position - Cannon3.transform.position).normalized;
+            Cannon1.transform.position += Cannon1vector * CannonSpinning2;
+            Cannon2.transform.position += Cannon2vector * CannonSpinning2;
+            Cannon3.transform.position += Cannon3vector * CannonSpinning2;
         }
         else if(CannonMode == 3){
-        float distance = Vector3.Distance(Cannon1.transform.position, Cannontransformfront.transform.position);
-        float distance2= Vector3.Distance(Cannon2.transform.position, Cannontransformfrontright.transform.position);
-        float distance3 = Vector3.Distance(Cannon3.transform.position, Cannontransformfrontleft.transform.position);
-        Vector3 Cannon1vector = (Cannontransformfront.position - Cannon1.transform.position).normalized;
-        Vector3 Cannon2vector = (Cannontransformfrontright.position - Cannon2.transform.position).normalized;
-        Vector3 Cannon3vector = (Cannontransformfrontleft.position - Cannon3.transform.position).normalized;
-        if(distance > 1) {Cannon1.transform.position += Cannon1vector * 1.3f;}
-        if(distance2 > 1) {Cannon2.transform.position += Cannon2vector * 1.3f;}
-        if(distance3 > 1) {Cannon3.transform.position += Cannon3vector * 1.3f;}
+            float distance = Vector3.Distance(Cannon1.transform.position, Cannontransformfront.transform.position);
+            float distance2= Vector3.Distance(Cannon2.transform.position, Cannontransformfrontright.transform.position);
+            float distance3 = Vector3.Distance(Cannon3.transform.position, Cannontransformfrontleft.transform.position);
+            Vector3 Cannon1vector = (Cannontransformfront.position - Cannon1.transform.position).normalized;
+            Vector3 Cannon2vector = (Cannontransformfrontright.position - Cannon2.transform.position).normalized;
+            Vector3 Cannon3vector = (Cannontransformfrontleft.position - Cannon3.transform.position).normalized;
+            if(distance > 1) {Cannon1.transform.position += Cannon1vector * 1.3f;}
+            if(distance2 > 1) {Cannon2.transform.position += Cannon2vector * 1.3f;}
+            if(distance3 > 1) {Cannon3.transform.position += Cannon3vector * 1.3f;}
         }
         else if(CannonMode == 4){
-        float distance = Vector3.Distance(Cannon1.transform.position, Cannontransformbehind.transform.position);
-        float distance2= Vector3.Distance(Cannon2.transform.position, Cannontransformright.transform.position);
-        float distance3 = Vector3.Distance(Cannon3.transform.position, Cannontransformleft.transform.position);
-        Vector3 Cannon1vector = (Cannontransformbehind.position - Cannon1.transform.position).normalized;
-        Vector3 Cannon2vector = (Cannontransformright.position - Cannon2.transform.position).normalized;
-        Vector3 Cannon3vector = (Cannontransformleft.position - Cannon3.transform.position).normalized;
-        if(distance > 1) {Cannon1.transform.position += Cannon1vector * 1f;}
-        if(distance2 > 1) {Cannon2.transform.position += Cannon2vector * 1f;}
-        if(distance3 > 1) {Cannon3.transform.position += Cannon3vector * 1f;}
+            float distance = Vector3.Distance(Cannon1.transform.position, Cannontransformbehind.transform.position);
+            float distance2= Vector3.Distance(Cannon2.transform.position, Cannontransformright.transform.position);
+            float distance3 = Vector3.Distance(Cannon3.transform.position, Cannontransformleft.transform.position);
+            Vector3 Cannon1vector = (Cannontransformbehind.position - Cannon1.transform.position).normalized;
+            Vector3 Cannon2vector = (Cannontransformright.position - Cannon2.transform.position).normalized;
+            Vector3 Cannon3vector = (Cannontransformleft.position - Cannon3.transform.position).normalized;
+            if(distance > 1) {Cannon1.transform.position += Cannon1vector * 1f;}
+            if(distance2 > 1) {Cannon2.transform.position += Cannon2vector * 1f;}
+            if(distance3 > 1) {Cannon3.transform.position += Cannon3vector * 1f;}
         }
         else if(CannonMode == 5){
-        SpinOrigin.eulerAngles = SpinOrigin.eulerAngles + new Vector3(0,-0.5f,0);
-        float distance = Vector3.Distance(Cannon1.transform.position, Cannontransformtop.transform.position);
-        Vector3 Cannon1vector = (Cannontransformtop.position - Cannon1.transform.position).normalized;
-        Vector3 Cannon2vector = (Cannontransformrightspin.position - Cannon2.transform.position).normalized;
-        Vector3 Cannon3vector = (Cannontransformbehindspin.position - Cannon3.transform.position).normalized;
-        if(distance > 1) {Cannon1.transform.position += Cannon1vector * 1f;}
-        Cannon2.transform.position += Cannon2vector * 0.7f;
-        Cannon3.transform.position += Cannon3vector * 0.7f;
-        Vector3 Cannon1direction = Player.transform.position - Cannon1.transform.position;
-        Cannon1.transform.rotation = Quaternion.LookRotation(Cannon1direction);
+            SpinOrigin.eulerAngles = SpinOrigin.eulerAngles + new Vector3(0,-0.5f,0);
+            float distance = Vector3.Distance(Cannon1.transform.position, Cannontransformtop.transform.position);
+            Vector3 Cannon1vector = (Cannontransformtop.position - Cannon1.transform.position).normalized;
+            Vector3 Cannon2vector = (Cannontransformrightspin.position - Cannon2.transform.position).normalized;
+            Vector3 Cannon3vector = (Cannontransformbehindspin.position - Cannon3.transform.position).normalized;
+            if(distance > 1) {Cannon1.transform.position += Cannon1vector * 1f;}
+            Cannon2.transform.position += Cannon2vector * 0.7f;
+            Cannon3.transform.position += Cannon3vector * 0.7f;
+            Vector3 Cannon1direction = Player.transform.position - Cannon1.transform.position;
+            Cannon1.transform.rotation = Quaternion.LookRotation(Cannon1direction);
         }
         else if(CannonMode == 6){
-        SpinOrigin.eulerAngles = SpinOrigin.eulerAngles + new Vector3(0,-0.5f,0);
-        float distance3 = Vector3.Distance(Cannon3.transform.position, Cannontransformtop.transform.position);
-        Vector3 Cannon1vector = (Cannontransformleftspin.position - Cannon1.transform.position).normalized;
-        Vector3 Cannon2vector = (Cannontransformrightspin.position - Cannon2.transform.position).normalized;
-        Vector3 Cannon3vector = (Cannontransformtop.position - Cannon3.transform.position).normalized;
-        Cannon1.transform.position += Cannon1vector * 0.7f;
-        Cannon2.transform.position += Cannon2vector * 0.7f;
-        if(distance3 > 1) {Cannon3.transform.position += Cannon3vector * 1f;}
-        Vector3 Cannon3direction = Player.transform.position - Cannon3.transform.position;
-        Cannon3.transform.rotation = Quaternion.LookRotation(Cannon3direction);
+            SpinOrigin.eulerAngles = SpinOrigin.eulerAngles + new Vector3(0,-0.5f,0);
+            float distance3 = Vector3.Distance(Cannon3.transform.position, Cannontransformtop.transform.position);
+            Vector3 Cannon1vector = (Cannontransformleftspin.position - Cannon1.transform.position).normalized;
+            Vector3 Cannon2vector = (Cannontransformrightspin.position - Cannon2.transform.position).normalized;
+            Vector3 Cannon3vector = (Cannontransformtop.position - Cannon3.transform.position).normalized;
+            Cannon1.transform.position += Cannon1vector * 0.7f;
+            Cannon2.transform.position += Cannon2vector * 0.7f;
+            if(distance3 > 1) {Cannon3.transform.position += Cannon3vector * 1f;}
+            Vector3 Cannon3direction = Player.transform.position - Cannon3.transform.position;
+            Cannon3.transform.rotation = Quaternion.LookRotation(Cannon3direction);
         }
         else if(CannonMode == 7){
-        SpinOrigin.eulerAngles = SpinOrigin.eulerAngles + new Vector3(0,-0.5f,0);
-        float distance2 = Vector3.Distance(Cannon2.transform.position, Cannontransformtop.transform.position);
-        Vector3 Cannon1vector = (Cannontransformleftspin.position - Cannon1.transform.position).normalized;
-        Vector3 Cannon2vector = (Cannontransformtop.position - Cannon2.transform.position).normalized;
-        Vector3 Cannon3vector = (Cannontransformbehindspin.position - Cannon3.transform.position).normalized;
-        Cannon1.transform.position += Cannon1vector * 0.7f;
-        if(distance2 > 1) {Cannon2.transform.position += Cannon2vector * 1f;}
-        Cannon3.transform.position += Cannon3vector * 0.7f;
-        Vector3 Cannon2direction = Player.transform.position - Cannon2.transform.position;
-        Cannon2.transform.rotation = Quaternion.LookRotation(Cannon2direction);
+            SpinOrigin.eulerAngles = SpinOrigin.eulerAngles + new Vector3(0,-0.5f,0);
+            float distance2 = Vector3.Distance(Cannon2.transform.position, Cannontransformtop.transform.position);
+            Vector3 Cannon1vector = (Cannontransformleftspin.position - Cannon1.transform.position).normalized;
+            Vector3 Cannon2vector = (Cannontransformtop.position - Cannon2.transform.position).normalized;
+            Vector3 Cannon3vector = (Cannontransformbehindspin.position - Cannon3.transform.position).normalized;
+            Cannon1.transform.position += Cannon1vector * 0.7f;
+            if(distance2 > 1) {Cannon2.transform.position += Cannon2vector * 1f;}
+            Cannon3.transform.position += Cannon3vector * 0.7f;
+            Vector3 Cannon2direction = Player.transform.position - Cannon2.transform.position;
+            Cannon2.transform.rotation = Quaternion.LookRotation(Cannon2direction);
         }
-
     }
 
     private void Update()
@@ -249,18 +248,18 @@ public class EnemySentryBoss : MonoBehaviour
         if(HP <= 0){
 
                 if(IsDead == 0){
-                if(Cannon1.activeSelf == false){Cannon1.SetActive(true); Cannon1SpawnParticle.Play();}
-                CancelInvoke("StartEnemy"); CancelInvoke("Attack1A"); CancelInvoke("Attack2A"); CancelInvoke("Attack2B"); CancelInvoke("Attack3A"); CancelInvoke("Attack3B"); CancelInvoke("Attack4A"); CancelInvoke("Attack5A"); CancelInvoke("ChasePlayer");
-                CannonMode = 1;
+                    LIFE = 0;
+                    IsDead = 1;
+                    hascounted = 1;
+                    AlertSign.SetActive(false);
+                    HealthBar.SetActive(false);
 
-                LIFE = 0;
-                AlertSign.SetActive(false);
-                IsDead = 1;
-                HealthBar.SetActive(false);
-                hascounted = 1;
+                    if(Cannon1.activeSelf == false){Cannon1.SetActive(true); Cannon1SpawnParticle.Play();}
+                    CancelInvoke("StartEnemy"); CancelInvoke("Attack1A"); CancelInvoke("Attack2A"); CancelInvoke("Attack2B"); CancelInvoke("Attack3A"); CancelInvoke("Attack3B"); CancelInvoke("Attack4A"); CancelInvoke("Attack5A"); CancelInvoke("ChasePlayer");
+                    CannonMode = 1;
 
-                Invoke("DyingAnimationStart",0.1f);
-                Invoke("Remove",8f);
+                    Invoke("DyingAnimationStart",0.1f);
+                    Invoke("Remove",8f);
                 }
             }
 
@@ -273,7 +272,7 @@ public class EnemySentryBoss : MonoBehaviour
 
     void StartEnemy()
     {
-
+        if(GlobalData.GetEnemyCount() == 0){GlobalData.SetEnemyCount(GlobalData.GetEnemyCount() + 1);}
         if(HP <= HPMAX*1 && HP > HPMAX*0.7){ATTACKSMIN = 0; ATTACKSMAX = 2;}
         if(HP <= HPMAX*0.7 && HP > HPMAX*0.5){ATTACKSMIN = 1;ATTACKSMAX = 3;}
         if(HP <= HPMAX*0.5 && HP > HPMAX*0.3){ATTACKSMIN = 0; ATTACKSMAX = 4;}
