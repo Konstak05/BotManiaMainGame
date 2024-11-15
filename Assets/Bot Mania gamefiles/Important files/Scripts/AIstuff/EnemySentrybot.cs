@@ -249,7 +249,7 @@ public class EnemySentrybot : MonoBehaviour
         randomDirection += transform.position;
         NavMeshHit hit;
         if(!IsStationary){
-            if (NavMesh.SamplePosition(randomDirection, out hit, 10f, NavMesh.AllAreas)){
+            if (NavMesh.SamplePosition(randomDirection, out hit, 10f, NavMesh.AllAreas) && navMeshAgent.isOnNavMesh){
                 destination = hit.position;
                 navMeshAgent.SetDestination(destination);
             }
@@ -259,11 +259,9 @@ public class EnemySentrybot : MonoBehaviour
     void ChasePlayer()
     {
         Invoke("ChasePlayer",3f);
-        if(!IsStationary){
+        if(!IsStationary && navMeshAgent.isOnNavMesh){
             float heightDifference = Player.transform.position.y - transform.position.y;
-            //if(heightDifference < 30){
             navMeshAgent.SetDestination(Player.transform.position);
-            //}
         }
     }
 

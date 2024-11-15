@@ -464,8 +464,8 @@ public class EnemySentryBoss : MonoBehaviour
     void Remove2(){Destroy(MainObject);}
 
 
-    void StartBossBattleSequence(){PlayerSpawner.Combat.clip = BossSoundBeginning; PlayerSpawner.Ambient.Play(); PlayerSpawner.Combat.Play(); Invoke("StartBossBattleSequence2", 12.8f);}
-    void StartBossBattleSequence2(){PlayerSpawner.Combat.clip = BossSoundLoop; PlayerSpawner.Combat.Play();}
+    void StartBossBattleSequence(){PlayerSpawner.Ambient.clip = BossSoundBeginning; PlayerSpawner.Combat.clip = BossSoundBeginning; PlayerSpawner.Ambient.Play(); PlayerSpawner.Combat.Play(); Invoke("StartBossBattleSequence2", 12.8f);}
+    void StartBossBattleSequence2(){PlayerSpawner.Ambient.clip = BossSoundLoop; PlayerSpawner.Combat.clip = BossSoundLoop; PlayerSpawner.Ambient.Play(); PlayerSpawner.Combat.Play();}
     void EndBossBattleSequence(){PlayerSpawner.Ambient.clip = null; PlayerSpawner.Ambient.Play();}
 
 void OnCollisionEnter(Collision other)

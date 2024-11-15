@@ -11,27 +11,14 @@ public class Slidersaver : MonoBehaviour
     public Slider BounceMul;
     void Start()
     {
-        if(PlayerPrefs.GetFloat(PlayerPref) <= If){
-        BounceMul.value = Turn;
-        }
-        else{
-        BounceMul.value = PlayerPrefs.GetFloat(PlayerPref);
-        }
+        if(PlayerPrefs.GetFloat(PlayerPref) <= If){BounceMul.value = Turn;}
+        else{BounceMul.value = PlayerPrefs.GetFloat(PlayerPref);}
     }
 
 
     public void OnValueChanged()
     {
-      if(BounceMul.value == If | PlayerPrefs.GetFloat(PlayerPref) == If)
-      {
-        PlayerPrefs.SetFloat(PlayerPref,Turn);  
-      }
-      else{
-
-      
-      PlayerPrefs.SetFloat(PlayerPref,BounceMul.value);  
-      }
+        if(BounceMul.value == If | PlayerPrefs.GetFloat(PlayerPref) == If){PlayerPrefs.SetFloat(PlayerPref,Turn);  }
+        else{PlayerPrefs.SetFloat(PlayerPref,BounceMul.value);  }
     }
-
-
 }

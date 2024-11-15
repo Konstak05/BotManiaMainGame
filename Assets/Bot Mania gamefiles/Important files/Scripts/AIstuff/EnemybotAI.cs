@@ -360,10 +360,15 @@ public class EnemybotAI : MonoBehaviour
         Vector3 randomDirection = Random.insideUnitSphere * 100f;
         randomDirection += transform.position;
         NavMeshHit hit;
-        if (NavMesh.SamplePosition(randomDirection, out hit, 10f, NavMesh.AllAreas)){destination = hit.position; navMeshAgent.SetDestination(destination);}
+        if (NavMesh.SamplePosition(randomDirection, out hit, 10f, NavMesh.AllAreas) && navMeshAgent.isOnNavMesh){destination = hit.position; navMeshAgent.SetDestination(destination);}
     }
 
-    void ChasePlayer(){Invoke("ChasePlayer",0.3f); navMeshAgent.SetDestination(Player.transform.position);}
+    void ChasePlayer(){
+        Invoke("ChasePlayer",0.3f); 
+        if(navMeshAgent.isOnNavMesh){
+            navMeshAgent.SetDestination(Player.transform.position);
+        }
+    }
 
     void Remove(){Destroy(MainObject);}
 

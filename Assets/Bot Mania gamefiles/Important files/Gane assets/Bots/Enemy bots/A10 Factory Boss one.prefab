@@ -558,7 +558,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2169319224833844779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.9, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -36573,7 +36573,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4233304082193662614}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 1.5769479, z: 0}
+  m_LocalPosition: {x: 0, y: 1.65, z: 0}
   m_LocalScale: {x: 1, y: 0.14999999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -64582,7 +64582,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4233304083233626088}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: -0.2143994, z: 0}
+  m_LocalPosition: {x: 0, y: -0.1, z: 0}
   m_LocalScale: {x: 0.036350414, y: 0.036350414, z: 0.036350414}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -104295,13 +104295,13 @@ MonoBehaviour:
     m_Bits: 1024
   PatrolChance: 20
   Shoot: 0
-  FrameImmunity: 0
   playerInSightRange: 0
   IsDead: 0
   IsSearching: 0
   IsPatrolling: 0
   LIFE: 0
   hascounted: 0
+  EnemyStartDelay: 0
   sightrangeStart: 300
   sightRange: 150
   sightRangeWhenCaught: 0
@@ -104314,7 +104314,12 @@ MonoBehaviour:
   DamageReduction: 1
   bulletSpeed: 600
   DMG: 10
+  FrameImmunity: 0
   ShootingSpeed: 7
+  IsStoryBoss: 0
+  PlayerSpawner: {fileID: 0}
+  BossSoundBeginning: {fileID: 0}
+  BossSoundLoop: {fileID: 0}
 --- !u!82 &997873289526514523
 AudioSource:
   m_ObjectHideFlags: 0

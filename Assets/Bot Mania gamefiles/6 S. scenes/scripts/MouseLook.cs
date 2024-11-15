@@ -19,14 +19,12 @@ public class MouseLook : MonoBehaviour
     public float MouseX;
     public float MouseY;
     public GameObject MainCameraMain;
-    // Start is called before the first frame update
 
     void Start()
-
     {
         transform.localRotation = Quaternion.Euler(90, 0f, 0f);
         //Cursor.lockState = CursorLockMode.Locked;
-
+        Invoke("Mouselook",1f);
     }
 
 
@@ -39,35 +37,22 @@ public class MouseLook : MonoBehaviour
         MainCameraMain.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
     }
 
-    public void FalldamageApplier()
+    public void FalldamageApplier(){xRotation += 20;}
+
+
+    void Mouselook()
     {
-        xRotation += 20;
-    }
+        if(ToggleUI.PauseMenu == 0){
+            float MouseX = Input.GetAxis("Mouse X") * PlayerPrefs.GetFloat("Sensitivity") * 0.01f;
+            float MouseY = Input.GetAxis("Mouse Y")/2 * PlayerPrefs.GetFloat("Sensitivity") * 0.01f;
 
+            xRotation -= MouseY;
+            xRotation = Mathf.Clamp(xRotation, -90f, 66f);
 
-    void Update()
+            MainCameraMain.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
-    {
-        if(ToggleUI.PauseMenu == 0)
-        {
-        float MouseX = Input.GetAxis("Mouse X") * PlayerPrefs.GetFloat("Sensitivity") * Time.deltaTime;
-
-        float MouseY = Input.GetAxis("Mouse Y")/2 * PlayerPrefs.GetFloat("Sensitivity") * Time.deltaTime;
-
-
-
-        xRotation -= MouseY;
-
-        xRotation = Mathf.Clamp(xRotation, -90f, 66f);
-
-
-
-        MainCameraMain.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-
-        playerBody.Rotate(Vector3.up * MouseX);
+            playerBody.Rotate(Vector3.up * MouseX);
         }
-
-
+        Invoke("Mouselook",0.01f);
     }
-
 }
