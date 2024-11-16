@@ -7,7 +7,7 @@ public class SpawnOnTrigger : MonoBehaviour
     public GameObject[] prefabsToSpawn;
     public float spawnInterval = 0.2f;
     public Transform[] spawnPositions;
-    private bool hasSpawned = false;
+    public bool hasSpawned,spawnindefinitely;
     public AudioSource Sound;
     public float[] Mag;
     public int[] EnemyType;
@@ -19,7 +19,7 @@ public class SpawnOnTrigger : MonoBehaviour
         if (other.CompareTag("Player") && !hasSpawned)
         {
             StartCoroutine(SpawnPrefabs());
-            hasSpawned = true;
+            if(!spawnindefinitely){hasSpawned = true;}
         }
     }
 
