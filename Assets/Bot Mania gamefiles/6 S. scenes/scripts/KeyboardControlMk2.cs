@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class KeyboardControlMk2 : MonoBehaviour
 {
@@ -33,6 +34,12 @@ public class KeyboardControlMk2 : MonoBehaviour
     public GameObject CameraUI;
     public GameObject CameraUI2;
     public GameObject ScreenEffect;
+    //Indicator Stuff
+    public GameObject HurtIndicatorCanvas;
+    public Image HurtIndicatorImage;
+    public Color HurtIndicatorColor;
+
+
     public MouseLook scriptA;
     public HPbar HeartbeatStarter;
     public AudioClip Clip;
@@ -454,6 +461,8 @@ public class KeyboardControlMk2 : MonoBehaviour
                 Dead = 1;
                 velocity.x = 0;
                 velocity.z = 0;
+                //HurtIndicatorCanvas
+                HurtIndicatorCanvas.SetActive(false);
             }
             FallingRigidBody.isKinematic = false;
             controller.enabled = false;
@@ -576,9 +585,25 @@ public class KeyboardControlMk2 : MonoBehaviour
         }
     }
 
-
-
-
+    //HurtIndicatorFunctions
+    void StartHurtGameObject(){
+        HurtIndicatorColor.a = 1f;
+        HurtIndicatorImage.color = HurtIndicatorColor;
+        HurtIndicatorCanvas.SetActive(true);
+        CancelInvoke("RemoveHurtGameObject");
+        CancelInvoke("EndHurtGameObject");
+        Invoke("RemoveHurtGameObject",0.5f);
+    }
+    void RemoveHurtGameObject(){
+        HurtIndicatorColor.a -= 0.1f;
+        HurtIndicatorImage.color = HurtIndicatorColor;
+        Invoke("RemoveHurtGameObject",0.01f);
+        Invoke("EndHurtGameObject",1f);
+    }
+    void EndHurtGameObject(){
+        HurtIndicatorCanvas.SetActive(false);
+        CancelInvoke("RemoveHurtGameObject");
+    }
 
     ////////////////////////
     ///Collision Functions//
@@ -602,6 +627,8 @@ public class KeyboardControlMk2 : MonoBehaviour
                 Sound.PlayOneShot(Clip5);
                 //scriptA.FalldamageApplier();
                 CanFall = 0f;
+                //HurtIndicator
+                StartHurtGameObject();
             }
         }
     if (hit.gameObject.CompareTag("DEATHBARRIER")){
@@ -624,6 +651,8 @@ public class KeyboardControlMk2 : MonoBehaviour
             Vector3 direction = BodyPos.position - hit.gameObject.transform.position;
             direction.Normalize();
             velocity = direction * Mathf.Sqrt(jump * -30f * gravity);
+            //HurtIndicator
+            StartHurtGameObject();
     }
     }
 
@@ -650,6 +679,8 @@ public class KeyboardControlMk2 : MonoBehaviour
             int DamageBullet = Mathf.RoundToInt(bullet.GetComponent<BulletScript>().Damage);
             HP -= DamageBullet*3;
         }
+        //HurtIndicator
+        StartHurtGameObject();
     }
     //EnemyMeleeCollision
     if (collision.gameObject.CompareTag("EnemyMeleeProjectile") && FrameImmunity >= 1f && Dead == 0 && WeaponScript.GuardingBot == 0 && DashInvince == false){
@@ -661,6 +692,8 @@ public class KeyboardControlMk2 : MonoBehaviour
             GameObject bullet = collision.gameObject;
             int DamageBullet = Mathf.RoundToInt(bullet.GetComponent<Enemydamagegiver>().Damage);
             HP -= DamageBullet;
+            //HurtIndicator
+            StartHurtGameObject();
     }
     //PlayerMissileCollision
     if (collision.gameObject.CompareTag("PlayerMissileBot") && FrameImmunity >= 1f && Dead == 0){
@@ -708,6 +741,8 @@ public class KeyboardControlMk2 : MonoBehaviour
                 velocity = direction * Mathf.Sqrt(jump * -50f * gravity);
                 JetpackStarted = 0;
             }
+            //HurtIndicator
+            StartHurtGameObject();
         }
     }
 }
