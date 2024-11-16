@@ -10,10 +10,7 @@ public class PopupMain : MonoBehaviour
     public TextMeshPro TextDesc;
     public AudioSource Audio;
 
-    void Start()
-    {
-    SignMain.SetActive(false);
-    }
+    void Start(){SignMain.SetActive(false);}
 
     public void ShowText(){
         float audioVolume = PlayerPrefs.GetFloat("AudioVolume");
@@ -25,8 +22,5 @@ public class PopupMain : MonoBehaviour
         Invoke("HideText", 7f);
     }
 
-    public void HideText(){
-        SignMain.SetActive(false);
-
-    }
+    public void HideText(){SignMain.SetActive(false);}
 }

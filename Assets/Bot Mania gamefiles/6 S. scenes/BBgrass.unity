@@ -20426,7 +20426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextNameReplacer: TUTORIAL
-  TextDescReplacer: Press [SHIFT] to run.
+  TextDescReplacer: Press [SHIFT] to AAAAAAAAAAAAAAAAAAAAAAAAA
   isactive: 0
 --- !u!65 &1236706222
 BoxCollider:
@@ -24855,7 +24855,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh395742
+  m_Name: pb_Mesh182596
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
