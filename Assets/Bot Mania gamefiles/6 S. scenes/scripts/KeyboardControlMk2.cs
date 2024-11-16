@@ -96,6 +96,8 @@ public class KeyboardControlMk2 : MonoBehaviour
     public bool IsDashing;
     public bool SlidingSourceStarter;
     public bool DashInvince;
+    //Respawndelay
+    public bool Allowtorespawn;
 
     public WeaponScript IsHealing;
     public int IsAlreadyHealing;
@@ -461,13 +463,15 @@ public class KeyboardControlMk2 : MonoBehaviour
                 Dead = 1;
                 velocity.x = 0;
                 velocity.z = 0;
+                Allowtorespawn = false;
+                Invoke("Allowrespawn",1f);
                 //HurtIndicatorCanvas
                 HurtIndicatorCanvas.SetActive(false);
             }
             FallingRigidBody.isKinematic = false;
             controller.enabled = false;
             transform.rotation = Quaternion.Euler(60f, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
-            if(Input.GetButtonDown("Jump")){RespawnOnMap();}
+            if(Input.GetButtonDown("Jump") && Allowtorespawn){RespawnOnMap();}
         }
     }
 
@@ -485,6 +489,10 @@ public class KeyboardControlMk2 : MonoBehaviour
         JumpAction = PlayerInputStarter.actions["Jump"];
         SlideAction = PlayerInputStarter.actions["Slide"];
         DashAction = PlayerInputStarter.actions["Dash"];
+    }
+
+    void Allowrespawn(){
+        Allowtorespawn = true;
     }
 
     //Respawningoption
