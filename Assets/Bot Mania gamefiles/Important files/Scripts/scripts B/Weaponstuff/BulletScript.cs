@@ -48,9 +48,10 @@ public class BulletScript : MonoBehaviour
 
         initialPosition = transform.position;
         if (Physics.Raycast(initialPosition, transform.forward, out hit , Mathf.Infinity, layerMask)){Debug.DrawLine(initialPosition, hit.point, Color.red, 5f);}
+        Invoke("BulletUpdater",0.05f);
     }
 
-    void Update()
+    void BulletUpdater()
     {
         if(NormalBullet){
             float distanceTraveled = Vector3.Distance(initialPosition, transform.position);
@@ -65,6 +66,7 @@ public class BulletScript : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        Invoke("BulletUpdater",0.05f);
     }
 
     void Delete(){

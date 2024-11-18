@@ -46811,6 +46811,7 @@ MonoBehaviour:
   LIFE: 0
   BotType: 0
   hascounted: 0
+  EnemyStartDelay: 0
   sightrangeStart: 150
   sightRange: 150
   MeleeRange: 0
@@ -46824,8 +46825,9 @@ MonoBehaviour:
   bulletSpeed: 200
   MeleeReload: 1
   DMG: 5
-  IsSmart: 0
+  IsSmart: 1
   CanHeal: 1
+  IsSupportBot: 0
   ShootingSpeed: 4
   StoppingDistanceStart: 50
 --- !u!82 &833214412034184571

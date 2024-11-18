@@ -25,7 +25,7 @@ public class timespawner : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
 
-        if (Ground == (Ground | (1 << other.gameObject.layer))){Invoke("SpawnTurret",SpawnTimer);}
+        if (other.gameObject.layer == LayerMask.NameToLayer("Ground")){Invoke("SpawnTurret",SpawnTimer);}
 
         if (other.gameObject.CompareTag("PlayerBulletBot") | other.gameObject.CompareTag("MeleeProjectileBot") | other.gameObject.CompareTag("PlayerMissileBot"))
         {

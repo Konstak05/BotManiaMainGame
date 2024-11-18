@@ -15514,7 +15514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Turret: {fileID: 2626280906139738531, guid: 720c3369f77dcdf408bd55da62205987, type: 3}
   MAG: 1
-  SpawnTimer: 2
+  SpawnTimer: 0.5
   ActiveTurret: {fileID: 0}
   Hasexploded: 0
   GrenadahModel: {fileID: 2657035022344270825}
