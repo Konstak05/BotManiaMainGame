@@ -6184,7 +6184,7 @@ MonoBehaviour:
   BubbleSound: {fileID: 8300000, guid: 531d88cd369f3ce448792a7455691ab7, type: 3}
   Barrier: {fileID: 0}
   GunId: 11
-  TextNameReplacer: Missile launcher
+  TextNameReplacer: TUTORIAL
   TextDescReplacer: Allows you to shoot a small homing missile that locks on bot
     enemies. Charges slowly so use wisely!
 --- !u!1 &1913474739452939950

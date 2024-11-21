@@ -126,8 +126,8 @@ MonoBehaviour:
   Barrier: {fileID: 0}
   GunId: 5
   TextNameReplacer: TUTORIAL
-  TextDescReplacer: You have now the ability to color objects! Press right click
-    to change color and left click on an object to apply!
+  TextDescReplacer: You now have the ability to color objects! Right click to change
+    color and left click on an object to apply!
 --- !u!1 &8965220375415228714
 GameObject:
   m_ObjectHideFlags: 0

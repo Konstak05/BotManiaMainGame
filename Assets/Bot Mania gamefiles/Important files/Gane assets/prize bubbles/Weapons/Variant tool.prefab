@@ -5246,9 +5246,8 @@ MonoBehaviour:
   Barrier: {fileID: 0}
   GunId: 4
   TextNameReplacer: TUTORIAL
-  TextDescReplacer: You have unlocked the Variant tool! Pressing left click will
-    upgrade all of your previous creative tools. Right click will return them back
-    to normal!
+  TextDescReplacer: You have unlocked the variant tool! Pressing Left or Right click
+    swaps sandbox tool functionalities!
 --- !u!1 &4791339123326101379
 GameObject:
   m_ObjectHideFlags: 0

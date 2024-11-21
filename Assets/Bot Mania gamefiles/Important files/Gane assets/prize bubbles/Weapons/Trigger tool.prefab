@@ -15063,9 +15063,8 @@ MonoBehaviour:
   Barrier: {fileID: 0}
   GunId: 6
   TextNameReplacer: TUTORIAL
-  TextDescReplacer: You have now unlocked the trigger tool! It allows you to configure
-    misc objects! (if you have any) For example you can now launch the thrusters
-    by left clicking on them!
+  TextDescReplacer: You have unlocked the Trigger tool! Pressing Left click on rockets
+    allows you to turn them on!
 --- !u!1 &6399151420667137017
 GameObject:
   m_ObjectHideFlags: 0

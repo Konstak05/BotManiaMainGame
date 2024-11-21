@@ -211,7 +211,7 @@ MonoBehaviour:
   GunId: 3
   TextNameReplacer: TUTORIAL
   TextDescReplacer: You have unlocked the Glue tool! You can glue things together
-    by left clicking 2 entities. You can unglue them by pressing R on them
+    by left clicking 2 entities. You can unglue them by pressing R on them!
 --- !u!1 &8128062178024469810
 GameObject:
   m_ObjectHideFlags: 0
