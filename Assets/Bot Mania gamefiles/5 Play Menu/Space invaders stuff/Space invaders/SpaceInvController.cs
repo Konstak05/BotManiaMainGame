@@ -10,7 +10,11 @@ public class SpaceInvController : MonoBehaviour
     public Animator SpaceshipAnimator;
     public float Spaceshiprotation;
 
-    void Update()
+    void Start(){
+        Invoke("ShipController",2f);
+    }
+
+    void ShipController()
     {
         // Get input for movement
         float horizontalInput = Input.GetAxis("Horizontal")*1.2f;
@@ -20,35 +24,21 @@ public class SpaceInvController : MonoBehaviour
         Vector3 movement = new Vector3(horizontalInput, verticalInput, 0f);
 
         // Move the player
-        playerTransform.Translate(movement * moveSpeed * Time.deltaTime);
+        playerTransform.Translate(movement * moveSpeed * 0.03f);
 
         // Ensure the player stays within the trigger object
         ClampPosition();
 
-        
         SpaceshipAnimator.SetFloat("Moving", Spaceshiprotation);
 
-        if (Input.GetKey(KeyCode.W)){
-          if(Spaceshiprotation > 0f){
-          Spaceshiprotation -= 0.1f;
-          }
-        }
-        if (Input.GetKey(KeyCode.S)){
-          if(Spaceshiprotation < 1f){
-          Spaceshiprotation += 0.1f;
-          }
-
-        }
+        if (Input.GetKey(KeyCode.W)){if(Spaceshiprotation > -1f){Spaceshiprotation -= 0.2f;}}
+        if (Input.GetKey(KeyCode.S)){if(Spaceshiprotation < 1f){Spaceshiprotation += 0.2f;}}
 
         if (!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W)){
-
-          if(Spaceshiprotation > 0.5f){
-          Spaceshiprotation -= 0.1f;
-          }
-          if(Spaceshiprotation < 0.5f){
-          Spaceshiprotation += 0.1f;
-          }
+            if(Spaceshiprotation > 0f){Spaceshiprotation -= 0.2f;}
+            if(Spaceshiprotation < 0f){Spaceshiprotation += 0.2f;}
         }
+        Invoke("ShipController",0.02f);
     }
 
     void ClampPosition()
