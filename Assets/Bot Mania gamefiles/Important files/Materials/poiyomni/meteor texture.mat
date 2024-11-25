@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: meteor texture
-  m_Shader: {fileID: 4800000, guid: 94cc516013153c942a93b8bff4d40a05, type: 3}
+  m_Shader: {fileID: 4800000, guid: a2dd8466d253de54180e8d6d06b9d258, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - BSSBLOOMFOGTYPE_HEIGHT
@@ -1322,7 +1322,7 @@ Material:
     - _LightingWrappedNormalization: 0
     - _LightingWrappedWrap: 0
     - _LineColorThemeIndex: 0
-    - _LineWidth: 5.86
+    - _LineWidth: 14.6
     - _MainALHueShiftBand: 0
     - _MainALHueShiftCTIndex: 0
     - _MainAlphaMaskMode: 2
@@ -1599,13 +1599,13 @@ Material:
     - _OutlineCull: 1
     - _OutlineDstBlend: 0
     - _OutlineDstBlendAlpha: 0
-    - _OutlineEmission: 0
+    - _OutlineEmission: 5.7
     - _OutlineExpansionMode: 1
     - _OutlineFixWidth: 0.5
     - _OutlineFixedSize: 1
     - _OutlineHueOffsetSpeed: 0
     - _OutlineHueShift: 0
-    - _OutlineLit: 1
+    - _OutlineLit: 0
     - _OutlineMaskChannel: 0
     - _OutlineMaskUV: 0
     - _OutlineOverrideAlpha: 0
@@ -2211,7 +2211,7 @@ Material:
     - footer_twitter: 0
     - footer_youtube: 0
     - m_AudioLinkCategory: 0
-    - m_OutlineCategory: 0
+    - m_OutlineCategory: 1
     - m_end_ALDecalSpectrum: 0
     - m_end_ALVolumeColor: 0
     - m_end_Alpha: 0
@@ -3145,7 +3145,7 @@ Material:
     - _LightingShadowMasksPan: {r: 0, g: 0, b: 0, a: 0}
     - _LightingWrappedColor: {r: 1, g: 1, b: 1, a: 1}
     - _LightngForcedDirection: {r: 0, g: 0, b: 0, a: 1}
-    - _LineColor: {r: 0.4245283, g: 0.14886165, b: 0.0020024967, a: 1}
+    - _LineColor: {r: 0.6509434, g: 0.09862779, b: 0, a: 1}
     - _MainColorAdjustTexturePan: {r: 0, g: 0, b: 0, a: 0}
     - _MainTexPan: {r: 0, g: 0, b: 0, a: 0}
     - _MatCap2ndBlendUV1: {r: 0, g: 0, b: 0, a: 0}

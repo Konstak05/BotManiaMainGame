@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2213421627267166755}
   m_Layer: 12
   m_Name: Cylinder
-  m_TagString: EnemyBullet
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 527720119191050160}
   m_Layer: 12
   m_Name: Bullet back
-  m_TagString: EnemyBullet
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 5925966852651413465}
   m_Layer: 12
   m_Name: Boom particle
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5050,7 +5050,7 @@ GameObject:
   - component: {fileID: 4186449662324281582}
   m_Layer: 12
   m_Name: pyramid
-  m_TagString: EnemyBullet
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5136,7 +5136,7 @@ GameObject:
   - component: {fileID: 567376309573828420}
   m_Layer: 12
   m_Name: PlayerBullet2
-  m_TagString: PlayerBulletBot
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5322,7 +5322,7 @@ GameObject:
   - component: {fileID: 3479130361603777367}
   m_Layer: 12
   m_Name: Bullet enemy bot
-  m_TagString: EnemyBullet
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5410,7 +5410,7 @@ GameObject:
   - component: {fileID: 7637729986235272528}
   m_Layer: 12
   m_Name: pyramid (1)
-  m_TagString: EnemyBullet
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5493,7 +5493,7 @@ GameObject:
   - component: {fileID: 1815086041180207217}
   m_Layer: 12
   m_Name: pyramid (1)
-  m_TagString: EnemyBullet
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5576,7 +5576,7 @@ GameObject:
   - component: {fileID: 5538005332260962005}
   m_Layer: 12
   m_Name: Bullet front
-  m_TagString: EnemyBullet
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5659,7 +5659,7 @@ GameObject:
   - component: {fileID: 1202785931253605406}
   m_Layer: 12
   m_Name: pyramid (1)
-  m_TagString: EnemyBullet
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5743,7 +5743,7 @@ GameObject:
   - component: {fileID: 8236855385118855000}
   m_Layer: 12
   m_Name: Boom particle_1
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

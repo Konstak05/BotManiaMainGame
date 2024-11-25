@@ -2217,7 +2217,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/04074f085dbb37043ba444ee8fe3330b"
 				{
 					distanceOffset *= lerp(1.0, clamp((distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, o.localPos).xyz)), 0.0f, (1.0 /*_OutlinesMaxDistance*/)), (0.5 /*_OutlineFixWidth*/));
 				}
-				float lineWidth = (5.86 /*_LineWidth*/);
+				float lineWidth = (14.6 /*_LineWidth*/);
 				#ifdef POI_AUDIOLINK
 				if ((1.0 /*_AudioLinkAnimToggle*/))
 				{
@@ -3702,7 +3702,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/04074f085dbb37043ba444ee8fe3330b"
 				#endif
 				#ifdef VIGNETTE_MASKED
 				#ifdef POI_PASS_OUTLINE
-				if ((1.0 /*_OutlineLit*/))
+				if ((0.0 /*_OutlineLit*/))
 				{
 					calculateShading(poiLight, poiFragData, poiMesh, poiCam);
 				}
@@ -5520,7 +5520,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/04074f085dbb37043ba444ee8fe3330b"
 				{
 					distanceOffset *= lerp(1.0, clamp((distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, o.localPos).xyz)), 0.0f, (1.0 /*_OutlinesMaxDistance*/)), (0.5 /*_OutlineFixWidth*/));
 				}
-				float lineWidth = (5.86 /*_LineWidth*/);
+				float lineWidth = (14.6 /*_LineWidth*/);
 				#ifdef POI_AUDIOLINK
 				if ((1.0 /*_AudioLinkAnimToggle*/))
 				{
@@ -7005,7 +7005,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/04074f085dbb37043ba444ee8fe3330b"
 				#endif
 				#ifdef VIGNETTE_MASKED
 				#ifdef POI_PASS_OUTLINE
-				if ((1.0 /*_OutlineLit*/))
+				if ((0.0 /*_OutlineLit*/))
 				{
 					calculateShading(poiLight, poiFragData, poiMesh, poiCam);
 				}
@@ -8873,7 +8873,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/04074f085dbb37043ba444ee8fe3330b"
 				{
 					distanceOffset *= lerp(1.0, clamp((distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, o.localPos).xyz)), 0.0f, (1.0 /*_OutlinesMaxDistance*/)), (0.5 /*_OutlineFixWidth*/));
 				}
-				float lineWidth = (5.86 /*_LineWidth*/);
+				float lineWidth = (14.6 /*_LineWidth*/);
 				#ifdef POI_AUDIOLINK
 				if ((1.0 /*_AudioLinkAnimToggle*/))
 				{
@@ -9096,7 +9096,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/04074f085dbb37043ba444ee8fe3330b"
 				}
 				if ((0.0 /*_OutlineClipAtZeroWidth*/))
 				{
-					float lineWidth = (5.86 /*_LineWidth*/);
+					float lineWidth = (14.6 /*_LineWidth*/);
 					#ifdef POI_AUDIOLINK
 					if (poiMods.audioLinkAvailable)
 					{
@@ -9107,7 +9107,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/04074f085dbb37043ba444ee8fe3330b"
 				}
 				float4 col = POI2D_SAMPLER_PAN(_OutlineTexture, _MainTex, poiUV(poiMesh.uv[(0.0 /*_OutlineTextureUV*/)], float4(1,1,0,0)), float4(0,0,0,0));
 				poiFragData.baseColor = lerp(col, col * poiFragData.baseColor * lerp(1, poiFragData.baseColor, (0.0 /*_PoiUTSStyleOutlineBlend*/)), (0.0 /*_OutlineTintMix*/));
-				float4 outlineColor = float4(0.1507121,0.01934636,0.000154992,1);
+				float4 outlineColor = float4(0.3812781,0.00981118,0,1);
 				#ifdef POI_AUDIOLINK
 				if ((0.0 /*_OutlineALColorEnabled*/) && poiMods.audioLinkAvailable)
 				{
@@ -9139,7 +9139,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/04074f085dbb37043ba444ee8fe3330b"
 					float3 position = (1.0 /*_OutlineAlphaDistanceFadeType*/) ? poiMesh.worldPos : poiMesh.objectPosition;
 					poiFragData.alpha *= lerp((0.0 /*_OutlineAlphaDistanceFadeMinAlpha*/), (1.0 /*_OutlineAlphaDistanceFadeMaxAlpha*/), smoothstep((0.0 /*_OutlineAlphaDistanceFadeMin*/), (0.0 /*_OutlineAlphaDistanceFadeMax*/), distance(position, poiCam.worldPos)));
 				}
-				float emission = (0.0 /*_OutlineEmission*/);
+				float emission = (5.7 /*_OutlineEmission*/);
 				#ifdef POI_AUDIOLINK
 				if (poiMods.audioLinkAvailable)
 				{
@@ -10103,7 +10103,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/04074f085dbb37043ba444ee8fe3330b"
 				#endif
 				#ifdef VIGNETTE_MASKED
 				#ifdef POI_PASS_OUTLINE
-				if ((1.0 /*_OutlineLit*/))
+				if ((0.0 /*_OutlineLit*/))
 				{
 					calculateShading(poiLight, poiFragData, poiMesh, poiCam);
 				}
@@ -11800,7 +11800,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/04074f085dbb37043ba444ee8fe3330b"
 				{
 					distanceOffset *= lerp(1.0, clamp((distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, o.localPos).xyz)), 0.0f, (1.0 /*_OutlinesMaxDistance*/)), (0.5 /*_OutlineFixWidth*/));
 				}
-				float lineWidth = (5.86 /*_LineWidth*/);
+				float lineWidth = (14.6 /*_LineWidth*/);
 				#ifdef POI_AUDIOLINK
 				if ((1.0 /*_AudioLinkAnimToggle*/))
 				{
