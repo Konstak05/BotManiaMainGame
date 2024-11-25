@@ -1,4 +1,4 @@
-Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
+Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/04074f085dbb37043ba444ee8fe3330b"
 {
 	Properties
 	{
@@ -160,108 +160,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 		[HideInInspector][ThryWideEnum(Add, 7, Subtract, 1, Multiply, 2, Divide, 3, Min, 4, Max, 5, Average, 6, Replace, 0)] _ShadingRampedLightMapInverseApplyGlobalMaskBlendType ("Blending", Int) = 2
 		[HideInInspector] s_end_ShadingGlobalMask ("Global Masks", Float) = 0
 		[HideInInspector] m_end_PoiShading ("Shading", Float) = 0
-		[HideInInspector] m_start_rimLight1Options ("Rim Lighting 0--{reference_property:_EnableRimLighting,button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/shading/rim-lighting},hover:Documentation}}", Float) = 0
-		[HideInInspector][ThryToggle(_GLOSSYREFLECTIONS_OFF)]_EnableRimLighting ("Enable Rim Lighting", Float) = 0
-		[KeywordEnum(Poiyomi, UTS2, LilToon)] _RimStyle ("Style", Float) = 0
-		[sRGBWarning]_Set_RimLightMask ("Set_RimLightMask--{reference_properties:[_Set_RimLightMaskPan, _Set_RimLightMaskUV, _Set_RimLightMaskChannel], condition_showS:_RimStyle==1}", 2D) = "white" { }
-		[HideInInspector][Vector2]_Set_RimLightMaskPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _Set_RimLightMaskUV ("UV", Int) = 0
-		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_Set_RimLightMaskChannel ("Channel", Float) = 1
-		[sRGBWarning][ThryRGBAPacker(Mask, Bias, linear, false)]_RimMask ("Mask & Bias--{reference_properties:[_RimMaskPan, _RimMaskUV, _RimMaskChannel, _RimMaskInvert, _RimBiasIntensity], condition_showS:_RimStyle==0}", 2D) = "white" { }
-		[HideInInspector][Vector2]_RimMaskPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _RimMaskUV ("UV", Int) = 0
-		[HideInInspector][ToggleUI]_RimMaskInvert ("Invert Mask", Float) = 0
-		[HideInInspector]_RimBiasIntensity ("Bias Intensity", Range(0, 1)) = 0
-		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_RimMaskChannel ("Channel", Float) = 0
-		[HideInInspector] s_start_RimLight0Color ("Color & Blending--{persistent_expand:true,default_expand:true, condition_showS:_RimStyle==0||_RimStyle==1}", Float) = 1
-		[sRGBWarning(true)]_RimTex ("Rim Texture--{reference_properties:[_RimTexPan, _RimTexUV], condition_showS:_RimStyle==0}", 2D) = "white" { }
-		[HideInInspector][Vector2]_RimTexPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _RimTexUV ("UV", Int) = 0
-		_RimLightColor (" Color--{condition_showS:_RimStyle==0||_RimStyle==1,reference_property:_RimLightColorThemeIndex}", Color) = (1, 1, 1, 1)
-		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _RimLightColorThemeIndex ("", Int) = 0
-		[ThryWideEnum(Add, 0, Replace, 1, Multiply, 2, Mixed, 3, Screen, 4)] _RimPoiBlendMode ("Blend Mode--{ condition_showS:_RimStyle==0}", Int) = 0
-		_RimBlendStrength ("Blend Alpha--{ condition_showS:_RimStyle==0}", Range(0, 1)) = 1
-		_RimBaseColorMix ("Mix Base Color--{ condition_showS:_RimStyle==0}", Range(0, 1)) = 0
-		_RimBrightness ("Brightness--{ condition_showS:_RimStyle==0}", Range(0, 10)) = 1
-		_RimStrength ("Emission--{ condition_showS:_RimStyle==0}", Range(0, 20)) = 0
-		_Tweak_RimLightMaskLevel ("Tweak_RimLightMaskLevel--{ condition_showS:_RimStyle==1}", Range(-1, 1)) = 0
-		_Is_LightColor_RimLight ("Mix Light Color--{ condition_showS:_RimStyle==1}", Range(0, 1)) = 1
-		[HideInInspector] s_end_RimLight0Color ("Color & Brightness", Float) = 0
-		[HideInInspector] s_start_RimLight0ShapeControls ("Shape Controls--{persistent_expand:true,default_expand:true, condition_showS:_RimStyle==0||_RimStyle==1}", Float) = 1
-		_RimWidth ("Width--{ condition_showS:_RimStyle==0}", Range(0, 1)) = 0.8
-		_RimSharpness ("Sharpness--{ condition_showS:_RimStyle==0}", Range(0, 1)) = .25
-		_RimPower ("Rim Power--{ condition_showS:_RimStyle==0}", Range(0, 10)) = 1
-		_Is_NormalMapToRimLight ("Normal Strength", Range(0, 1)) = 1
-		[ToggleUI]_RimLightingInvert ("Invert Rim--{ condition_showS:_RimStyle==0}", Float) = 0
-		_RimLight_Power ("Rim Power--{ condition_showS:_RimStyle==1}", Range(0, 1)) = 0.1
-		_RimLight_InsideMask ("Inside Mask--{ condition_showS:_RimStyle==1}", Range(0.0001, 1)) = 0.0001
-		[Toggle(_)] _RimLight_FeatherOff ("Feather Off--{ condition_showS:_RimStyle==1}", Float) = 0
-		[HideInInspector] s_end_RimLight0ShapeControls ("Shape Controls", Float) = 0
-		[HideInInspector] s_start_RimLight0LightDirMask ("Light Direction Mask--{reference_property:_RimShadowToggle,persistent_expand:true,default_expand:false, condition_showS:_RimStyle==0}", Float) = 0
-		[HideInInspector][ToggleUI] _RimShadowToggle ("Light Direction Mask}", Float) = 0
-		[Enum(Shadow Map, 0, Custom, 1)]_RimShadowMaskRampType ("Light Falloff Type", Int) = 0
-		[ToggleUI]_RimShadowMaskInvert ("Invert Shadow Mask", Float) = 0
-		_RimShadowMaskStrength ("Shadow Mask Strength", Range(0, 1)) = 1
-		[MultiSlider]_RimShadowAlpha ("Hide In Shadow--{ condition_showS:_RimShadowMaskRampType==1}", Vector) = (0.0, 0.0, 0, 1)
-		_RimShadowWidth ("Shrink In Shadow", Range(0, 1)) = 0
-		[HideInInspector] s_end_RimLight0LightDirMask ("Light Direction Mask", Float) = 0
-		[HideInInspector] s_start_RimLightDirectionMask ("Light Direction Mask--{persistent_expand:true,default_expand:false, condition_showS:_RimStyle==1}", Float) = 0
-		[ToggleUI] _LightDirection_MaskOn ("Light Direction Mask--{ condition_showS:_RimStyle==1}", Float) = 0
-		_Tweak_LightDirection_MaskLevel ("Light Dir Mask Level--{ condition_showS:_RimStyle==1}", Range(0, 0.5)) = 0
-		[ThryToggleUI(true)] _Add_Antipodean_RimLight ("<size=13><b>  Antipodean(Ap) Rim</b></size>--{ condition_showS:_RimStyle==1}", Float) = 0
-		_Is_LightColor_Ap_RimLight ("Ap Light Color Mix--{ condition_showS:_Add_Antipodean_RimLight==1&&_RimStyle==1}", Range(0, 1)) = 1
-		_Ap_RimLightColor ("Ap Color--{reference_property:_RimApColorThemeIndex, condition_showS:_Add_Antipodean_RimLight==1&&_RimStyle==1}", Color) = (1, 1, 1, 1)
-		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _RimApColorThemeIndex ("", Int) = 0
-		_Ap_RimLight_Power ("Ap Power--{ condition_showS:_Add_Antipodean_RimLight==1&&_RimStyle==1}", Range(0, 1)) = 0.1
-		[Toggle(_)] _Ap_RimLight_FeatherOff ("Ap Feather Off--{ condition_showS:_Add_Antipodean_RimLight==1&&_RimStyle==1}", Float) = 0
-		[HideInInspector] s_end_RimLightDirectionMask ("Light Direction Mask", Float) = 0
-		[HDR][Gamma]_RimColor ("Rim Color--{condition_showS:_RimStyle==2,reference_property:_RimLightColorThemeIndex}", Color) = (0.66, 0.5, 0.48, 1)
-		[sRGBWarning(true)] _RimColorTex ("Color / Mask--{condition_showS:_RimStyle==2,reference_properties:[_RimColorTexPan, _RimColorTexUV]}", 2D) = "white" { }
-		[HideInInspector][Vector2] _RimColorTexPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _RimColorTexUV ("UV", Int) = 0
-		_RimMainStrength ("Main Color Blend--{condition_showS:_RimStyle==2}", Range(0, 1)) = 0
-		_RimNormalStrength ("Normal Strength--{condition_showS:_RimStyle==2}", Range(0, 1)) = 1.0
-		_RimBorder ("Border--{condition_showS:_RimStyle==2}", Range(0, 1)) = 0.5
-		_RimBlur ("Blur--{condition_showS:_RimStyle==2}", Range(0, 1)) = 0.65
-		[PowerSlider(3.0)]_RimFresnelPower ("Fresnel Power--{condition_showS:_RimStyle==2}", Range(0.01, 50)) = 3.5
-		_RimEnableLighting ("Enable Lighting--{condition_showS:_RimStyle==2}", Range(0, 1)) = 1
-		_RimShadowMask ("Shadow Mask--{condition_showS:_RimStyle==2}", Range(0, 1)) = 0.5
-		[ToggleUI]_RimBackfaceMask ("Backface Mask--{condition_showS:_RimStyle==2}", Int) = 1
-		_RimVRParallaxStrength ("VR Parallax Strength--{condition_showS:_RimStyle==2}", Range(0, 1)) = 1
-		[ThryWideEnum(Replace, 0, Add, 1, Screen, 2, Multiply, 3)]_RimBlendMode ("Blend Mode--{condition_showS:_RimStyle==2}", Int) = 1
-		[HideInInspector] s_start_liltoon_rim_lightdir ("Light Direction--{persistent_expand:true,default_expand:false, condition_showS:_RimStyle==2}", Float) = 0
-		_RimDirStrength ("Light direction strength", Range(0, 1)) = 0
-		_RimDirRange ("Direction Light Width", Range(-1, 1)) = 0
-		_RimIndirRange ("Indirection Light Width", Range(-1, 1)) = 0
-		[HDR][Gamma]_RimIndirColor ("Indirection Color", Color) = (1, 1, 1, 1)
-		_RimIndirBorder ("Indirection Border", Range(0, 1)) = 0.5
-		_RimIndirBlur ("Indirection Blur", Range(0, 1)) = 0.1
-		[HideInInspector] s_end_liltoon_rim_lightdir ("", Float) = 0
-		[HideInInspector] s_start_RimLight0HueShift ("Hue Shift--{reference_property:_RimHueShiftEnabled,persistent_expand:true,default_expand:false}", Float) = 0
-		[HideInInspector][ToggleUI] _RimHueShiftEnabled ("Hue Shift", Float) = 0
-		[ThryWideEnum(OKLab, 0, HSV, 1)] _RimHueShiftColorSpace ("Color Space", Int) = 0
-		_RimHueShiftSpeed ("Shift Speed", Float) = 0
-		_RimHueShift ("Hue Shift", Range(0, 1)) = 0
-		[HideInInspector] s_end_RimLight0HueShift ("Hue Shift", Float) = 0
-		[HideInInspector] s_start_RimLight0GlobalMasking ("Alpha & Global Masking--{persistent_expand:true,default_expand:false}", Float) = 0
-		[ThryWideEnum(Off, 0, Add, 1, Multiply, 2)]_RimApplyAlpha ("Apply to Alpha--{ condition_showS:_Rim2Style==0}", Int) = 0
-		_RimApplyAlphaBlend ("Apply to Alpha Blend--{ condition_showS:_Rim2Style==0}", Range(0, 1)) = 1.0
-		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _RimGlobalMask (" Global Mask--{reference_property:_RimGlobalMaskBlendType}", Int) = 0
-		[HideInInspector][ThryWideEnum(Add, 7, Subtract, 1, Multiply, 2, Divide, 3, Min, 4, Max, 5, Average, 6, Replace, 0)] _RimGlobalMaskBlendType ("Blending", Int) = 2
-		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _RimApplyGlobalMaskIndex (" Apply to Global Mask--{reference_property:_RimApplyGlobalMaskBlendType,condition_showS:_RimStyle==0}", Int) = 0
-		[HideInInspector][ThryWideEnum(Add, 7, Subtract, 1, Multiply, 2, Divide, 3, Min, 4, Max, 5, Average, 6, Replace, 0)] _RimApplyGlobalMaskBlendType ("Blending", Int) = 2
-		[HideInInspector] s_end_RimLight0GlobalMasking ("Alpha & Global Masking", Float) = 0
-		[HideInInspector] m_start_RimAudioLink ("Audio Link ♫--{ condition_showS:_EnableAudioLink==1&&_RimStyle==0}", Float) = 0
-		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _AudioLinkRimWidthBand ("Width Add Band", Int) = 0
-		[VectorLabel(Min, Max)] _AudioLinkRimWidthAdd ("Width Add", Vector) = (0, 0, 0, 0)
-		[Space(7)]
-		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _AudioLinkRimEmissionBand ("Emission Add Band", Int) = 0
-		[VectorLabel(Min, Max)] _AudioLinkRimEmissionAdd ("Emission Add", Vector) = (0, 0, 0, 0)
-		[Space(7)]
-		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _AudioLinkRimBrightnessBand ("Brightness Band", Int) = 0
-		[VectorLabel(Min, Max)] _AudioLinkRimBrightnessAdd ("Brightness Add", Vector) = (0, 0, 0, 0)
-		[HideInInspector] m_end_RimAudioLink ("Audio Link", Float) = 0
-		[HideInInspector] m_end_rim1LightOptions ("Rim Lighting", Float) = 0
 		[HideInInspector] m_OutlineCategory (" Outlines--{reference_property:_EnableOutlines,button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/outlines/main},hover:Documentation}}", Float) = 0
 		[HideInInspector][ToggleUI]_EnableOutlines ("Enable Outlines", float) = 0
 		[Enum(Basic, 1, Rim Light, 2, Directional, 3, DropShadow, 4)]_OutlineExpansionMode ("Mode", Int) = 1
@@ -331,82 +229,60 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 		[HideInInspector] s_end_outline_al_color ("Color--{draw_border:true}", Float) = 0
 		[HideInInspector] m_end_OutlineAudioLink ("Audio Link", Float) = 0
 		[HideInInspector] m_specialFXCategory ("Special FX", Float) = 0
-		[HideInInspector] m_start_glitter ("Glitter / Sparkle--{reference_property:_GlitterEnable,button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/special-fx/glitter},hover:Documentation}}", Float) = 0
-		[HideInInspector][ThryToggle(_SUNDISK_SIMPLE)]_GlitterEnable ("Enable Glitter", Float) = 0
-		[ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _GlitterUV ("UV", Int) = 0
-		[Enum(Angle, 0, Linear Emission, 1, Light Reflections, 2)]_GlitterMode ("Mode", Int) = 0
-		[Enum(Circle, 0, Square, 1)]_GlitterShape ("Shape", Int) = 0
-		[Enum(Add, 0, Replace, 1)] _GlitterBlendType ("Blend Mode", Int) = 0
-		_GlitterUseNormals ("Use Normals", Range(0, 1)) = 0
-		[IntRange]_GlitterLayers ("Layers", Range(1, 4)) = 2
-		[HideInInspector] s_start_GlitterColorAndShape ("Shape & Color--{persistent_expand:true,default_expand:true}", Float) = 1
-		_GlitterTexture ("Shape Texture", 2D) = "white" { }
-		[sRGBWarning(true)]_GlitterColorMap ("Color Map--{reference_properties:[_GlitterColorMapPan, _GlitterColorMapUV]}", 2D) = "white" { }
-		[HideInInspector][Vector2]_GlitterColorMapPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _GlitterColorMapUV ("UV", Int) = 0
-		[HDR]_GlitterColor ("Color--{reference_property:_GlitterColorThemeIndex}", Color) = (1, 1, 1)
-		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _GlitterColorThemeIndex ("", Int) = 0
-		_GlitterUseSurfaceColor ("Use Base Color", Range(0, 1)) = 0
-		[ToggleUI]_GlitterRandomColors ("Random Colors", Float) = 0
-		[MultiSlider]_GlitterMinMaxSaturation ("Saturation Range--{condition_showS:(_GlitterRandomColors==1)}", Vector) = (0.8, 1, 0, 1)
-		[MultiSlider]_GlitterMinMaxBrightness ("Brightness Range--{condition_showS:(_GlitterRandomColors==1)}", Vector) = (0.8, 1, 0, 1)
-		[HideInInspector] s_end_GlitterColorAndShape ("Color", Float) = 0
-		[HideInInspector] s_start_GlitterPositionSize ("Position & Size--{persistent_expand:true,default_expand:true}", Float) = 01
-		_GlitterFrequency ("Glitter Density", Float) = 300.0
-		_GlitterSize ("Glitter Size--{condition_show:(_GlitterRandomSize==0)}", Range(0, 1)) = .3
-		[Vector2]_GlitterUVPanning ("Panning", Vector) = (0, 0, 0, 0)
-		[ToggleUI]_GlitterRandomLocation ("Random Position", Float) = 1.0
-		[ToggleUI]_GlitterRandomSize ("Random Size", Float) = 0
-		[MultiSlider]_GlitterMinMaxSize ("Size Range--{condition_show:(_GlitterRandomSize==1)}", Vector) = (0.1, 0.5, 0, 1)
-		[HideInInspector] s_end_GlitterPositionSize ("Position & Size", Float) = 0
-		[HideInInspector] s_start_GlitterSparkleControl ("Sparkle Control--{persistent_expand:true,default_expand:true}", Float) = 1
-		_GlitterMinBrightness ("Glitter Min Brightness", Range(0, 1)) = 0
-		_GlitterBrightness ("Glitter Max Brightness", Range(0, 40)) = 3
-		_GlitterSpeed ("Speed", Float) = 10.0
-		_GlitterAngleRange ("Glitter Angle Range--{condition_showS:(_GlitterMode==0||_GlitterMode==2)}", Range(0, 90)) = 90
-		_GlitterBias ("Glitter Bias--{condition_show:(_GlitterMode==0)}", Range(0, 1)) = .8
-		_GlitterCenterSize ("dim light--{condition_show:{type:AND,condition1:{type:PROPERTY_BOOL,data:_GlitterMode==1},condition2:{type:PROPERTY_BOOL,data:_GlitterShape==1}}}", Range(0, 1)) = .08
-		_GlitterContrast ("Post Contrast--{condition_showS:(_GlitterMode==0||_GlitterMode==2)}", Range(1, 1000)) = 300
-		_GlitterJaggyFix ("Distant Jaggy Fix--{condition_show:{type:PROPERTY_BOOL,data:_GlitterShape==1}}", Range(0, .1)) = .0
-		[HideInInspector] s_end_GlitterSparkleControl ("Sparkle Control", Float) = 0
-		[HideInInspector] s_start_GlitterRotationSection ("Rotations--{persistent_expand:true,default_expand:false}", Float) = 0
-		[ToggleUI]_GlitterRandomRotation ("Random Offset", Float) = 0
-		_GlitterTextureRotation ("Constant Speed", Float) = 0
-		[VectorLabel(Min, Max)]_GlitterRandomRotationSpeed ("Random Speed Range", Vector) = (0, 0, 0, 0)
-		[HideInInspector] s_end_GlitterRotationSection ("Rotations", Float) = 0
-		[HideInInspector] s_start_GlitterMask ("Masking & Light Masking--{persistent_expand:true,default_expand:false}", Float) = 0
-		[sRGBWarning]_GlitterMask ("Glitter Mask--{reference_properties:[_GlitterMaskPan, _GlitterMaskUV, _GlitterMaskChannel, _GlitterMaskInvert]}", 2D) = "white" { }
-		[HideInInspector][Vector2]_GlitterMaskPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _GlitterMaskUV ("UV", Int) = 0
-		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_GlitterMaskChannel ("Channel", Float) = 0
-		[HideInInspector][ToggleUI]_GlitterMaskInvert ("Invert", Float) = 0
-		_GlitterHideInShadow ("Hide in shadow", Range(0, 1)) = 0
-		_GlitterScaleWithLighting ("Scale With Lighting", Range(0, 1)) = 0
-		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _GlitterMaskGlobalMask ("Global Mask--{reference_property:_GlitterMaskGlobalMaskBlendType}", Int) = 0
-		[HideInInspector][ThryWideEnum(Add, 7, Subtract, 1, Multiply, 2, Divide, 3, Min, 4, Max, 5, Average, 6, Replace, 0)]_GlitterMaskGlobalMaskBlendType ("Blending", Range(0, 1)) = 2
-		[HideInInspector] s_end_GlitterMask ("Masking", Float) = 0
-		[HideInInspector] s_start_GlitterHueShiftSection ("Hue Shift--{reference_property:_GlitterHueShiftEnabled, persistent_expand:true,default_expand:false)}", Float) = 0
-		[HideInInspector][ToggleUI]_GlitterHueShiftEnabled ("Enable Hue Shift", Float) = 0
-		[ThryWideEnum(OKLab, 0, HSV, 1)] _GlitteHueShiftColorSpace ("Color Space", Int) = 0
-		_GlitterHueShiftSpeed ("Shift Speed", Float) = 0
-		_GlitterHueShift ("Hue Shift", Range(0, 1)) = 0
-		[HideInInspector] s_end_GlitterHueShiftSection ("Hue Shift--{reference_property:_ShadowBorderMapToggle, persistent_expand:true,default_expand:false)}", Float) = 0
-		[HideInInspector] s_start_GlitterAudioLink ("Audio Link ♫--{reference_property:_GlitterALEnabled,persistent_expand:true,default_expand:false, condition_showS:(_EnableAudioLink==1)}", Float) = 0
-		[HideInInspector][ToggleUI] _GlitterALEnabled ("Enable Audio Link", Float) = 0
-		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _GlitterALAlphaAddBand ("Alpha Band", Int) = 0
-		[VectorLabel(Min, Max)]_GlitterALAlphaAdd ("Alpha Mod", Vector) = (0, 0, 0, 0)
-		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _GlitterALMaxBrightnessBand ("Max Brightness Band", Int) = 0
-		[VectorLabel(Min, Max)]_GlitterALMaxBrightnessAdd ("Max Brightness Mod", Vector) = (0, 0, 0, 0)
-		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _GlitterALSizeAddBand ("Size Band", Int) = 0
-		[VectorLabel(Min, Max)]_GlitterALSizeAdd ("Size Mod", Vector) = (0, 0, 0, 0)
-		[ThryWideEnum(Motion increases as intensity of band increases, 0, Above but Smooth, 1, Motion moves back and forth as a function of intensity, 2, Above but Smoooth, 3, Fixed speed increase when the band is dark Stationary when light, 4, Above but Smooooth, 5, Fixed speed increase when the band is dark Fixed speed decrease when light, 6, Above but Smoooooth, 7)]_GlitterALChronoSparkleSpeedType ("Chrono Sparkle Type", Int) = 0
-		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _GlitterALChronoSparkleSpeedBand ("Chrono Sparkle Band", Int) = 0
-		_GlitterALChronoSparkleSpeed ("Chrono Sparkle Speed", Float) = 0
-		[ThryWideEnum(Motion increases as intensity of band increases, 0, Above but Smooth, 1, Motion moves back and forth as a function of intensity, 2, Above but Smoooth, 3, Fixed speed increase when the band is dark Stationary when light, 4, Above but Smooooth, 5, Fixed speed increase when the band is dark Fixed speed decrease when light, 6, Above but Smoooooth, 7)]_GlitterALChronoRotationSpeedType ("Chrono Rotation Type", Int) = 0
-		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _GlitterALChronoRotationSpeedBand ("Chrono Rotation Band", Int) = 0
-		_GlitterALChronoRotationSpeed ("Chrono Rotation Speed", Float) = 0
-		[HideInInspector] s_end_GlitterAudioLink ("Audio Link", Float) = 0
-		[HideInInspector] m_end_glitter ("Glitter / Sparkle", Float) = 0
+		[HideInInspector] m_start_voronoi ("Voronoi--{reference_property:_VoronoiEnabled}", Int) = 0
+		[HideInInspector][ThryToggle(POI_VORONOI)]_VoronoiEnabled ("Voronoi Enabled", Int) = 0
+		[Enum(2D(Fast), 0, 3D(Fast with color bugs), 1, 3D(slow but no bugs), 2)] _VoronoiType ("Type", Int) = 1
+		[Enum(Local, 0, World, 1, UV, 2)] _VoronoiSpace ("Space", Int) = 0
+		[Enum(Color and Emission, 0, Just Emission, 1)] _VoronoiBlend ("Blend", Int) = 0
+		[ToggleUI]_VoronoiAffectsMaterialAlpha ("Affects Material Alpha", Int) = 0
+		[sRGBWarning] _VoronoiMask ("Mask--{reference_properties:[_VoronoiMaskPan, _VoronoiMaskUV, _VoronoiMaskChannel]}", 2D) = "white" { }
+		[HideInInspector][Vector2] _VoronoiMaskPan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _VoronoiMaskUV ("UV", Int) = 0
+		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)] _VoronoiMaskChannel ("Channel", Int) = 0
+		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _VoronoiGlobalMask ("Global Mask--{reference_property:_VoronoiGlobalMaskBlendType}", Int) = 0
+		[HideInInspector][ThryWideEnum(Add, 7, Subtract, 1, Multiply, 2, Divide, 3, Min, 4, Max, 5, Average, 6, Replace, 0)] _VoronoiGlobalMaskBlendType ("Blending", Int) = 2
+		[sRGBWarning] _VoronoiNoise ("Noise--{reference_properties:[_VoronoiNoisePan, _VoronoiNoiseUV, _VoronoiNoiseChannel]}", 2D) = "black" { }
+		[HideInInspector][Vector2] _VoronoiNoisePan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _VoronoiNoiseUV ("UV", Int) = 0
+		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)] _VoronoiNoiseChannel ("Channel", Int) = 0
+		_VoronoiNoiseIntensity ("Noise Intensity", Range(0, 1)) = .1
+		_VoronoiOuterColor ("Outer Color", Color) = (0, 0, 0, 1)
+		_VoronoiOuterEmissionStrength ("Outer Emission", Range(0, 20)) = 0
+		_VoronoiInnerColor ("Inner Color", Color) = (1, 1, 1, 1)
+		_VoronoiInnerEmissionStrength ("Inner Emission", Range(0, 20)) = 0
+		[Vector2]_VoronoiGradient ("Gradient", Vector) = (0, 0.5, 0, 0)
+		_VoronoiPower ("Power", Float) = 0.45454545
+		_VoronoiScale ("Scale", Float) = 5.0
+		[Vector3]_VoronoiSpeed ("Speed", Vector) = (1.0, 1.0, 1.0)
+		[HideInInspector] m_start_voronoiRandom ("Voronoi Random Cell Color--{reference_property:_VoronoiEnableRandomCellColor}", Int) = 0
+		[HideInInspector][ToggleUI]_VoronoiEnableRandomCellColor ("Rando Cell Col", Int) = 0
+		[MultiSlider]_VoronoiRandomMinMaxSaturation ("Saturation Range", Vector) = (0.8, 1, 0, 1)
+		[MultiSlider]_VoronoiRandomMinMaxBrightness ("Brightness Range", Vector) = (0.8, 1, 0, 1)
+		[HideInInspector] m_end_voronoiRandom ("Voronoi Random Cell Color", Float) = 0
+		[HideInInspector] m_start_VoronoiAudioLink ("Audio Link ♫--{condition_showS:_EnableAudioLink==1}", Float) = 0
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _AudioLinkVoronoiInnerEmissionBand ("Inner Emission Band", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkVoronoiInnerEmission ("Inner Emission Mod", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _AudioLinkVoronoiOuterEmissionBand ("Outer Emission Band", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkVoronoiOuterEmission ("Outer Emission Mod", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _AudioLinkVoronoiGradientMinAddBand ("Gradient Min Band", Int) = 0
+		_AudioLinkVoronoiGradientMinAdd ("Gradient Min Add", Float) = 0
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _AudioLinkVoronoiGradientMaxAddBand ("Gradient Max Band", Int) = 0
+		_AudioLinkVoronoiGradientMaxAdd ("Gradient Max Add", Float) = 0
+		[Space(7)]
+		[ThryWideEnum(Motion increases as intensity of band increases, 0, Above but Smooth, 1, Motion moves back and forth as a function of intensity, 2, Above but Smoooth, 3, Fixed speed increase when the band is dark Stationary when light, 4, Above but Smooooth, 5, Fixed speed increase when the band is dark Fixed speed decrease when light, 6, Above but Smoooooth, 7)]_AudioLinkVoronoiChronoSpeedXType ("Speed X Motion Type", Int) = 0
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _AudioLinkVoronoiChronoSpeedXBand ("Speed X Band", Int) = 0
+		_AudioLinkVoronoiChronoSpeedXSpeed ("Speed X", Float) = 0
+		[ThryWideEnum(Motion increases as intensity of band increases, 0, Above but Smooth, 1, Motion moves back and forth as a function of intensity, 2, Above but Smoooth, 3, Fixed speed increase when the band is dark Stationary when light, 4, Above but Smooooth, 5, Fixed speed increase when the band is dark Fixed speed decrease when light, 6, Above but Smoooooth, 7)]_AudioLinkVoronoiChronoSpeedYType ("Speed Y Motion Type", Int) = 0
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _AudioLinkVoronoiChronoSpeedYBand ("Speed Y Band", Int) = 0
+		_AudioLinkVoronoiChronoSpeedYSpeed ("Speed Y", Float) = 0
+		[ThryWideEnum(Motion increases as intensity of band increases, 0, Above but Smooth, 1, Motion moves back and forth as a function of intensity, 2, Above but Smoooth, 3, Fixed speed increase when the band is dark Stationary when light, 4, Above but Smooooth, 5, Fixed speed increase when the band is dark Fixed speed decrease when light, 6, Above but Smoooooth, 7)]_AudioLinkVoronoiChronoSpeedZType ("Speed Z Motion Type", Int) = 0
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _AudioLinkVoronoiChronoSpeedZBand ("Speed Z Band", Int) = 0
+		_AudioLinkVoronoiChronoSpeedZSpeed ("Speed Z", Float) = 0
+		[HideInInspector] m_end_VoronoiAudioLink ("Audio Link", Float) = 0
+		[HideInInspector] m_end_voronoi ("Voronoi", Float) = 0
 		[HideInInspector] m_modifierCategory ("Global Modifiers & Data", Float) = 0
 		[HideInInspector] m_start_PoiGlobalCategory ("Global Data and Masks", Float) = 0
 		[HideInInspector] m_start_GlobalThemes ("Global Themes--{button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/color-and-normals/global-themes},hover:Documentation}}", Float) = 0
@@ -602,13 +478,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 			BlendOp [_BlendOp], [_BlendOpAlpha]
 			Blend [_SrcBlend] [_DstBlend], [_SrcBlendAlpha] [_DstBlendAlpha]
 			CGPROGRAM
+ #define POI_VORONOI 
  #define VIGNETTE_MASKED 
- #define _GLOSSYREFLECTIONS_OFF 
  #define _LIGHTINGMODE_FLAT 
- #define _RIM2STYLE_POIYOMI 
- #define _RIMSTYLE_POIYOMI 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
- #define _SUNDISK_SIMPLE 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma skip_variants LIGHTMAP_ON DYNAMICLIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK DIRLIGHTMAP_COMBINED _MIXED_LIGHTING_SUBTRACTIVE
@@ -848,142 +721,61 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				float matcapALChronoPanBand;
 				float matcapALChronoPanSpeed;
 			};
-			#ifdef _GLOSSYREFLECTIONS_OFF
-			float _Is_NormalMapToRimLight;
-			float4 _RimLightColor;
-			float _RimLightColorThemeIndex;
-			#ifdef _RIMSTYLE_POIYOMI
-			float _RimLightingInvert;
-			float _RimWidth;
-			float _RimStrength;
-			float _RimSharpness;
-			float _RimBaseColorMix;
-			float _EnableRimLighting;
-			float _RimWidthNoiseStrength;
-			float4 _RimShadowAlpha;
-			float _RimShadowWidth;
-			float _RimBlendStrength;
-			float _RimPoiBlendMode;
-			float _RimShadowToggle;
-			float _RimPower;
-			float _RimShadowMaskStrength;
-			float _RimShadowMaskRampType;
-			float _RimShadowMaskInvert;
-			float _RimBrightness;
-			#if defined(PROP_RIMTEX) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _RimTex;
-			#endif
-			float4 _RimTex_ST;
-			float2 _RimTexPan;
-			float _RimTexUV;
-			#if defined(PROP_RIMMASK) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _RimMask;
-			#endif
-			float4 _RimMask_ST;
-			float2 _RimMaskPan;
-			float _RimMaskUV;
-			float _RimMaskChannel;
-			float _RimMaskInvert;
-			float _RimBiasIntensity;
-			int _RimApplyAlpha;
-			float _RimApplyAlphaBlend;
-			#ifdef POI_AUDIOLINK
-			half _AudioLinkRimWidthBand;
-			float2 _AudioLinkRimWidthAdd;
-			half _AudioLinkRimEmissionBand;
-			float2 _AudioLinkRimEmissionAdd;
-			half _AudioLinkRimBrightnessBand;
-			float2 _AudioLinkRimBrightnessAdd;
-			#endif
-			#endif
-			float _RimGlobalMask;
-			float _RimGlobalMaskBlendType;
-			float _RimApplyGlobalMaskIndex;
-			float _RimApplyGlobalMaskBlendType;
-			float _RimHueShiftEnabled;
-			float _RimHueShiftColorSpace;
-			float _RimHueShiftSpeed;
-			float _RimHueShift;
-			#endif
-			#ifdef _SUNDISK_SIMPLE
-			float4 _GlitterRandomRotationSpeed;
-			float _GlitterLayers;
-			float _GlitterUseNormals;
-			float _GlitterUV;
-			float4 _GlitterColor;
-			float _GlitterColorThemeIndex;
-			float2 _GlitterPan;
-			half _GlitterSpeed;
-			half _GlitterBrightness;
-			float _GlitterFrequency;
-			float _GlitterRandomLocation;
-			half _GlitterSize;
-			half _GlitterContrast;
-			half _GlitterAngleRange;
-			half _GlitterMinBrightness;
-			half _GlitterBias;
-			fixed _GlitterUseSurfaceColor;
-			float _GlitterBlendType;
-			float _GlitterMode;
-			float _GlitterShape;
-			float _GlitterCenterSize;
-			float _GlitterJaggyFix;
-			float _GlitterTextureRotation;
-			float2 _GlitterUVPanning;
-			float _GlitterHueShiftEnabled;
-			float _GlitteHueShiftColorSpace;
-			float _GlitterHueShiftSpeed;
-			float _GlitterHueShift;
-			float _GlitterHideInShadow;
-			float _GlitterScaleWithLighting;
-			float _GlitterRandomColors;
-			float2 _GlitterMinMaxSaturation;
-			float2 _GlitterMinMaxBrightness;
-			float _GlitterRandomSize;
-			float4 _GlitterMinMaxSize;
-			float _GlitterRandomRotation;
-			#if defined(PROP_GLITTERMASK) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _GlitterMask;
-			#endif
-			float4 _GlitterMask_ST;
-			float2 _GlitterMaskPan;
-			float _GlitterMaskUV;
-			float _GlitterMaskChannel;
-			float _GlitterMaskInvert;
-			float _GlitterMaskGlobalMask;
-			float _GlitterMaskGlobalMaskBlendType;
-			#if defined(PROP_GLITTERCOLORMAP) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _GlitterColorMap;
-			#endif
-			float4 _GlitterColorMap_ST;
-			float2 _GlitterColorMapPan;
-			float _GlitterColorMapUV;
-			#if defined(PROP_GLITTERTEXTURE) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _GlitterTexture;
-			#endif
-			float4 _GlitterTexture_ST;
-			float2 _GlitterTexturePan;
-			float _GlitterTextureUV;
-			float _GlitterALEnabled;
-			float _GlitterALAlphaAddBand;
-			float4 _GlitterALAlphaAdd;
-			float _GlitterALMinBrightnessBand;
-			float4 _GlitterALMinBrightnessAdd;
-			float _GlitterALMaxBrightnessBand;
-			float4 _GlitterALMaxBrightnessAdd;
-			float _GlitterALSizeAddBand;
-			float4 _GlitterALSizeAdd;
-			float _GlitterALChronoSparkleSpeedType;
-			float _GlitterALChronoSparkleSpeedBand;
-			float _GlitterALChronoSparkleSpeed;
-			float _GlitterALChronoRotationSpeedType;
-			float _GlitterALChronoRotationSpeedBand;
-			float _GlitterALChronoRotationSpeed;
-			#endif
 			float _PPLightingMultiplier;
 			float _PPLightingAddition;
 			float _PPEmissionMultiplier;
 			float _PPFinalColorMultiplier;
+			#ifdef POI_VORONOI
+			#if defined(PROP_VORONOIMASK) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _VoronoiMask;
+			float4 _VoronoiMask_ST;
+			float2 _VoronoiMaskPan;
+			float _VoronoiMaskUV;
+			int _VoronoiMaskChannel;
+			#endif
+			#if defined(PROP_VORONOINOISE) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _VoronoiNoise;
+			float4 _VoronoiNoise_ST;
+			float2 _VoronoiNoisePan;
+			float _VoronoiNoiseUV;
+			int _VoronoiNoiseChannel;
+			#endif
+			int _VoronoiSpace;
+			int _VoronoiBlend;
+			int _VoronoiType;
+			float4 _VoronoiOuterColor;
+			float _VoronoiOuterEmissionStrength;
+			float4 _VoronoiInnerColor;
+			float _VoronoiInnerEmissionStrength;
+			float _VoronoiPower;
+			float2 _VoronoiGradient;
+			float _VoronoiScale;
+			float3 _VoronoiSpeed;
+			float _VoronoiEnableRandomCellColor;
+			float2 _VoronoiRandomMinMaxSaturation;
+			float2 _VoronoiRandomMinMaxBrightness;
+			float _VoronoiNoiseIntensity;
+			int _VoronoiAffectsMaterialAlpha;
+			float _VoronoiGlobalMask;
+			float _VoronoiGlobalMaskBlendType;
+			int _AudioLinkVoronoiInnerEmissionBand;
+			float2 _AudioLinkVoronoiInnerEmission;
+			int _AudioLinkVoronoiOuterEmissionBand;
+			float2 _AudioLinkVoronoiOuterEmission;
+			int _AudioLinkVoronoiGradientMinAddBand;
+			float _AudioLinkVoronoiGradientMinAdd;
+			int _AudioLinkVoronoiGradientMaxAddBand;
+			float _AudioLinkVoronoiGradientMaxAdd;
+			int _AudioLinkVoronoiChronoSpeedXType;
+			int _AudioLinkVoronoiChronoSpeedXBand;
+			float _AudioLinkVoronoiChronoSpeedXSpeed;
+			int _AudioLinkVoronoiChronoSpeedYType;
+			int _AudioLinkVoronoiChronoSpeedYBand;
+			float _AudioLinkVoronoiChronoSpeedYSpeed;
+			int _AudioLinkVoronoiChronoSpeedZType;
+			int _AudioLinkVoronoiChronoSpeedZBand;
+			float _AudioLinkVoronoiChronoSpeedZSpeed;
+			#endif
 			struct appdata
 			{
 				float4 vertex : POSITION;
@@ -2425,7 +2217,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				{
 					distanceOffset *= lerp(1.0, clamp((distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, o.localPos).xyz)), 0.0f, (1.0 /*_OutlinesMaxDistance*/)), (0.5 /*_OutlineFixWidth*/));
 				}
-				float lineWidth = (1.0 /*_LineWidth*/);
+				float lineWidth = (5.86 /*_LineWidth*/);
 				#ifdef POI_AUDIOLINK
 				if ((1.0 /*_AudioLinkAnimToggle*/))
 				{
@@ -3161,384 +2953,267 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				float2 uv = 0;
 			}
 			#endif
-			#if defined(_GLOSSYREFLECTIONS_OFF) || defined(POI_RIM2)
-			#if defined(_RIMSTYLE_POIYOMI) || defined(_RIM2STYLE_POIYOMI)
-			void ApplyPoiyomiRimLighting(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiCam poiCam, in PoiLight poiLight, inout PoiMods poiMods, float Is_NormalMapToRimLight, float RimInvert, float RimPower, float RimStrength, float RimShadowWidth, float RimShadowToggle, float RimWidth, float RimBlendStrength, float RimMask, float RimGlobalMask, float RimGlobalMaskBlendType, float4 RimTex, float4 RimLightColor, float RimLightColorThemeIndex, float RimHueShiftEnabled, float RimHueShift, float RimHueShiftColorSpace, float RimHueShiftSpeed, float RimSharpness, float RimShadowMaskRampType, float RimShadowMaskInvert, float RimShadowMaskStrength, float2 RimShadowAlpha, float RimApplyGlobalMaskIndex, float RimApplyGlobalMaskBlendType, float RimBaseColorMix, float RimBrightness, float RimBlendMode, half AudioLinkRimWidthBand, float2 AudioLinkRimWidthAdd, half AudioLinkRimEmissionBand, float2 AudioLinkRimEmissionAdd, half AudioLinkRimBrightnessBand, float2 AudioLinkRimBrightnessAdd, float rimBias, float rimBiasIntensity, int RimApplyAlpha, float RimApplyAlphaBlend)
+			#ifdef POI_VORONOI
+			#define VoronoiK 0.142857142857
+			#define VoronoiKo 0.428571428571
+			float3 Permutation(float3 x)
 			{
-				float viewDotNormal = abs(dot(poiCam.viewDir, lerp(poiMesh.normals[0], poiMesh.normals[1], Is_NormalMapToRimLight)));
+				return glsl_mod((34.0 * x + 1.0) * x, 289.0);
+			}
+			float3 inoise(float3 P, float jitter, out float3 randomPoint)
+			{
+				P *= 0.7f; // Scale adjustment
+				float3 Pi = glsl_mod(floor(P), 289.0);
+				float3 Pf = frac(P);
+				float3 oi = float3(-1.0, 0.0, 1.0);
+				float3 of = float3(-0.5, 0.5, 1.5);
+				float3 px = Permutation(Pi.x + oi);
+				float3 py = Permutation(Pi.y + oi);
+				float3 pz = Permutation(Pi.z + oi);
+				float3 p, ox, oy, oz, dx, dy, dz;
+				float3 F = 1e6;
+				[unroll(3)]
+				for (int i = 0; i < 3; i++)
+				{
+					[unroll(3)]
+					for (int j = 0; j < 3; j++)
+					{
+						[unroll(3)]
+						for (int k = 0; k < 3; k++)
+						{
+							p = Permutation(px[i] + py[j] + pz[k] + oi); // pij1, pij2, pij3
+							float3 ogp = p;
+							ox = frac(p * VoronoiK) - VoronoiKo;
+							oy = glsl_mod(floor(p * VoronoiK), 7.0) * VoronoiK - VoronoiKo;
+							p = Permutation(p);
+							oz = frac(p * VoronoiK) - VoronoiKo;
+							dx = Pf.x - of[i] + jitter * ox;
+							dy = Pf.y - of[j] + jitter * oy;
+							dz = Pf.z - of[k] + jitter * oz;
+							float3 d = dx * dx + dy * dy + dz * dz; // dij1, dij2 and dij3, squared
+							for (int n = 0; n < 3; n++)
+							{
+								if (d[n] < F[0])
+								{
+									F[1] = F[0];
+									F[0] = d[n];
+									randomPoint = p;
+								}
+								else if (d[n] < F[1])
+								{
+									F[1] = d[n];
+								}
+							}
+						}
+					}
+				}
+				return F;
+			}
+			float voronoi2D(in float2 x, float scale, float2 speed, out float2 randomPoint)
+			{
+				x *= scale;
+				x += speed * _Time.x;
+				float2 n = floor(x);
+				float2 f = frac(x);
+				float2 mg, mr;
+				float md = 8.0;
+				for (int j = -1; j <= 1; j++)
+				{
+					for (int i = -1; i <= 1; i++)
+					{
+						float2 g = float2(float(i), float(j));
+						float2 o = random2(n + g);
+						float2 currentPoint = o;
+						float2 r = g + o - f;
+						float d = dot(r, r);
+						if (d < md)
+						{
+							md = d;
+							mr = r;
+							mg = g;
+							randomPoint.xy = currentPoint;
+						}
+					}
+				}
+				md = 8.0;
+				for (int r = -2; r <= 2; r++)
+				{
+					for (int q = -2; q <= 2; q++)
+					{
+						float2 g = mg + float2(float(q), float(r));
+						float2 o = random2(n + g);
+						float2 r = g + o - f;
+						if (dot(mr - r, mr - r) > 0.00001)
+						{
+							md = min(md, dot(0.5 * (mr + r), normalize(r - mr)));
+						}
+					}
+				}
+				return md;
+			}
+			float voronoi3D(in float3 x, float scale, float3 speed, out float3 randomPoint)
+			{
+				x *= scale;
+				x += speed * _Time.x;
+				float3 n = floor(x);
+				float3 f = frac(x);
+				float3 mg, mr;
+				float md = 8.0;
+				for (int j = -1; j <= 1; j++)
+				{
+					for (int i = -1; i <= 1; i++)
+					{
+						for (int h = -1; h <= 1; h++)
+						{
+							float3 g = float3(float(h), float(i), float(j));
+							float3 o = random3(n + g);
+							float3 currentPoint = o;
+							float3 r = g + o - f;
+							float d = dot(r, r);
+							if (d < md)
+							{
+								md = d;
+								mr = r;
+								mg = g;
+								randomPoint = currentPoint;
+							}
+						}
+					}
+				}
+				md = 8.0;
+				for (int r = -2; r <= 2; r++)
+				{
+					for (int q = -2; q <= 2; q++)
+					{
+						for (int p = -2; p <= 2; p++)
+						{
+							float3 g = mg + float3(float(p), float(q), float(r));
+							float3 o = random3(n + g);
+							float3 r = g + o - f;
+							if (dot(mr - r, mr - r) > 0.00001)
+							{
+								md = min(md, dot(0.5 * (mr + r), normalize(r - mr)));
+							}
+						}
+					}
+				}
+				return md;
+			}
+			float VoronoiNoise_Octaves(float3 p, float scale, float3 speed, int octaveNumber, float octaveScale, float octaveAttenuation, float jitter, float time, out float3 randomPoint)
+			{
+				float freq = scale;
+				float weight = 1.0f;
+				float sum = 0;
+				float3 F = inoise(p * freq + time * speed, jitter, randomPoint) * weight;
+				sum += sqrt(F[0]);
+				return sum;
+			}
+			float VoronoiNoiseDiff_Octaves(float3 p, float scale, float3 speed, int octaveNumber, float octaveScale, float octaveAttenuation, float jitter, float time, out float3 randomPoint)
+			{
+				float freq = scale;
+				float weight = 1.0f;
+				float sum = 0;
+				float3 F = inoise(p * freq + time * speed, jitter, randomPoint) * weight;
+				sum += sqrt(F[1]) - sqrt(F[0]);
+				return sum;
+			}
+			void ApplyVoronoi(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiMods poiMods)
+			{
+				float voronoiOctaveNumber = 1;
+				float voronoiOctaveScale = 1;
+				float voronoiOctaveAttenuation = 1;
+				float3 randomPoint = 0;
+				float voronoi = 0;
+				float3 position = 0;
 				
-				if (RimInvert)
+				if ((0 /*_VoronoiSpace*/) == 0)
 				{
-					viewDotNormal = 1 - viewDotNormal;
+					position = poiMesh.localPos;
 				}
-				viewDotNormal = pow(viewDotNormal, RimPower);
-				if (RimShadowWidth && RimShadowToggle)
+				
+				if ((0 /*_VoronoiSpace*/) == 1)
 				{
-					viewDotNormal += lerp(0, (1 - poiLight.nDotLNormalized) * 3, RimShadowWidth);
+					position = poiMesh.worldPos;
 				}
-				viewDotNormal *= lerp(1, rimBias, rimBiasIntensity);
-				float rimStrength = RimStrength;
-				float rimWidth = lerp( - .05, 1, RimWidth);
-				float blendStrength = RimBlendStrength;
+				
+				if ((0 /*_VoronoiSpace*/) == 2)
+				{
+					position = float3(poiMesh.uv[0].x, poiMesh.uv[0].y, 0);
+				}
+				#if defined(PROP_VORONOIMASK) || !defined(OPTIMIZER_ENABLED)
+				float mask = POI2D_SAMPLER_PAN(_VoronoiMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_VoronoiMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0 /*_VoronoiMaskChannel*/)];
+				#else
+				float mask = 1;
+				#endif
+				if ((0.0 /*_VoronoiGlobalMask*/) > 0)
+				{
+					mask = maskBlend(mask, poiMods.globalMask[(0.0 /*_VoronoiGlobalMask*/) - 1], (2.0 /*_VoronoiGlobalMaskBlendType*/));
+				}
+				#if defined(PROP_VORONOINOISE) || !defined(OPTIMIZER_ENABLED)
+				float edgeNoise = POI2D_SAMPLER_PAN(_VoronoiNoise, _MainTex, poiUV(poiMesh.uv[(0.0 /*_VoronoiNoiseUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0 /*_VoronoiNoiseChannel*/)];
+				#else
+				float edgeNoise = 0;
+				#endif
+				edgeNoise *= (0.1 /*_VoronoiNoiseIntensity*/);
+				float3 voronoiSpeed = float4(0,0,0,1) * 10;
 				#ifdef POI_AUDIOLINK
-				
 				if (poiMods.audioLinkAvailable)
 				{
-					rimWidth = clamp(rimWidth + lerp(AudioLinkRimWidthAdd.x, AudioLinkRimWidthAdd.y, poiMods.audioLink[AudioLinkRimWidthBand]), - .05, 1);
-					rimStrength += lerp(AudioLinkRimEmissionAdd.x, AudioLinkRimEmissionAdd.y, poiMods.audioLink[AudioLinkRimEmissionBand]);
-					RimBrightness += lerp(AudioLinkRimBrightnessAdd.x, AudioLinkRimBrightnessAdd.y, poiMods.audioLink[AudioLinkRimBrightnessBand]);
+					position.x += AudioLinkGetChronoTime((0 /*_AudioLinkVoronoiChronoSpeedXType*/), (0 /*_AudioLinkVoronoiChronoSpeedXBand*/)) * (0.0 /*_AudioLinkVoronoiChronoSpeedXSpeed*/) * 0.01;
+					position.y += AudioLinkGetChronoTime((0 /*_AudioLinkVoronoiChronoSpeedYType*/), (0 /*_AudioLinkVoronoiChronoSpeedYBand*/)) * (0.0 /*_AudioLinkVoronoiChronoSpeedYSpeed*/) * 0.01;
+					position.z += AudioLinkGetChronoTime((0 /*_AudioLinkVoronoiChronoSpeedZType*/), (0 /*_AudioLinkVoronoiChronoSpeedZBand*/)) * (0.0 /*_AudioLinkVoronoiChronoSpeedZSpeed*/) * 0.01;
 				}
 				#endif
-				float rimMask = RimMask;
-				if (RimGlobalMask > 0)
+				if ((0 /*_VoronoiType*/) == 0) // Basic
 				{
-					rimMask = maskBlend(rimMask, poiMods.globalMask[RimGlobalMask - 1], RimGlobalMaskBlendType);
+					voronoi = voronoi2D(position.xy, (1.32 /*_VoronoiScale*/), voronoiSpeed, randomPoint.xy);
+					voronoi *= 1.55; // Range adjustment
 				}
-				float4 rimColor = RimTex;
-				rimColor *= float4(poiThemeColor(poiMods, RimLightColor.rgb, RimLightColorThemeIndex), RimLightColor.a);
-				
-				if (RimHueShiftEnabled)
+				if ((0 /*_VoronoiType*/) == 1) // Diff
 				{
-					rimColor.rgb = hueShift(rimColor.rgb, RimHueShift + _Time.x * RimHueShiftSpeed, RimHueShiftColorSpace);
+					voronoi = VoronoiNoiseDiff_Octaves(position, (1.32 /*_VoronoiScale*/), voronoiSpeed, voronoiOctaveNumber, voronoiOctaveScale, voronoiOctaveAttenuation, 1, _Time.x, randomPoint);
 				}
-				float rim = 1 - smoothstep(min(RimSharpness, rimWidth), rimWidth, viewDotNormal);
-				rim *= RimLightColor.a * rimColor.a * rimMask;
-				if (RimShadowToggle)
+				if ((0 /*_VoronoiType*/) == 2) // Fixed Border
 				{
-					switch(RimShadowMaskRampType)
-					{
-						case 0:
-						float rampedLightMap = poiLight.rampedLightMap;
-						if (RimShadowMaskInvert) rampedLightMap = 1 - rampedLightMap;
-						rim = lerp(rim, rim * rampedLightMap, RimShadowMaskStrength);
-						break;
-						case 1:
-						float nDotLNormalized = poiLight.nDotLNormalized;
-						if (RimShadowMaskInvert) nDotLNormalized = 1 - nDotLNormalized;
-						rim = lerp(rim, rim * smoothstep(RimShadowAlpha.x, RimShadowAlpha.y, nDotLNormalized), RimShadowMaskStrength);
-						break;
-					}
+					voronoi = voronoi3D(position, (1.32 /*_VoronoiScale*/), voronoiSpeed, randomPoint);
+					voronoi *= 1.8; // Range adjustment
 				}
-				if (RimApplyGlobalMaskIndex > 0)
+				float4 outerColor = float4(0.009166719,0.00278998,0.0008610645,1);
+				float4 innerColor = float4(0.05672633,0.01392266,0.007321635,1);
+				if ((1.0 /*_VoronoiEnableRandomCellColor*/) == 1)
 				{
-					applyToGlobalMask(poiMods, RimApplyGlobalMaskIndex - 1, RimApplyGlobalMaskBlendType, rim * blendStrength);
+					float3 rando = random3(randomPoint);
+					fixed hue = rando.x;
+					fixed saturation = lerp(float4(0,0.1,0,1).x, float4(0,0.1,0,1).y, rando.y);
+					fixed value = lerp(float4(0,0.1,0,1).x, float4(0,0.1,0,1).y, rando.z);
+					float3 hsv = float3(hue, saturation, value);
+					innerColor.rgb = HSVtoRGB(hsv);
 				}
-				if (RimApplyAlpha == 1) // Add
-				{
-					poiFragData.alpha += lerp(0, saturate(rim), RimApplyAlphaBlend);
-					poiFragData.alpha = saturate(poiFragData.alpha);
-				}
-				if (RimApplyAlpha == 2) // Multiply
-				{
-					poiFragData.alpha *= lerp(1, saturate(rim), RimApplyAlphaBlend);
-				}
-				float3 finalRimColor = rimColor.rgb * lerp(1, poiFragData.baseColor, RimBaseColorMix);
-				finalRimColor *= RimBrightness;
-				switch(RimBlendMode)
-				{
-					case 0: poiFragData.baseColor += finalRimColor * rim * blendStrength; break;
-					case 1: poiFragData.baseColor = lerp(poiFragData.baseColor, finalRimColor, rim * blendStrength); break;
-					case 2: poiFragData.baseColor = lerp(poiFragData.baseColor, poiFragData.baseColor * finalRimColor, rim * blendStrength); break;
-					case 3: poiFragData.baseColor = lerp(poiFragData.baseColor.rgb, poiFragData.baseColor.rgb + poiFragData.baseColor.rgb * finalRimColor, rim * blendStrength); break;
-					case 4: poiFragData.baseColor = lerp(poiFragData.baseColor, 1 - (1 - poiFragData.baseColor) * (1 - finalRimColor), rim * blendStrength); break;
-				}
-				poiFragData.emission += finalRimColor * rim * rimStrength;
-			}
-			#endif
-			#if defined(_RIMSTYLE_UTS2) || defined(_RIM2STYLE_UTS2)
-			void ApplyUTS2RimLighting(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiCam poiCam, in PoiLight poiLight, in PoiMods poiMods, float Set_RimLightMask_var, float RimGlobalMask, float RimGlobalMaskBlendType, float4 RimLightColor, float RimLightColorThemeIndex, float Is_LightColor_RimLight, float Is_NormalMapToRimLight, float RimLight_Power, float RimLight_InsideMask, float RimLight_FeatherOff, float LightDirection_MaskOn, float Tweak_LightDirection_MaskLevel, float Add_Antipodean_RimLight, float4 Ap_RimLightColor, float RimApColorThemeIndex, float Is_LightColor_Ap_RimLight, float Ap_RimLight_Power, float Ap_RimLight_FeatherOff, float Tweak_RimLightMaskLevel, float RimHueShiftEnabled, float RimHueShift, float RimHueShiftColorSpace, float RimHueShiftSpeed)
-			{
-				if (RimGlobalMask > 0)
-				{
-					Set_RimLightMask_var = maskBlend(Set_RimLightMask_var, poiMods.globalMask[RimGlobalMask - 1], RimGlobalMaskBlendType);
-				}
-				float3 rimColor = float3(poiThemeColor(poiMods, RimLightColor.rgb, RimLightColorThemeIndex));
-				float3 _Is_LightColor_RimLight_var = lerp(rimColor, (rimColor * poiLight.directColor), Is_LightColor_RimLight);
-				float _RimArea_var = (1.0 - dot(lerp(poiMesh.normals[0], poiMesh.normals[1], Is_NormalMapToRimLight), poiCam.viewDir));
-				float _RimLightPower_var = pow(_RimArea_var, exp2(lerp(3, 0, RimLight_Power)));
-				float _Rimlight_InsideMask_var = saturate(lerp((0.0 + ((_RimLightPower_var - RimLight_InsideMask) * (1.0 - 0.0)) / (1.0 - RimLight_InsideMask)), step(RimLight_InsideMask, _RimLightPower_var), RimLight_FeatherOff));
-				float _VertHalfLambert_var = 0.5 * dot(poiMesh.normals[0], poiLight.direction) + 0.5;
-				float3 _LightDirection_MaskOn_var = lerp((_Is_LightColor_RimLight_var * _Rimlight_InsideMask_var), (_Is_LightColor_RimLight_var * saturate((_Rimlight_InsideMask_var - ((1.0 - _VertHalfLambert_var) + Tweak_LightDirection_MaskLevel)))), LightDirection_MaskOn);
-				float _ApRimLightPower_var = pow(_RimArea_var, exp2(lerp(3, 0, Ap_RimLight_Power)));
-				float3 ApRimColor = float3(poiThemeColor(poiMods, Ap_RimLightColor.rgb, RimApColorThemeIndex));
-				float3 _RimLight_var = (saturate((Set_RimLightMask_var + Tweak_RimLightMaskLevel)) * lerp(_LightDirection_MaskOn_var, (_LightDirection_MaskOn_var + (lerp(ApRimColor, (ApRimColor * poiLight.directColor), Is_LightColor_Ap_RimLight) * saturate((lerp((0.0 + ((_ApRimLightPower_var - RimLight_InsideMask) * (1.0 - 0.0)) / (1.0 - RimLight_InsideMask)), step(RimLight_InsideMask, _ApRimLightPower_var), Ap_RimLight_FeatherOff) - (saturate(_VertHalfLambert_var) + Tweak_LightDirection_MaskLevel))))), Add_Antipodean_RimLight));
-				
-				if (RimHueShiftEnabled)
-				{
-					_RimLight_var = hueShift(_RimLight_var, RimHueShift + _Time.x * RimHueShiftSpeed, RimHueShiftColorSpace);
-				}
-				poiFragData.baseColor += _RimLight_var;
-			}
-			#endif
-			#if defined(_RIMSTYLE_LILTOON) || defined(_RIM2STYLE_LILTOON)
-			void ApplyLiltoonRimLighting(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiCam poiCam, in PoiLight poiLight, in PoiMods poiMods, float4 RimColor, float4 RimIndirColor, float4 RimColorTex, float RimMainStrength, float RimNormalStrength, float RimDirRange, float RimIndirRange, float RimFresnelPower, float RimBackfaceMask, float RimDirStrength, float RimBorder, float RimBlur, float RimIndirBorder, float RimIndirBlur, float RimShadowMask, float RimEnableLighting, float RimVRParallaxStrength, float RimGlobalMask, float RimGlobalMaskBlendType, float RimHueShiftEnabled, float RimHueShift, float RimHueShiftColorSpace, float RimHueShiftSpeed, int RimBlendMode)
-			{
-				if (RimGlobalMask > 0)
-				{
-					RimColorTex.a = maskBlend(RimColorTex.a, poiMods.globalMask[RimGlobalMask - 1], RimGlobalMaskBlendType);
-				}
-				float4 rimColor = RimColor;
-				float4 rimIndirColor = RimIndirColor;
-				rimColor *= RimColorTex;
-				rimIndirColor *= RimColorTex;
-				if (RimHueShiftEnabled)
-				{
-					rimColor.rgb = hueShift(rimColor.rgb, RimHueShift + _Time.x * RimHueShiftSpeed, RimHueShiftColorSpace);
-					rimIndirColor.rgb = hueShift(rimIndirColor.rgb, RimHueShift + _Time.x * RimHueShiftSpeed, RimHueShiftColorSpace);
-				}
-				rimColor.rgb = lerp(rimColor.rgb, rimColor.rgb * poiFragData.baseColor, RimMainStrength);
-				float3 centerViewDir = !IsOrthographicCamera() ? normalize(getCameraPosition() - poiMesh.worldPos.xyz) : normalize(UNITY_MATRIX_I_V._m02_m12_m22);
-				float3 viewDir = lerp(centerViewDir, poiCam.viewDir, RimVRParallaxStrength);
-				float3 normal = lerp(poiMesh.normals[0], poiMesh.normals[1], RimNormalStrength);
-				float nvabs = abs(dot(normal, viewDir));
-				float lnRaw = dot(poiLight.direction, normal) * 0.5 + 0.5;
-				float lnDir = saturate((lnRaw + RimDirRange) / (1.0 + RimDirRange));
-				float lnIndir = saturate((1.0 - lnRaw + RimIndirRange) / (1.0 + RimIndirRange));
-				float rim = pow(saturate(1.0 - nvabs), RimFresnelPower);
-				rim = !poiMesh.isFrontFace && RimBackfaceMask ? 0.0 : rim;
-				float rimDir = lerp(rim, rim * lnDir, RimDirStrength);
-				float rimIndir = rim * lnIndir * RimDirStrength;
-				rimDir = poiEdgeLinear(rimDir, RimBorder, RimBlur);
-				rimIndir = poiEdgeLinear(rimIndir, RimIndirBorder, RimIndirBlur);
-				rimDir = lerp(rimDir, rimDir * poiLight.rampedLightMap, RimShadowMask);
-				rimIndir = lerp(rimIndir, rimIndir * poiLight.rampedLightMap, RimShadowMask);
-				float3 lightCol = poiLight.finalLighting;
-				#if !defined(POI_PASS_ADD)
-				float3 rimLightMul = 1 - RimEnableLighting + lightCol * RimEnableLighting;
-				#else
-				float3 rimLightMul = RimBlendMode < 3 ? lightCol * RimEnableLighting : 1;
-				#endif
-				poiFragData.finalColor = lilBlendColor(poiFragData.finalColor, rimColor.rgb * rimLightMul, rimDir * rimColor.a, RimBlendMode);
-				poiFragData.finalColor = lilBlendColor(poiFragData.finalColor, rimIndirColor.rgb * rimLightMul, rimIndir * rimIndirColor.a, RimBlendMode);
-			}
-			#endif
-			#endif
-			#ifdef _SUNDISK_SIMPLE
-			float3 RandomColorFromPoint(float2 rando, PoiMods poiMods)
-			{
-				fixed hue = random2(rando.x + rando.y).x;
-				fixed saturation = lerp(float4(0.8,1,0,1).x, float4(0.8,1,0,1).y, rando.x);
-				fixed value = lerp(float4(0.8,1,0,1).x, float4(0.8,1,0,1).y, rando.y);
-				float3 hsv = float3(hue, saturation, value);
-				return HSVtoRGB(hsv);
-			}
-			void applyGlitter(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiCam poiCam, in PoiLight poiLight, in PoiMods poiMods)
-			{
-				float glitterRotationTimeOffset = 0;
+				voronoi = pow(voronoi, (0.5 /*_VoronoiPower*/));
+				float2 voronoiGradient = float4(0,1,0,0).xy + edgeNoise;
 				#ifdef POI_AUDIOLINK
-				if ((0.0 /*_GlitterALEnabled*/))
-				{
-					glitterRotationTimeOffset += AudioLinkGetChronoTime((0.0 /*_GlitterALChronoRotationSpeedType*/), (0.0 /*_GlitterALChronoRotationSpeedBand*/)) * (0.0 /*_GlitterALChronoRotationSpeed*/);
-				}
+				voronoiGradient.x += (0.0 /*_AudioLinkVoronoiGradientMinAdd*/) * poiMods.audioLink[(0 /*_AudioLinkVoronoiGradientMinAddBand*/)];
+				voronoiGradient.y -= (0.0 /*_AudioLinkVoronoiGradientMaxAdd*/) * poiMods.audioLink[(0 /*_AudioLinkVoronoiGradientMaxAddBand*/)];
 				#endif
-				for (int glitterLayer = 0; glitterLayer < (1.0 /*_GlitterLayers*/); glitterLayer++)
+				float ramp = smoothstep(voronoiGradient.x, voronoiGradient.y, voronoi);
+				if ((0 /*_VoronoiBlend*/) == 0)
 				{
-					float2 st = (poiMesh.uv[(0.0 /*_GlitterUV*/)] + float4(0,0,0,0).xy * _Time.x) * (100.0 /*_GlitterFrequency*/);
-					float2 i_st = floor(st);
-					float2 f_st = frac(st);
-					float m_dist = 10.;  // minimun distance
-					float2 m_point = 0;        // minimum point
-					float2 randoPoint = 0;
-					float2 dank = 0;
-					for (int j = -1; j <= 1; j++)
+					float4 voronoiColor = lerp(outerColor, innerColor, ramp);
+					poiFragData.baseColor.rgb = lerp(poiFragData.baseColor.rgb, voronoiColor, min(mask * voronoiColor.a, 0.99999));
+					if ((0 /*_VoronoiAffectsMaterialAlpha*/))
 					{
-						for (int i = -1; i <= 1; i++)
-						{
-							float2 neighbor = float2(i, j);
-							float2 pos = random2(i_st + neighbor + glitterLayer * 0.5141);
-							float2 rando = pos;
-							pos = pos * (0.0 /*_GlitterRandomLocation*/);
-							float2 diff = neighbor + pos - f_st;
-							float dist = length(diff);
-							if (dist < m_dist)
-							{
-								dank = diff;
-								m_dist = dist;
-								m_point = pos;
-								randoPoint = rando;
-							}
-						}
-					}
-					float randomFromPoint = random(randoPoint);
-					float size = (0.086 /*_GlitterSize*/);
-					
-					if ((0.0 /*_GlitterRandomSize*/))
-					{
-						size = lerp(float4(0.1,0.5,0,1).x, float4(0.1,0.5,0,1).y, randomFromPoint);
-					}
-					#ifdef POI_AUDIOLINK
-					if ((0.0 /*_GlitterALEnabled*/))
-					{
-						size = saturate(size + lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[(0.0 /*_GlitterALSizeAddBand*/)]));
-					}
-					#endif
-					half glitterAlpha = 1;
-					switch((1.0 /*_GlitterShape*/))
-					{
-						case 0: //circle
-						glitterAlpha = saturate((size - m_dist) / clamp(fwidth(m_dist), 0.0001, 1.0));
-						break;
-						case 1: //sqaure
-						float jaggyFix = pow(poiCam.distanceToVert, 2) * (0.0 /*_GlitterJaggyFix*/);
-						
-						if ((0.0 /*_GlitterRandomRotation*/) == 1 || (0.0 /*_GlitterTextureRotation*/) != 0 || float4(0,0,0,0).x != 0 || float4(0,0,0,0).y != 0 || glitterRotationTimeOffset != 0)
-						{
-							float2 center = float2(0, 0);
-							float2 glitterRandomRotationSpeed = 0;
-							float randomBoy = 0;
-							
-							if ((0.0 /*_GlitterRandomRotation*/) || float4(0,0,0,0).x != 0 || float4(0,0,0,0).y != 0)
-							{
-								randomBoy = random(m_point * 200);
-								glitterRandomRotationSpeed = lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, randomBoy);
-							}
-							if (glitterRandomRotationSpeed.x + glitterRandomRotationSpeed.y + (0.0 /*_GlitterTextureRotation*/) == 0 && glitterRotationTimeOffset != 0)
-							{
-								glitterRandomRotationSpeed = 1;
-							}
-							float theta = radians((randomBoy + (_Time.x + glitterRotationTimeOffset) * ((0.0 /*_GlitterTextureRotation*/) + glitterRandomRotationSpeed)) * 360);
-							float cs = cos(theta);
-							float sn = sin(theta);
-							dank = float2((dank.x - center.x) * cs - (dank.y - center.y) * sn + center.x, (dank.x - center.x) * sn + (dank.y - center.y) * cs + center.y);
-							glitterAlpha = (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.x))) * (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.y)));
-						}
-						else
-						{
-							glitterAlpha = (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.x))) * (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.y)));
-						}
-						break;
-					}
-					float3 finalGlitter = 0;
-					half3 glitterColor = poiThemeColor(poiMods, float4(1,1,1,1).rgb, (0.0 /*_GlitterColorThemeIndex*/));
-					float3 norm = lerp(poiMesh.normals[0], poiMesh.normals[1], (0.0 /*_GlitterUseNormals*/));
-					float3 randomRotation = 0;
-					float glitterSpeedOffset = 0;
-					#ifdef POI_AUDIOLINK
-					if ((0.0 /*_GlitterALEnabled*/))
-					{
-						glitterSpeedOffset += AudioLinkGetChronoTime((0.0 /*_GlitterALChronoSparkleSpeedType*/), (0.0 /*_GlitterALChronoSparkleSpeedBand*/)) * (0.0 /*_GlitterALChronoSparkleSpeed*/);
-					}
-					#endif
-					switch((0.0 /*_GlitterMode*/))
-					{
-						case 0:
-						
-						if ((10.0 /*_GlitterSpeed*/) + glitterSpeedOffset > 0)
-						{
-							randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (10.0 /*_GlitterSpeed*/), glitterSpeedOffset);
-						}
-						else
-						{
-							randomRotation = randomFloat3Range(randoPoint, (90.0 /*_GlitterAngleRange*/));
-						}
-						float3 glitterReflectionDirection = normalize(mul(poiRotationMatrixFromAngles(randomRotation), norm));
-						finalGlitter = lerp(0, (0.0 /*_GlitterMinBrightness*/) * glitterAlpha, glitterAlpha) + max(pow(saturate(dot(lerp(glitterReflectionDirection, poiCam.viewDir, (0.8 /*_GlitterBias*/)), poiCam.viewDir)), (300.0 /*_GlitterContrast*/)), 0);
-						finalGlitter *= glitterAlpha;
-						break;
-						case 1:
-						float randomOffset = random(randoPoint);
-						float brightness = (sin((_Time.x * 10 + randomOffset +glitterSpeedOffset) * (10.0 /*_GlitterSpeed*/)) * .5 + .5);
-						finalGlitter = max((0.0 /*_GlitterMinBrightness*/) * glitterAlpha, brightness * glitterAlpha * smoothstep(0, 1, 1 - m_dist * (0.08 /*_GlitterCenterSize*/) * 10));
-						break;
-						case 2:
-						if ((10.0 /*_GlitterSpeed*/) + glitterSpeedOffset > 0)
-						{
-							randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (10.0 /*_GlitterSpeed*/), glitterSpeedOffset);
-						}
-						else
-						{
-							randomRotation = randomFloat3Range(randoPoint, (90.0 /*_GlitterAngleRange*/));
-						}
-						float3 glitterLightReflectionDirection = normalize(mul(poiRotationMatrixFromAngles(randomRotation), norm));
-						glitterAlpha *= poiLight.nDotLSaturated;
-						float3 halfDir = normalize(poiLight.direction + poiCam.viewDir);
-						float specAngle = max(dot(halfDir, glitterLightReflectionDirection), 0.0);
-						finalGlitter = lerp(0, (0.0 /*_GlitterMinBrightness*/) * glitterAlpha, glitterAlpha) + max(pow(specAngle, (300.0 /*_GlitterContrast*/)), 0);
-						glitterColor *= poiLight.directColor;
-						finalGlitter *= glitterAlpha;
-						break;
-					}
-					glitterColor *= lerp(1, poiFragData.baseColor, (0.0 /*_GlitterUseSurfaceColor*/));
-					#if defined(PROP_GLITTERCOLORMAP) || !defined(OPTIMIZER_ENABLED)
-					glitterColor *= POI2D_SAMPLER_PAN(_GlitterColorMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_GlitterColorMapUV*/)], float4(1,1,0,0)), float4(0,0,0,0)).rgb;
-					#endif
-					float2 uv = remapClamped(-size, size, dank, 0, 1);
-					
-					if ((0.0 /*_GlitterRandomRotation*/) == 1 || (0.0 /*_GlitterTextureRotation*/) != 0 || float4(0,0,0,0).x != 0 || float4(0,0,0,0).y && !(1.0 /*_GlitterShape*/) || glitterRotationTimeOffset != 0)
-					{
-						float2 fakeUVCenter = float2(.5, .5);
-						float randomBoy = 0;
-						float2 glitterRandomRotationSpeed = 0;
-						
-						if ((0.0 /*_GlitterRandomRotation*/) || float4(0,0,0,0).x != 0 || float4(0,0,0,0).y != 0)
-						{
-							randomBoy = random(randoPoint * 20);
-							glitterRandomRotationSpeed = lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, randomBoy);
-						}
-						if (glitterRandomRotationSpeed.x + glitterRandomRotationSpeed.y + (0.0 /*_GlitterTextureRotation*/) == 0 && glitterRotationTimeOffset != 0)
-						{
-							glitterRandomRotationSpeed = 1;
-						}
-						float theta = radians((randomBoy + (_Time.x + glitterRotationTimeOffset) * ((0.0 /*_GlitterTextureRotation*/) + glitterRandomRotationSpeed)) * 360);
-						float cs = cos(theta);
-						float sn = sin(theta);
-						uv = float2((uv.x - fakeUVCenter.x) * cs - (uv.y - fakeUVCenter.y) * sn + fakeUVCenter.x, (uv.x - fakeUVCenter.x) * sn + (uv.y - fakeUVCenter.y) * cs + fakeUVCenter.y);
-					}
-					#if defined(PROP_GLITTERTEXTURE) || !defined(OPTIMIZER_ENABLED)
-					float4 glitterTexture = POI2D_SAMPLER_PANGRAD(_GlitterTexture, _linear_clamp, poiUV(uv, float4(1,1,0,0)), _GlitterTexturePan, poiMesh.dx, poiMesh.dy);
-					#else
-					float4 glitterTexture = 1;
-					#endif
-					glitterColor *= glitterTexture.rgb;
-					#if defined(PROP_GLITTERMASK) || !defined(OPTIMIZER_ENABLED)
-					float glitterMask = POI2D_SAMPLER_PAN(_GlitterMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_GlitterMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0.0 /*_GlitterMaskChannel*/)];
-					#else
-					float glitterMask = 1;
-					#endif
-					#ifdef POI_AUDIOLINK
-					if ((0.0 /*_GlitterALEnabled*/))
-					{
-						glitterMask = clamp(glitterMask + lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[(0.0 /*_GlitterALAlphaAddBand*/)]), 0, glitterMask);
-					}
-					#endif
-					if ((0.0 /*_GlitterMaskInvert*/))
-					{
-						glitterMask = 1 - glitterMask;
-					}
-					glitterMask *= lerp(1, poiLight.rampedLightMap, (0.0 /*_GlitterHideInShadow*/));
-					glitterMask *= lerp(1, poiLight.directLuminance, (0.0 /*_GlitterScaleWithLighting*/));
-					glitterMask *= float4(1,1,1,1).a;
-					if ((0.0 /*_GlitterMaskGlobalMask*/) > 0)
-					{
-						glitterMask = maskBlend(glitterMask, poiMods.globalMask[(0.0 /*_GlitterMaskGlobalMask*/) - 1], (2.0 /*_GlitterMaskGlobalMaskBlendType*/));
-					}
-					if ((0.0 /*_GlitterRandomColors*/))
-					{
-						glitterColor *= RandomColorFromPoint(random2(randoPoint.x + randoPoint.y), poiMods);
-					}
-					
-					if ((0.0 /*_GlitterHueShiftEnabled*/))
-					{
-						glitterColor.rgb = hueShift(glitterColor.rgb, (1.0 /*_GlitterHueShift*/) + _Time.x * (1.0 /*_GlitterHueShiftSpeed*/), (1.0 /*_GlitteHueShiftColorSpace*/));
-					}
-					float GlitterbrightnessOffset = 0;
-					#ifdef POI_AUDIOLINK
-					if ((0.0 /*_GlitterALEnabled*/))
-					{
-						GlitterbrightnessOffset = max(GlitterbrightnessOffset +lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[(0.0 /*_GlitterALMaxBrightnessBand*/)]), 0);
-					}
-					#endif
-					
-					if ((0.0 /*_GlitterBlendType*/) == 1)
-					{
-						poiFragData.baseColor = lerp(poiFragData.baseColor, finalGlitter * glitterColor * ((3.0 /*_GlitterBrightness*/) + GlitterbrightnessOffset), finalGlitter * glitterTexture.a * glitterMask);
-						poiFragData.emission += finalGlitter * glitterColor * max(0, (((3.0 /*_GlitterBrightness*/) + GlitterbrightnessOffset) - 1) * glitterTexture.a) * glitterMask;
-					}
-					else
-					{
-						poiFragData.emission += finalGlitter * glitterColor * ((3.0 /*_GlitterBrightness*/) + GlitterbrightnessOffset) * glitterTexture.a * glitterMask;
+						poiFragData.alpha = lerp(poiFragData.alpha, voronoiColor.a, min(mask, 0.99999));
 					}
 				}
+				float outerEmissionStrength = (0.0 /*_VoronoiOuterEmissionStrength*/);
+				float innerEmissionStrength = (0.0 /*_VoronoiInnerEmissionStrength*/);
+				#ifdef POI_AUDIOLINK
+				outerEmissionStrength += lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[(0 /*_AudioLinkVoronoiOuterEmissionBand*/)]);
+				innerEmissionStrength += lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[(0 /*_AudioLinkVoronoiInnerEmissionBand*/)]);
+				#endif
+				float4 voronoiEmissionColor = lerp(outerColor, innerColor, ramp);
+				voronoiEmissionColor.rgb *= lerp(outerEmissionStrength, innerEmissionStrength, ramp);
+				poiFragData.emission += voronoiEmissionColor.rgb * mask * voronoiEmissionColor.a;
 			}
 			#endif
 			float4 frag(VertexOut i, uint facing : SV_IsFrontFace) : SV_Target
@@ -3922,12 +3597,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				poiLight.indirectColor = max(poiLight.indirectColor, 0.0001);
 				if ((0.0 /*_LightingColorMode*/) == 3)
 				{
-					poiLight.directColor = max(poiLight.directColor, (1.0 /*_LightingMinLightBrightness*/));
+					poiLight.directColor = max(poiLight.directColor, (0.0 /*_LightingMinLightBrightness*/));
 				}
 				else
 				{
-					poiLight.directColor = max(poiLight.directColor, poiLight.directColor * min(10000, ((1.0 /*_LightingMinLightBrightness*/) * rcp(calculateluminance(poiLight.directColor)))));
-					poiLight.indirectColor = max(poiLight.indirectColor, poiLight.indirectColor * min(10000, ((1.0 /*_LightingMinLightBrightness*/) * rcp(calculateluminance(poiLight.indirectColor)))));
+					poiLight.directColor = max(poiLight.directColor, poiLight.directColor * min(10000, ((0.0 /*_LightingMinLightBrightness*/) * rcp(calculateluminance(poiLight.directColor)))));
+					poiLight.indirectColor = max(poiLight.indirectColor, poiLight.indirectColor * min(10000, ((0.0 /*_LightingMinLightBrightness*/) * rcp(calculateluminance(poiLight.indirectColor)))));
 				}
 				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), (0.0 /*_LightingMonochromatic*/));
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), (0.0 /*_LightingMonochromatic*/));
@@ -4006,8 +3681,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				poiLight.lightMapNoAttenuation = poiLight.lightMap;
 				poiLight.lightMap *= lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
-				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(0,0,0,1).rgb, (0.0 /*_ColorThemeIndex*/));
-				poiFragData.alpha = mainTexture.a * float4(0,0,0,1).a;
+				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(0.2140411,0.06346862,0.0263546,1).rgb, (0.0 /*_ColorThemeIndex*/));
+				poiFragData.alpha = mainTexture.a * float4(0.2140411,0.06346862,0.0263546,1).a;
 				#if defined(PROP_ALPHAMASK) || !defined(OPTIMIZER_ENABLED)
 				if ((2.0 /*_MainAlphaMaskMode*/))
 				{
@@ -4056,44 +3731,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				#if defined(GEOM_TYPE_BRANCH) || defined(GEOM_TYPE_BRANCH_DETAIL) || defined(GEOM_TYPE_FROND) || defined(DEPTH_OF_FIELD_COC_VIEW)
 				applyDecals(poiFragData, poiMesh, poiCam, poiMods, poiLight);
 				#endif
-				#ifdef _GLOSSYREFLECTIONS_OFF
-				#ifdef _RIMSTYLE_POIYOMI
-				#if defined(PROP_RIMMASK) || !defined(OPTIMIZER_ENABLED)
-				float4 rimMaskAndBias = POI2D_SAMPLER_PAN(_RimMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_RimMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0));
-				float rimMask = rimMaskAndBias[(0.0 /*_RimMaskChannel*/)];
-				float rimBias = rimMaskAndBias.a;
-				#else
-				float rimMask = 1;
-				float rimBias = 0;
-				#endif
-				if ((0.0 /*_RimMaskInvert*/))
-				{
-					rimMask = 1 - rimMask;
-				}
-				#if defined(PROP_RIMTEX) || !defined(OPTIMIZER_ENABLED)
-				float4 rimColor = POI2D_SAMPLER_PAN(_RimTex, _MainTex, poiUV(poiMesh.uv[(0.0 /*_RimTexUV*/)], float4(1,1,0,0)), float4(0,0,0,0));
-				#else
-				float4 rimColor = 1;
-				#endif
-				half AudioLinkRimWidthBand = 0;
-				float2 AudioLinkRimWidthAdd = 0;
-				half AudioLinkRimEmissionBand = 0;
-				float2 AudioLinkRimEmissionAdd = 0;
-				half AudioLinkRimBrightnessBand = 0;
-				float2 AudioLinkRimBrightnessAdd = 0;
-				#ifdef POI_AUDIOLINK
-				AudioLinkRimWidthBand = (0.0 /*_AudioLinkRimWidthBand*/);
-				AudioLinkRimWidthAdd = float4(0,0,0,0);
-				AudioLinkRimEmissionBand = (0.0 /*_AudioLinkRimEmissionBand*/);
-				AudioLinkRimEmissionAdd = float4(0,0,0,0);
-				AudioLinkRimBrightnessBand = (0.0 /*_AudioLinkRimBrightnessBand*/);
-				AudioLinkRimBrightnessAdd = float4(0,0,0,0);
-				#endif
-				ApplyPoiyomiRimLighting(poiFragData, poiMesh, poiCam, poiLight, poiMods, (1.0 /*_Is_NormalMapToRimLight*/), (0.0 /*_RimLightingInvert*/), (0.74 /*_RimPower*/), (12.6 /*_RimStrength*/), (0.0 /*_RimShadowWidth*/), (0.0 /*_RimShadowToggle*/), (0.0 /*_RimWidth*/), (1.0 /*_RimBlendStrength*/), rimMask, (0.0 /*_RimGlobalMask*/), (2.0 /*_RimGlobalMaskBlendType*/), rimColor, float4(1,1,1,1), (0.0 /*_RimLightColorThemeIndex*/), (0.0 /*_RimHueShiftEnabled*/), (0.0 /*_RimHueShift*/), (0.0 /*_RimHueShiftColorSpace*/), (0.0 /*_RimHueShiftSpeed*/),  (0.25 /*_RimSharpness*/), (0.0 /*_RimShadowMaskRampType*/), (0.0 /*_RimShadowMaskInvert*/), (1.0 /*_RimShadowMaskStrength*/), float4(0,0,0,1), (0.0 /*_RimApplyGlobalMaskIndex*/), (2.0 /*_RimApplyGlobalMaskBlendType*/), (0.0 /*_RimBaseColorMix*/), (1.0 /*_RimBrightness*/), (0.0 /*_RimPoiBlendMode*/), AudioLinkRimWidthBand, AudioLinkRimWidthAdd, AudioLinkRimEmissionBand, AudioLinkRimEmissionAdd, AudioLinkRimBrightnessBand, AudioLinkRimBrightnessAdd, rimBias, (0.0 /*_RimBiasIntensity*/), (0 /*_RimApplyAlpha*/), (1.0 /*_RimApplyAlphaBlend*/));
-				#endif
-				#endif
-				#ifdef _SUNDISK_SIMPLE
-				applyGlitter(poiFragData, poiMesh, poiCam, poiLight, poiMods);
+				#ifdef POI_VORONOI
+				ApplyVoronoi(poiFragData, poiMesh, poiMods);
 				#endif
 				
 				if ((0.0 /*_AlphaPremultiply*/))
@@ -4102,8 +3741,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				}
 				poiFragData.finalColor = poiFragData.baseColor;
 				poiFragData.finalColor = poiFragData.baseColor * poiLight.finalLighting;
-				#ifdef _GLOSSYREFLECTIONS_OFF
-				#endif
 				if ((0.0 /*_IgnoreFog*/) == 0)
 				{
 					UNITY_APPLY_FOG(i.fogCoord, poiFragData.finalColor);
@@ -4117,7 +3754,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				if ((0.0 /*_Mode*/) == POI_MODE_OPAQUE)
 				{
 				}
-				clip(poiFragData.alpha - (0.545 /*_Cutoff*/));
+				clip(poiFragData.alpha - (0.5 /*_Cutoff*/));
 				if ((0.0 /*_Mode*/) == POI_MODE_CUTOUT && !(0.0 /*_AlphaToCoverage*/))
 				{
 					poiFragData.alpha = 1;
@@ -4149,13 +3786,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 			BlendOp [_AddBlendOp], [_AddBlendOpAlpha]
 			Blend [_AddSrcBlend] [_AddDstBlend], [_AddSrcBlendAlpha] [_AddDstBlendAlpha]
 			CGPROGRAM
+ #define POI_VORONOI 
  #define VIGNETTE_MASKED 
- #define _GLOSSYREFLECTIONS_OFF 
  #define _LIGHTINGMODE_FLAT 
- #define _RIM2STYLE_POIYOMI 
- #define _RIMSTYLE_POIYOMI 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
- #define _SUNDISK_SIMPLE 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma skip_variants LIGHTMAP_ON DYNAMICLIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK DIRLIGHTMAP_COMBINED _MIXED_LIGHTING_SUBTRACTIVE
@@ -4394,137 +4028,56 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				float matcapALChronoPanBand;
 				float matcapALChronoPanSpeed;
 			};
-			#ifdef _GLOSSYREFLECTIONS_OFF
-			float _Is_NormalMapToRimLight;
-			float4 _RimLightColor;
-			float _RimLightColorThemeIndex;
-			#ifdef _RIMSTYLE_POIYOMI
-			float _RimLightingInvert;
-			float _RimWidth;
-			float _RimStrength;
-			float _RimSharpness;
-			float _RimBaseColorMix;
-			float _EnableRimLighting;
-			float _RimWidthNoiseStrength;
-			float4 _RimShadowAlpha;
-			float _RimShadowWidth;
-			float _RimBlendStrength;
-			float _RimPoiBlendMode;
-			float _RimShadowToggle;
-			float _RimPower;
-			float _RimShadowMaskStrength;
-			float _RimShadowMaskRampType;
-			float _RimShadowMaskInvert;
-			float _RimBrightness;
-			#if defined(PROP_RIMTEX) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _RimTex;
+			#ifdef POI_VORONOI
+			#if defined(PROP_VORONOIMASK) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _VoronoiMask;
+			float4 _VoronoiMask_ST;
+			float2 _VoronoiMaskPan;
+			float _VoronoiMaskUV;
+			int _VoronoiMaskChannel;
 			#endif
-			float4 _RimTex_ST;
-			float2 _RimTexPan;
-			float _RimTexUV;
-			#if defined(PROP_RIMMASK) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _RimMask;
+			#if defined(PROP_VORONOINOISE) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _VoronoiNoise;
+			float4 _VoronoiNoise_ST;
+			float2 _VoronoiNoisePan;
+			float _VoronoiNoiseUV;
+			int _VoronoiNoiseChannel;
 			#endif
-			float4 _RimMask_ST;
-			float2 _RimMaskPan;
-			float _RimMaskUV;
-			float _RimMaskChannel;
-			float _RimMaskInvert;
-			float _RimBiasIntensity;
-			int _RimApplyAlpha;
-			float _RimApplyAlphaBlend;
-			#ifdef POI_AUDIOLINK
-			half _AudioLinkRimWidthBand;
-			float2 _AudioLinkRimWidthAdd;
-			half _AudioLinkRimEmissionBand;
-			float2 _AudioLinkRimEmissionAdd;
-			half _AudioLinkRimBrightnessBand;
-			float2 _AudioLinkRimBrightnessAdd;
-			#endif
-			#endif
-			float _RimGlobalMask;
-			float _RimGlobalMaskBlendType;
-			float _RimApplyGlobalMaskIndex;
-			float _RimApplyGlobalMaskBlendType;
-			float _RimHueShiftEnabled;
-			float _RimHueShiftColorSpace;
-			float _RimHueShiftSpeed;
-			float _RimHueShift;
-			#endif
-			#ifdef _SUNDISK_SIMPLE
-			float4 _GlitterRandomRotationSpeed;
-			float _GlitterLayers;
-			float _GlitterUseNormals;
-			float _GlitterUV;
-			float4 _GlitterColor;
-			float _GlitterColorThemeIndex;
-			float2 _GlitterPan;
-			half _GlitterSpeed;
-			half _GlitterBrightness;
-			float _GlitterFrequency;
-			float _GlitterRandomLocation;
-			half _GlitterSize;
-			half _GlitterContrast;
-			half _GlitterAngleRange;
-			half _GlitterMinBrightness;
-			half _GlitterBias;
-			fixed _GlitterUseSurfaceColor;
-			float _GlitterBlendType;
-			float _GlitterMode;
-			float _GlitterShape;
-			float _GlitterCenterSize;
-			float _GlitterJaggyFix;
-			float _GlitterTextureRotation;
-			float2 _GlitterUVPanning;
-			float _GlitterHueShiftEnabled;
-			float _GlitteHueShiftColorSpace;
-			float _GlitterHueShiftSpeed;
-			float _GlitterHueShift;
-			float _GlitterHideInShadow;
-			float _GlitterScaleWithLighting;
-			float _GlitterRandomColors;
-			float2 _GlitterMinMaxSaturation;
-			float2 _GlitterMinMaxBrightness;
-			float _GlitterRandomSize;
-			float4 _GlitterMinMaxSize;
-			float _GlitterRandomRotation;
-			#if defined(PROP_GLITTERMASK) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _GlitterMask;
-			#endif
-			float4 _GlitterMask_ST;
-			float2 _GlitterMaskPan;
-			float _GlitterMaskUV;
-			float _GlitterMaskChannel;
-			float _GlitterMaskInvert;
-			float _GlitterMaskGlobalMask;
-			float _GlitterMaskGlobalMaskBlendType;
-			#if defined(PROP_GLITTERCOLORMAP) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _GlitterColorMap;
-			#endif
-			float4 _GlitterColorMap_ST;
-			float2 _GlitterColorMapPan;
-			float _GlitterColorMapUV;
-			#if defined(PROP_GLITTERTEXTURE) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _GlitterTexture;
-			#endif
-			float4 _GlitterTexture_ST;
-			float2 _GlitterTexturePan;
-			float _GlitterTextureUV;
-			float _GlitterALEnabled;
-			float _GlitterALAlphaAddBand;
-			float4 _GlitterALAlphaAdd;
-			float _GlitterALMinBrightnessBand;
-			float4 _GlitterALMinBrightnessAdd;
-			float _GlitterALMaxBrightnessBand;
-			float4 _GlitterALMaxBrightnessAdd;
-			float _GlitterALSizeAddBand;
-			float4 _GlitterALSizeAdd;
-			float _GlitterALChronoSparkleSpeedType;
-			float _GlitterALChronoSparkleSpeedBand;
-			float _GlitterALChronoSparkleSpeed;
-			float _GlitterALChronoRotationSpeedType;
-			float _GlitterALChronoRotationSpeedBand;
-			float _GlitterALChronoRotationSpeed;
+			int _VoronoiSpace;
+			int _VoronoiBlend;
+			int _VoronoiType;
+			float4 _VoronoiOuterColor;
+			float _VoronoiOuterEmissionStrength;
+			float4 _VoronoiInnerColor;
+			float _VoronoiInnerEmissionStrength;
+			float _VoronoiPower;
+			float2 _VoronoiGradient;
+			float _VoronoiScale;
+			float3 _VoronoiSpeed;
+			float _VoronoiEnableRandomCellColor;
+			float2 _VoronoiRandomMinMaxSaturation;
+			float2 _VoronoiRandomMinMaxBrightness;
+			float _VoronoiNoiseIntensity;
+			int _VoronoiAffectsMaterialAlpha;
+			float _VoronoiGlobalMask;
+			float _VoronoiGlobalMaskBlendType;
+			int _AudioLinkVoronoiInnerEmissionBand;
+			float2 _AudioLinkVoronoiInnerEmission;
+			int _AudioLinkVoronoiOuterEmissionBand;
+			float2 _AudioLinkVoronoiOuterEmission;
+			int _AudioLinkVoronoiGradientMinAddBand;
+			float _AudioLinkVoronoiGradientMinAdd;
+			int _AudioLinkVoronoiGradientMaxAddBand;
+			float _AudioLinkVoronoiGradientMaxAdd;
+			int _AudioLinkVoronoiChronoSpeedXType;
+			int _AudioLinkVoronoiChronoSpeedXBand;
+			float _AudioLinkVoronoiChronoSpeedXSpeed;
+			int _AudioLinkVoronoiChronoSpeedYType;
+			int _AudioLinkVoronoiChronoSpeedYBand;
+			float _AudioLinkVoronoiChronoSpeedYSpeed;
+			int _AudioLinkVoronoiChronoSpeedZType;
+			int _AudioLinkVoronoiChronoSpeedZBand;
+			float _AudioLinkVoronoiChronoSpeedZSpeed;
 			#endif
 			struct appdata
 			{
@@ -5967,7 +5520,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				{
 					distanceOffset *= lerp(1.0, clamp((distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, o.localPos).xyz)), 0.0f, (1.0 /*_OutlinesMaxDistance*/)), (0.5 /*_OutlineFixWidth*/));
 				}
-				float lineWidth = (1.0 /*_LineWidth*/);
+				float lineWidth = (5.86 /*_LineWidth*/);
 				#ifdef POI_AUDIOLINK
 				if ((1.0 /*_AudioLinkAnimToggle*/))
 				{
@@ -6703,384 +6256,267 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				float2 uv = 0;
 			}
 			#endif
-			#if defined(_GLOSSYREFLECTIONS_OFF) || defined(POI_RIM2)
-			#if defined(_RIMSTYLE_POIYOMI) || defined(_RIM2STYLE_POIYOMI)
-			void ApplyPoiyomiRimLighting(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiCam poiCam, in PoiLight poiLight, inout PoiMods poiMods, float Is_NormalMapToRimLight, float RimInvert, float RimPower, float RimStrength, float RimShadowWidth, float RimShadowToggle, float RimWidth, float RimBlendStrength, float RimMask, float RimGlobalMask, float RimGlobalMaskBlendType, float4 RimTex, float4 RimLightColor, float RimLightColorThemeIndex, float RimHueShiftEnabled, float RimHueShift, float RimHueShiftColorSpace, float RimHueShiftSpeed, float RimSharpness, float RimShadowMaskRampType, float RimShadowMaskInvert, float RimShadowMaskStrength, float2 RimShadowAlpha, float RimApplyGlobalMaskIndex, float RimApplyGlobalMaskBlendType, float RimBaseColorMix, float RimBrightness, float RimBlendMode, half AudioLinkRimWidthBand, float2 AudioLinkRimWidthAdd, half AudioLinkRimEmissionBand, float2 AudioLinkRimEmissionAdd, half AudioLinkRimBrightnessBand, float2 AudioLinkRimBrightnessAdd, float rimBias, float rimBiasIntensity, int RimApplyAlpha, float RimApplyAlphaBlend)
+			#ifdef POI_VORONOI
+			#define VoronoiK 0.142857142857
+			#define VoronoiKo 0.428571428571
+			float3 Permutation(float3 x)
 			{
-				float viewDotNormal = abs(dot(poiCam.viewDir, lerp(poiMesh.normals[0], poiMesh.normals[1], Is_NormalMapToRimLight)));
+				return glsl_mod((34.0 * x + 1.0) * x, 289.0);
+			}
+			float3 inoise(float3 P, float jitter, out float3 randomPoint)
+			{
+				P *= 0.7f; // Scale adjustment
+				float3 Pi = glsl_mod(floor(P), 289.0);
+				float3 Pf = frac(P);
+				float3 oi = float3(-1.0, 0.0, 1.0);
+				float3 of = float3(-0.5, 0.5, 1.5);
+				float3 px = Permutation(Pi.x + oi);
+				float3 py = Permutation(Pi.y + oi);
+				float3 pz = Permutation(Pi.z + oi);
+				float3 p, ox, oy, oz, dx, dy, dz;
+				float3 F = 1e6;
+				[unroll(3)]
+				for (int i = 0; i < 3; i++)
+				{
+					[unroll(3)]
+					for (int j = 0; j < 3; j++)
+					{
+						[unroll(3)]
+						for (int k = 0; k < 3; k++)
+						{
+							p = Permutation(px[i] + py[j] + pz[k] + oi); // pij1, pij2, pij3
+							float3 ogp = p;
+							ox = frac(p * VoronoiK) - VoronoiKo;
+							oy = glsl_mod(floor(p * VoronoiK), 7.0) * VoronoiK - VoronoiKo;
+							p = Permutation(p);
+							oz = frac(p * VoronoiK) - VoronoiKo;
+							dx = Pf.x - of[i] + jitter * ox;
+							dy = Pf.y - of[j] + jitter * oy;
+							dz = Pf.z - of[k] + jitter * oz;
+							float3 d = dx * dx + dy * dy + dz * dz; // dij1, dij2 and dij3, squared
+							for (int n = 0; n < 3; n++)
+							{
+								if (d[n] < F[0])
+								{
+									F[1] = F[0];
+									F[0] = d[n];
+									randomPoint = p;
+								}
+								else if (d[n] < F[1])
+								{
+									F[1] = d[n];
+								}
+							}
+						}
+					}
+				}
+				return F;
+			}
+			float voronoi2D(in float2 x, float scale, float2 speed, out float2 randomPoint)
+			{
+				x *= scale;
+				x += speed * _Time.x;
+				float2 n = floor(x);
+				float2 f = frac(x);
+				float2 mg, mr;
+				float md = 8.0;
+				for (int j = -1; j <= 1; j++)
+				{
+					for (int i = -1; i <= 1; i++)
+					{
+						float2 g = float2(float(i), float(j));
+						float2 o = random2(n + g);
+						float2 currentPoint = o;
+						float2 r = g + o - f;
+						float d = dot(r, r);
+						if (d < md)
+						{
+							md = d;
+							mr = r;
+							mg = g;
+							randomPoint.xy = currentPoint;
+						}
+					}
+				}
+				md = 8.0;
+				for (int r = -2; r <= 2; r++)
+				{
+					for (int q = -2; q <= 2; q++)
+					{
+						float2 g = mg + float2(float(q), float(r));
+						float2 o = random2(n + g);
+						float2 r = g + o - f;
+						if (dot(mr - r, mr - r) > 0.00001)
+						{
+							md = min(md, dot(0.5 * (mr + r), normalize(r - mr)));
+						}
+					}
+				}
+				return md;
+			}
+			float voronoi3D(in float3 x, float scale, float3 speed, out float3 randomPoint)
+			{
+				x *= scale;
+				x += speed * _Time.x;
+				float3 n = floor(x);
+				float3 f = frac(x);
+				float3 mg, mr;
+				float md = 8.0;
+				for (int j = -1; j <= 1; j++)
+				{
+					for (int i = -1; i <= 1; i++)
+					{
+						for (int h = -1; h <= 1; h++)
+						{
+							float3 g = float3(float(h), float(i), float(j));
+							float3 o = random3(n + g);
+							float3 currentPoint = o;
+							float3 r = g + o - f;
+							float d = dot(r, r);
+							if (d < md)
+							{
+								md = d;
+								mr = r;
+								mg = g;
+								randomPoint = currentPoint;
+							}
+						}
+					}
+				}
+				md = 8.0;
+				for (int r = -2; r <= 2; r++)
+				{
+					for (int q = -2; q <= 2; q++)
+					{
+						for (int p = -2; p <= 2; p++)
+						{
+							float3 g = mg + float3(float(p), float(q), float(r));
+							float3 o = random3(n + g);
+							float3 r = g + o - f;
+							if (dot(mr - r, mr - r) > 0.00001)
+							{
+								md = min(md, dot(0.5 * (mr + r), normalize(r - mr)));
+							}
+						}
+					}
+				}
+				return md;
+			}
+			float VoronoiNoise_Octaves(float3 p, float scale, float3 speed, int octaveNumber, float octaveScale, float octaveAttenuation, float jitter, float time, out float3 randomPoint)
+			{
+				float freq = scale;
+				float weight = 1.0f;
+				float sum = 0;
+				float3 F = inoise(p * freq + time * speed, jitter, randomPoint) * weight;
+				sum += sqrt(F[0]);
+				return sum;
+			}
+			float VoronoiNoiseDiff_Octaves(float3 p, float scale, float3 speed, int octaveNumber, float octaveScale, float octaveAttenuation, float jitter, float time, out float3 randomPoint)
+			{
+				float freq = scale;
+				float weight = 1.0f;
+				float sum = 0;
+				float3 F = inoise(p * freq + time * speed, jitter, randomPoint) * weight;
+				sum += sqrt(F[1]) - sqrt(F[0]);
+				return sum;
+			}
+			void ApplyVoronoi(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiMods poiMods)
+			{
+				float voronoiOctaveNumber = 1;
+				float voronoiOctaveScale = 1;
+				float voronoiOctaveAttenuation = 1;
+				float3 randomPoint = 0;
+				float voronoi = 0;
+				float3 position = 0;
 				
-				if (RimInvert)
+				if ((0 /*_VoronoiSpace*/) == 0)
 				{
-					viewDotNormal = 1 - viewDotNormal;
+					position = poiMesh.localPos;
 				}
-				viewDotNormal = pow(viewDotNormal, RimPower);
-				if (RimShadowWidth && RimShadowToggle)
+				
+				if ((0 /*_VoronoiSpace*/) == 1)
 				{
-					viewDotNormal += lerp(0, (1 - poiLight.nDotLNormalized) * 3, RimShadowWidth);
+					position = poiMesh.worldPos;
 				}
-				viewDotNormal *= lerp(1, rimBias, rimBiasIntensity);
-				float rimStrength = RimStrength;
-				float rimWidth = lerp( - .05, 1, RimWidth);
-				float blendStrength = RimBlendStrength;
+				
+				if ((0 /*_VoronoiSpace*/) == 2)
+				{
+					position = float3(poiMesh.uv[0].x, poiMesh.uv[0].y, 0);
+				}
+				#if defined(PROP_VORONOIMASK) || !defined(OPTIMIZER_ENABLED)
+				float mask = POI2D_SAMPLER_PAN(_VoronoiMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_VoronoiMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0 /*_VoronoiMaskChannel*/)];
+				#else
+				float mask = 1;
+				#endif
+				if ((0.0 /*_VoronoiGlobalMask*/) > 0)
+				{
+					mask = maskBlend(mask, poiMods.globalMask[(0.0 /*_VoronoiGlobalMask*/) - 1], (2.0 /*_VoronoiGlobalMaskBlendType*/));
+				}
+				#if defined(PROP_VORONOINOISE) || !defined(OPTIMIZER_ENABLED)
+				float edgeNoise = POI2D_SAMPLER_PAN(_VoronoiNoise, _MainTex, poiUV(poiMesh.uv[(0.0 /*_VoronoiNoiseUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0 /*_VoronoiNoiseChannel*/)];
+				#else
+				float edgeNoise = 0;
+				#endif
+				edgeNoise *= (0.1 /*_VoronoiNoiseIntensity*/);
+				float3 voronoiSpeed = float4(0,0,0,1) * 10;
 				#ifdef POI_AUDIOLINK
-				
 				if (poiMods.audioLinkAvailable)
 				{
-					rimWidth = clamp(rimWidth + lerp(AudioLinkRimWidthAdd.x, AudioLinkRimWidthAdd.y, poiMods.audioLink[AudioLinkRimWidthBand]), - .05, 1);
-					rimStrength += lerp(AudioLinkRimEmissionAdd.x, AudioLinkRimEmissionAdd.y, poiMods.audioLink[AudioLinkRimEmissionBand]);
-					RimBrightness += lerp(AudioLinkRimBrightnessAdd.x, AudioLinkRimBrightnessAdd.y, poiMods.audioLink[AudioLinkRimBrightnessBand]);
+					position.x += AudioLinkGetChronoTime((0 /*_AudioLinkVoronoiChronoSpeedXType*/), (0 /*_AudioLinkVoronoiChronoSpeedXBand*/)) * (0.0 /*_AudioLinkVoronoiChronoSpeedXSpeed*/) * 0.01;
+					position.y += AudioLinkGetChronoTime((0 /*_AudioLinkVoronoiChronoSpeedYType*/), (0 /*_AudioLinkVoronoiChronoSpeedYBand*/)) * (0.0 /*_AudioLinkVoronoiChronoSpeedYSpeed*/) * 0.01;
+					position.z += AudioLinkGetChronoTime((0 /*_AudioLinkVoronoiChronoSpeedZType*/), (0 /*_AudioLinkVoronoiChronoSpeedZBand*/)) * (0.0 /*_AudioLinkVoronoiChronoSpeedZSpeed*/) * 0.01;
 				}
 				#endif
-				float rimMask = RimMask;
-				if (RimGlobalMask > 0)
+				if ((0 /*_VoronoiType*/) == 0) // Basic
 				{
-					rimMask = maskBlend(rimMask, poiMods.globalMask[RimGlobalMask - 1], RimGlobalMaskBlendType);
+					voronoi = voronoi2D(position.xy, (1.32 /*_VoronoiScale*/), voronoiSpeed, randomPoint.xy);
+					voronoi *= 1.55; // Range adjustment
 				}
-				float4 rimColor = RimTex;
-				rimColor *= float4(poiThemeColor(poiMods, RimLightColor.rgb, RimLightColorThemeIndex), RimLightColor.a);
-				
-				if (RimHueShiftEnabled)
+				if ((0 /*_VoronoiType*/) == 1) // Diff
 				{
-					rimColor.rgb = hueShift(rimColor.rgb, RimHueShift + _Time.x * RimHueShiftSpeed, RimHueShiftColorSpace);
+					voronoi = VoronoiNoiseDiff_Octaves(position, (1.32 /*_VoronoiScale*/), voronoiSpeed, voronoiOctaveNumber, voronoiOctaveScale, voronoiOctaveAttenuation, 1, _Time.x, randomPoint);
 				}
-				float rim = 1 - smoothstep(min(RimSharpness, rimWidth), rimWidth, viewDotNormal);
-				rim *= RimLightColor.a * rimColor.a * rimMask;
-				if (RimShadowToggle)
+				if ((0 /*_VoronoiType*/) == 2) // Fixed Border
 				{
-					switch(RimShadowMaskRampType)
-					{
-						case 0:
-						float rampedLightMap = poiLight.rampedLightMap;
-						if (RimShadowMaskInvert) rampedLightMap = 1 - rampedLightMap;
-						rim = lerp(rim, rim * rampedLightMap, RimShadowMaskStrength);
-						break;
-						case 1:
-						float nDotLNormalized = poiLight.nDotLNormalized;
-						if (RimShadowMaskInvert) nDotLNormalized = 1 - nDotLNormalized;
-						rim = lerp(rim, rim * smoothstep(RimShadowAlpha.x, RimShadowAlpha.y, nDotLNormalized), RimShadowMaskStrength);
-						break;
-					}
+					voronoi = voronoi3D(position, (1.32 /*_VoronoiScale*/), voronoiSpeed, randomPoint);
+					voronoi *= 1.8; // Range adjustment
 				}
-				if (RimApplyGlobalMaskIndex > 0)
+				float4 outerColor = float4(0.009166719,0.00278998,0.0008610645,1);
+				float4 innerColor = float4(0.05672633,0.01392266,0.007321635,1);
+				if ((1.0 /*_VoronoiEnableRandomCellColor*/) == 1)
 				{
-					applyToGlobalMask(poiMods, RimApplyGlobalMaskIndex - 1, RimApplyGlobalMaskBlendType, rim * blendStrength);
+					float3 rando = random3(randomPoint);
+					fixed hue = rando.x;
+					fixed saturation = lerp(float4(0,0.1,0,1).x, float4(0,0.1,0,1).y, rando.y);
+					fixed value = lerp(float4(0,0.1,0,1).x, float4(0,0.1,0,1).y, rando.z);
+					float3 hsv = float3(hue, saturation, value);
+					innerColor.rgb = HSVtoRGB(hsv);
 				}
-				if (RimApplyAlpha == 1) // Add
-				{
-					poiFragData.alpha += lerp(0, saturate(rim), RimApplyAlphaBlend);
-					poiFragData.alpha = saturate(poiFragData.alpha);
-				}
-				if (RimApplyAlpha == 2) // Multiply
-				{
-					poiFragData.alpha *= lerp(1, saturate(rim), RimApplyAlphaBlend);
-				}
-				float3 finalRimColor = rimColor.rgb * lerp(1, poiFragData.baseColor, RimBaseColorMix);
-				finalRimColor *= RimBrightness;
-				switch(RimBlendMode)
-				{
-					case 0: poiFragData.baseColor += finalRimColor * rim * blendStrength; break;
-					case 1: poiFragData.baseColor = lerp(poiFragData.baseColor, finalRimColor, rim * blendStrength); break;
-					case 2: poiFragData.baseColor = lerp(poiFragData.baseColor, poiFragData.baseColor * finalRimColor, rim * blendStrength); break;
-					case 3: poiFragData.baseColor = lerp(poiFragData.baseColor.rgb, poiFragData.baseColor.rgb + poiFragData.baseColor.rgb * finalRimColor, rim * blendStrength); break;
-					case 4: poiFragData.baseColor = lerp(poiFragData.baseColor, 1 - (1 - poiFragData.baseColor) * (1 - finalRimColor), rim * blendStrength); break;
-				}
-				poiFragData.emission += finalRimColor * rim * rimStrength;
-			}
-			#endif
-			#if defined(_RIMSTYLE_UTS2) || defined(_RIM2STYLE_UTS2)
-			void ApplyUTS2RimLighting(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiCam poiCam, in PoiLight poiLight, in PoiMods poiMods, float Set_RimLightMask_var, float RimGlobalMask, float RimGlobalMaskBlendType, float4 RimLightColor, float RimLightColorThemeIndex, float Is_LightColor_RimLight, float Is_NormalMapToRimLight, float RimLight_Power, float RimLight_InsideMask, float RimLight_FeatherOff, float LightDirection_MaskOn, float Tweak_LightDirection_MaskLevel, float Add_Antipodean_RimLight, float4 Ap_RimLightColor, float RimApColorThemeIndex, float Is_LightColor_Ap_RimLight, float Ap_RimLight_Power, float Ap_RimLight_FeatherOff, float Tweak_RimLightMaskLevel, float RimHueShiftEnabled, float RimHueShift, float RimHueShiftColorSpace, float RimHueShiftSpeed)
-			{
-				if (RimGlobalMask > 0)
-				{
-					Set_RimLightMask_var = maskBlend(Set_RimLightMask_var, poiMods.globalMask[RimGlobalMask - 1], RimGlobalMaskBlendType);
-				}
-				float3 rimColor = float3(poiThemeColor(poiMods, RimLightColor.rgb, RimLightColorThemeIndex));
-				float3 _Is_LightColor_RimLight_var = lerp(rimColor, (rimColor * poiLight.directColor), Is_LightColor_RimLight);
-				float _RimArea_var = (1.0 - dot(lerp(poiMesh.normals[0], poiMesh.normals[1], Is_NormalMapToRimLight), poiCam.viewDir));
-				float _RimLightPower_var = pow(_RimArea_var, exp2(lerp(3, 0, RimLight_Power)));
-				float _Rimlight_InsideMask_var = saturate(lerp((0.0 + ((_RimLightPower_var - RimLight_InsideMask) * (1.0 - 0.0)) / (1.0 - RimLight_InsideMask)), step(RimLight_InsideMask, _RimLightPower_var), RimLight_FeatherOff));
-				float _VertHalfLambert_var = 0.5 * dot(poiMesh.normals[0], poiLight.direction) + 0.5;
-				float3 _LightDirection_MaskOn_var = lerp((_Is_LightColor_RimLight_var * _Rimlight_InsideMask_var), (_Is_LightColor_RimLight_var * saturate((_Rimlight_InsideMask_var - ((1.0 - _VertHalfLambert_var) + Tweak_LightDirection_MaskLevel)))), LightDirection_MaskOn);
-				float _ApRimLightPower_var = pow(_RimArea_var, exp2(lerp(3, 0, Ap_RimLight_Power)));
-				float3 ApRimColor = float3(poiThemeColor(poiMods, Ap_RimLightColor.rgb, RimApColorThemeIndex));
-				float3 _RimLight_var = (saturate((Set_RimLightMask_var + Tweak_RimLightMaskLevel)) * lerp(_LightDirection_MaskOn_var, (_LightDirection_MaskOn_var + (lerp(ApRimColor, (ApRimColor * poiLight.directColor), Is_LightColor_Ap_RimLight) * saturate((lerp((0.0 + ((_ApRimLightPower_var - RimLight_InsideMask) * (1.0 - 0.0)) / (1.0 - RimLight_InsideMask)), step(RimLight_InsideMask, _ApRimLightPower_var), Ap_RimLight_FeatherOff) - (saturate(_VertHalfLambert_var) + Tweak_LightDirection_MaskLevel))))), Add_Antipodean_RimLight));
-				
-				if (RimHueShiftEnabled)
-				{
-					_RimLight_var = hueShift(_RimLight_var, RimHueShift + _Time.x * RimHueShiftSpeed, RimHueShiftColorSpace);
-				}
-				poiFragData.baseColor += _RimLight_var;
-			}
-			#endif
-			#if defined(_RIMSTYLE_LILTOON) || defined(_RIM2STYLE_LILTOON)
-			void ApplyLiltoonRimLighting(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiCam poiCam, in PoiLight poiLight, in PoiMods poiMods, float4 RimColor, float4 RimIndirColor, float4 RimColorTex, float RimMainStrength, float RimNormalStrength, float RimDirRange, float RimIndirRange, float RimFresnelPower, float RimBackfaceMask, float RimDirStrength, float RimBorder, float RimBlur, float RimIndirBorder, float RimIndirBlur, float RimShadowMask, float RimEnableLighting, float RimVRParallaxStrength, float RimGlobalMask, float RimGlobalMaskBlendType, float RimHueShiftEnabled, float RimHueShift, float RimHueShiftColorSpace, float RimHueShiftSpeed, int RimBlendMode)
-			{
-				if (RimGlobalMask > 0)
-				{
-					RimColorTex.a = maskBlend(RimColorTex.a, poiMods.globalMask[RimGlobalMask - 1], RimGlobalMaskBlendType);
-				}
-				float4 rimColor = RimColor;
-				float4 rimIndirColor = RimIndirColor;
-				rimColor *= RimColorTex;
-				rimIndirColor *= RimColorTex;
-				if (RimHueShiftEnabled)
-				{
-					rimColor.rgb = hueShift(rimColor.rgb, RimHueShift + _Time.x * RimHueShiftSpeed, RimHueShiftColorSpace);
-					rimIndirColor.rgb = hueShift(rimIndirColor.rgb, RimHueShift + _Time.x * RimHueShiftSpeed, RimHueShiftColorSpace);
-				}
-				rimColor.rgb = lerp(rimColor.rgb, rimColor.rgb * poiFragData.baseColor, RimMainStrength);
-				float3 centerViewDir = !IsOrthographicCamera() ? normalize(getCameraPosition() - poiMesh.worldPos.xyz) : normalize(UNITY_MATRIX_I_V._m02_m12_m22);
-				float3 viewDir = lerp(centerViewDir, poiCam.viewDir, RimVRParallaxStrength);
-				float3 normal = lerp(poiMesh.normals[0], poiMesh.normals[1], RimNormalStrength);
-				float nvabs = abs(dot(normal, viewDir));
-				float lnRaw = dot(poiLight.direction, normal) * 0.5 + 0.5;
-				float lnDir = saturate((lnRaw + RimDirRange) / (1.0 + RimDirRange));
-				float lnIndir = saturate((1.0 - lnRaw + RimIndirRange) / (1.0 + RimIndirRange));
-				float rim = pow(saturate(1.0 - nvabs), RimFresnelPower);
-				rim = !poiMesh.isFrontFace && RimBackfaceMask ? 0.0 : rim;
-				float rimDir = lerp(rim, rim * lnDir, RimDirStrength);
-				float rimIndir = rim * lnIndir * RimDirStrength;
-				rimDir = poiEdgeLinear(rimDir, RimBorder, RimBlur);
-				rimIndir = poiEdgeLinear(rimIndir, RimIndirBorder, RimIndirBlur);
-				rimDir = lerp(rimDir, rimDir * poiLight.rampedLightMap, RimShadowMask);
-				rimIndir = lerp(rimIndir, rimIndir * poiLight.rampedLightMap, RimShadowMask);
-				float3 lightCol = poiLight.finalLighting;
-				#if !defined(POI_PASS_ADD)
-				float3 rimLightMul = 1 - RimEnableLighting + lightCol * RimEnableLighting;
-				#else
-				float3 rimLightMul = RimBlendMode < 3 ? lightCol * RimEnableLighting : 1;
-				#endif
-				poiFragData.finalColor = lilBlendColor(poiFragData.finalColor, rimColor.rgb * rimLightMul, rimDir * rimColor.a, RimBlendMode);
-				poiFragData.finalColor = lilBlendColor(poiFragData.finalColor, rimIndirColor.rgb * rimLightMul, rimIndir * rimIndirColor.a, RimBlendMode);
-			}
-			#endif
-			#endif
-			#ifdef _SUNDISK_SIMPLE
-			float3 RandomColorFromPoint(float2 rando, PoiMods poiMods)
-			{
-				fixed hue = random2(rando.x + rando.y).x;
-				fixed saturation = lerp(float4(0.8,1,0,1).x, float4(0.8,1,0,1).y, rando.x);
-				fixed value = lerp(float4(0.8,1,0,1).x, float4(0.8,1,0,1).y, rando.y);
-				float3 hsv = float3(hue, saturation, value);
-				return HSVtoRGB(hsv);
-			}
-			void applyGlitter(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiCam poiCam, in PoiLight poiLight, in PoiMods poiMods)
-			{
-				float glitterRotationTimeOffset = 0;
+				voronoi = pow(voronoi, (0.5 /*_VoronoiPower*/));
+				float2 voronoiGradient = float4(0,1,0,0).xy + edgeNoise;
 				#ifdef POI_AUDIOLINK
-				if ((0.0 /*_GlitterALEnabled*/))
-				{
-					glitterRotationTimeOffset += AudioLinkGetChronoTime((0.0 /*_GlitterALChronoRotationSpeedType*/), (0.0 /*_GlitterALChronoRotationSpeedBand*/)) * (0.0 /*_GlitterALChronoRotationSpeed*/);
-				}
+				voronoiGradient.x += (0.0 /*_AudioLinkVoronoiGradientMinAdd*/) * poiMods.audioLink[(0 /*_AudioLinkVoronoiGradientMinAddBand*/)];
+				voronoiGradient.y -= (0.0 /*_AudioLinkVoronoiGradientMaxAdd*/) * poiMods.audioLink[(0 /*_AudioLinkVoronoiGradientMaxAddBand*/)];
 				#endif
-				for (int glitterLayer = 0; glitterLayer < (1.0 /*_GlitterLayers*/); glitterLayer++)
+				float ramp = smoothstep(voronoiGradient.x, voronoiGradient.y, voronoi);
+				if ((0 /*_VoronoiBlend*/) == 0)
 				{
-					float2 st = (poiMesh.uv[(0.0 /*_GlitterUV*/)] + float4(0,0,0,0).xy * _Time.x) * (100.0 /*_GlitterFrequency*/);
-					float2 i_st = floor(st);
-					float2 f_st = frac(st);
-					float m_dist = 10.;  // minimun distance
-					float2 m_point = 0;        // minimum point
-					float2 randoPoint = 0;
-					float2 dank = 0;
-					for (int j = -1; j <= 1; j++)
+					float4 voronoiColor = lerp(outerColor, innerColor, ramp);
+					poiFragData.baseColor.rgb = lerp(poiFragData.baseColor.rgb, voronoiColor, min(mask * voronoiColor.a, 0.99999));
+					if ((0 /*_VoronoiAffectsMaterialAlpha*/))
 					{
-						for (int i = -1; i <= 1; i++)
-						{
-							float2 neighbor = float2(i, j);
-							float2 pos = random2(i_st + neighbor + glitterLayer * 0.5141);
-							float2 rando = pos;
-							pos = pos * (0.0 /*_GlitterRandomLocation*/);
-							float2 diff = neighbor + pos - f_st;
-							float dist = length(diff);
-							if (dist < m_dist)
-							{
-								dank = diff;
-								m_dist = dist;
-								m_point = pos;
-								randoPoint = rando;
-							}
-						}
-					}
-					float randomFromPoint = random(randoPoint);
-					float size = (0.086 /*_GlitterSize*/);
-					
-					if ((0.0 /*_GlitterRandomSize*/))
-					{
-						size = lerp(float4(0.1,0.5,0,1).x, float4(0.1,0.5,0,1).y, randomFromPoint);
-					}
-					#ifdef POI_AUDIOLINK
-					if ((0.0 /*_GlitterALEnabled*/))
-					{
-						size = saturate(size + lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[(0.0 /*_GlitterALSizeAddBand*/)]));
-					}
-					#endif
-					half glitterAlpha = 1;
-					switch((1.0 /*_GlitterShape*/))
-					{
-						case 0: //circle
-						glitterAlpha = saturate((size - m_dist) / clamp(fwidth(m_dist), 0.0001, 1.0));
-						break;
-						case 1: //sqaure
-						float jaggyFix = pow(poiCam.distanceToVert, 2) * (0.0 /*_GlitterJaggyFix*/);
-						
-						if ((0.0 /*_GlitterRandomRotation*/) == 1 || (0.0 /*_GlitterTextureRotation*/) != 0 || float4(0,0,0,0).x != 0 || float4(0,0,0,0).y != 0 || glitterRotationTimeOffset != 0)
-						{
-							float2 center = float2(0, 0);
-							float2 glitterRandomRotationSpeed = 0;
-							float randomBoy = 0;
-							
-							if ((0.0 /*_GlitterRandomRotation*/) || float4(0,0,0,0).x != 0 || float4(0,0,0,0).y != 0)
-							{
-								randomBoy = random(m_point * 200);
-								glitterRandomRotationSpeed = lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, randomBoy);
-							}
-							if (glitterRandomRotationSpeed.x + glitterRandomRotationSpeed.y + (0.0 /*_GlitterTextureRotation*/) == 0 && glitterRotationTimeOffset != 0)
-							{
-								glitterRandomRotationSpeed = 1;
-							}
-							float theta = radians((randomBoy + (_Time.x + glitterRotationTimeOffset) * ((0.0 /*_GlitterTextureRotation*/) + glitterRandomRotationSpeed)) * 360);
-							float cs = cos(theta);
-							float sn = sin(theta);
-							dank = float2((dank.x - center.x) * cs - (dank.y - center.y) * sn + center.x, (dank.x - center.x) * sn + (dank.y - center.y) * cs + center.y);
-							glitterAlpha = (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.x))) * (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.y)));
-						}
-						else
-						{
-							glitterAlpha = (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.x))) * (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.y)));
-						}
-						break;
-					}
-					float3 finalGlitter = 0;
-					half3 glitterColor = poiThemeColor(poiMods, float4(1,1,1,1).rgb, (0.0 /*_GlitterColorThemeIndex*/));
-					float3 norm = lerp(poiMesh.normals[0], poiMesh.normals[1], (0.0 /*_GlitterUseNormals*/));
-					float3 randomRotation = 0;
-					float glitterSpeedOffset = 0;
-					#ifdef POI_AUDIOLINK
-					if ((0.0 /*_GlitterALEnabled*/))
-					{
-						glitterSpeedOffset += AudioLinkGetChronoTime((0.0 /*_GlitterALChronoSparkleSpeedType*/), (0.0 /*_GlitterALChronoSparkleSpeedBand*/)) * (0.0 /*_GlitterALChronoSparkleSpeed*/);
-					}
-					#endif
-					switch((0.0 /*_GlitterMode*/))
-					{
-						case 0:
-						
-						if ((10.0 /*_GlitterSpeed*/) + glitterSpeedOffset > 0)
-						{
-							randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (10.0 /*_GlitterSpeed*/), glitterSpeedOffset);
-						}
-						else
-						{
-							randomRotation = randomFloat3Range(randoPoint, (90.0 /*_GlitterAngleRange*/));
-						}
-						float3 glitterReflectionDirection = normalize(mul(poiRotationMatrixFromAngles(randomRotation), norm));
-						finalGlitter = lerp(0, (0.0 /*_GlitterMinBrightness*/) * glitterAlpha, glitterAlpha) + max(pow(saturate(dot(lerp(glitterReflectionDirection, poiCam.viewDir, (0.8 /*_GlitterBias*/)), poiCam.viewDir)), (300.0 /*_GlitterContrast*/)), 0);
-						finalGlitter *= glitterAlpha;
-						break;
-						case 1:
-						float randomOffset = random(randoPoint);
-						float brightness = (sin((_Time.x * 10 + randomOffset +glitterSpeedOffset) * (10.0 /*_GlitterSpeed*/)) * .5 + .5);
-						finalGlitter = max((0.0 /*_GlitterMinBrightness*/) * glitterAlpha, brightness * glitterAlpha * smoothstep(0, 1, 1 - m_dist * (0.08 /*_GlitterCenterSize*/) * 10));
-						break;
-						case 2:
-						if ((10.0 /*_GlitterSpeed*/) + glitterSpeedOffset > 0)
-						{
-							randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (10.0 /*_GlitterSpeed*/), glitterSpeedOffset);
-						}
-						else
-						{
-							randomRotation = randomFloat3Range(randoPoint, (90.0 /*_GlitterAngleRange*/));
-						}
-						float3 glitterLightReflectionDirection = normalize(mul(poiRotationMatrixFromAngles(randomRotation), norm));
-						glitterAlpha *= poiLight.nDotLSaturated;
-						float3 halfDir = normalize(poiLight.direction + poiCam.viewDir);
-						float specAngle = max(dot(halfDir, glitterLightReflectionDirection), 0.0);
-						finalGlitter = lerp(0, (0.0 /*_GlitterMinBrightness*/) * glitterAlpha, glitterAlpha) + max(pow(specAngle, (300.0 /*_GlitterContrast*/)), 0);
-						glitterColor *= poiLight.directColor;
-						finalGlitter *= glitterAlpha;
-						break;
-					}
-					glitterColor *= lerp(1, poiFragData.baseColor, (0.0 /*_GlitterUseSurfaceColor*/));
-					#if defined(PROP_GLITTERCOLORMAP) || !defined(OPTIMIZER_ENABLED)
-					glitterColor *= POI2D_SAMPLER_PAN(_GlitterColorMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_GlitterColorMapUV*/)], float4(1,1,0,0)), float4(0,0,0,0)).rgb;
-					#endif
-					float2 uv = remapClamped(-size, size, dank, 0, 1);
-					
-					if ((0.0 /*_GlitterRandomRotation*/) == 1 || (0.0 /*_GlitterTextureRotation*/) != 0 || float4(0,0,0,0).x != 0 || float4(0,0,0,0).y && !(1.0 /*_GlitterShape*/) || glitterRotationTimeOffset != 0)
-					{
-						float2 fakeUVCenter = float2(.5, .5);
-						float randomBoy = 0;
-						float2 glitterRandomRotationSpeed = 0;
-						
-						if ((0.0 /*_GlitterRandomRotation*/) || float4(0,0,0,0).x != 0 || float4(0,0,0,0).y != 0)
-						{
-							randomBoy = random(randoPoint * 20);
-							glitterRandomRotationSpeed = lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, randomBoy);
-						}
-						if (glitterRandomRotationSpeed.x + glitterRandomRotationSpeed.y + (0.0 /*_GlitterTextureRotation*/) == 0 && glitterRotationTimeOffset != 0)
-						{
-							glitterRandomRotationSpeed = 1;
-						}
-						float theta = radians((randomBoy + (_Time.x + glitterRotationTimeOffset) * ((0.0 /*_GlitterTextureRotation*/) + glitterRandomRotationSpeed)) * 360);
-						float cs = cos(theta);
-						float sn = sin(theta);
-						uv = float2((uv.x - fakeUVCenter.x) * cs - (uv.y - fakeUVCenter.y) * sn + fakeUVCenter.x, (uv.x - fakeUVCenter.x) * sn + (uv.y - fakeUVCenter.y) * cs + fakeUVCenter.y);
-					}
-					#if defined(PROP_GLITTERTEXTURE) || !defined(OPTIMIZER_ENABLED)
-					float4 glitterTexture = POI2D_SAMPLER_PANGRAD(_GlitterTexture, _linear_clamp, poiUV(uv, float4(1,1,0,0)), _GlitterTexturePan, poiMesh.dx, poiMesh.dy);
-					#else
-					float4 glitterTexture = 1;
-					#endif
-					glitterColor *= glitterTexture.rgb;
-					#if defined(PROP_GLITTERMASK) || !defined(OPTIMIZER_ENABLED)
-					float glitterMask = POI2D_SAMPLER_PAN(_GlitterMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_GlitterMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0.0 /*_GlitterMaskChannel*/)];
-					#else
-					float glitterMask = 1;
-					#endif
-					#ifdef POI_AUDIOLINK
-					if ((0.0 /*_GlitterALEnabled*/))
-					{
-						glitterMask = clamp(glitterMask + lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[(0.0 /*_GlitterALAlphaAddBand*/)]), 0, glitterMask);
-					}
-					#endif
-					if ((0.0 /*_GlitterMaskInvert*/))
-					{
-						glitterMask = 1 - glitterMask;
-					}
-					glitterMask *= lerp(1, poiLight.rampedLightMap, (0.0 /*_GlitterHideInShadow*/));
-					glitterMask *= lerp(1, poiLight.directLuminance, (0.0 /*_GlitterScaleWithLighting*/));
-					glitterMask *= float4(1,1,1,1).a;
-					if ((0.0 /*_GlitterMaskGlobalMask*/) > 0)
-					{
-						glitterMask = maskBlend(glitterMask, poiMods.globalMask[(0.0 /*_GlitterMaskGlobalMask*/) - 1], (2.0 /*_GlitterMaskGlobalMaskBlendType*/));
-					}
-					if ((0.0 /*_GlitterRandomColors*/))
-					{
-						glitterColor *= RandomColorFromPoint(random2(randoPoint.x + randoPoint.y), poiMods);
-					}
-					
-					if ((0.0 /*_GlitterHueShiftEnabled*/))
-					{
-						glitterColor.rgb = hueShift(glitterColor.rgb, (1.0 /*_GlitterHueShift*/) + _Time.x * (1.0 /*_GlitterHueShiftSpeed*/), (1.0 /*_GlitteHueShiftColorSpace*/));
-					}
-					float GlitterbrightnessOffset = 0;
-					#ifdef POI_AUDIOLINK
-					if ((0.0 /*_GlitterALEnabled*/))
-					{
-						GlitterbrightnessOffset = max(GlitterbrightnessOffset +lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[(0.0 /*_GlitterALMaxBrightnessBand*/)]), 0);
-					}
-					#endif
-					
-					if ((0.0 /*_GlitterBlendType*/) == 1)
-					{
-						poiFragData.baseColor = lerp(poiFragData.baseColor, finalGlitter * glitterColor * ((3.0 /*_GlitterBrightness*/) + GlitterbrightnessOffset), finalGlitter * glitterTexture.a * glitterMask);
-						poiFragData.emission += finalGlitter * glitterColor * max(0, (((3.0 /*_GlitterBrightness*/) + GlitterbrightnessOffset) - 1) * glitterTexture.a) * glitterMask;
-					}
-					else
-					{
-						poiFragData.emission += finalGlitter * glitterColor * ((3.0 /*_GlitterBrightness*/) + GlitterbrightnessOffset) * glitterTexture.a * glitterMask;
+						poiFragData.alpha = lerp(poiFragData.alpha, voronoiColor.a, min(mask, 0.99999));
 					}
 				}
+				float outerEmissionStrength = (0.0 /*_VoronoiOuterEmissionStrength*/);
+				float innerEmissionStrength = (0.0 /*_VoronoiInnerEmissionStrength*/);
+				#ifdef POI_AUDIOLINK
+				outerEmissionStrength += lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[(0 /*_AudioLinkVoronoiOuterEmissionBand*/)]);
+				innerEmissionStrength += lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[(0 /*_AudioLinkVoronoiInnerEmissionBand*/)]);
+				#endif
+				float4 voronoiEmissionColor = lerp(outerColor, innerColor, ramp);
+				voronoiEmissionColor.rgb *= lerp(outerEmissionStrength, innerEmissionStrength, ramp);
+				poiFragData.emission += voronoiEmissionColor.rgb * mask * voronoiEmissionColor.a;
 			}
 			#endif
 			float4 frag(VertexOut i, uint facing : SV_IsFrontFace) : SV_Target
@@ -7464,12 +6900,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				poiLight.indirectColor = max(poiLight.indirectColor, 0.0001);
 				if ((0.0 /*_LightingColorMode*/) == 3)
 				{
-					poiLight.directColor = max(poiLight.directColor, (1.0 /*_LightingMinLightBrightness*/));
+					poiLight.directColor = max(poiLight.directColor, (0.0 /*_LightingMinLightBrightness*/));
 				}
 				else
 				{
-					poiLight.directColor = max(poiLight.directColor, poiLight.directColor * min(10000, ((1.0 /*_LightingMinLightBrightness*/) * rcp(calculateluminance(poiLight.directColor)))));
-					poiLight.indirectColor = max(poiLight.indirectColor, poiLight.indirectColor * min(10000, ((1.0 /*_LightingMinLightBrightness*/) * rcp(calculateluminance(poiLight.indirectColor)))));
+					poiLight.directColor = max(poiLight.directColor, poiLight.directColor * min(10000, ((0.0 /*_LightingMinLightBrightness*/) * rcp(calculateluminance(poiLight.directColor)))));
+					poiLight.indirectColor = max(poiLight.indirectColor, poiLight.indirectColor * min(10000, ((0.0 /*_LightingMinLightBrightness*/) * rcp(calculateluminance(poiLight.indirectColor)))));
 				}
 				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), (0.0 /*_LightingMonochromatic*/));
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), (0.0 /*_LightingMonochromatic*/));
@@ -7548,8 +6984,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				poiLight.lightMapNoAttenuation = poiLight.lightMap;
 				poiLight.lightMap *= lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
-				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(0,0,0,1).rgb, (0.0 /*_ColorThemeIndex*/));
-				poiFragData.alpha = mainTexture.a * float4(0,0,0,1).a;
+				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(0.2140411,0.06346862,0.0263546,1).rgb, (0.0 /*_ColorThemeIndex*/));
+				poiFragData.alpha = mainTexture.a * float4(0.2140411,0.06346862,0.0263546,1).a;
 				#if defined(PROP_ALPHAMASK) || !defined(OPTIMIZER_ENABLED)
 				if ((2.0 /*_MainAlphaMaskMode*/))
 				{
@@ -7598,44 +7034,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				#if defined(GEOM_TYPE_BRANCH) || defined(GEOM_TYPE_BRANCH_DETAIL) || defined(GEOM_TYPE_FROND) || defined(DEPTH_OF_FIELD_COC_VIEW)
 				applyDecals(poiFragData, poiMesh, poiCam, poiMods, poiLight);
 				#endif
-				#ifdef _GLOSSYREFLECTIONS_OFF
-				#ifdef _RIMSTYLE_POIYOMI
-				#if defined(PROP_RIMMASK) || !defined(OPTIMIZER_ENABLED)
-				float4 rimMaskAndBias = POI2D_SAMPLER_PAN(_RimMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_RimMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0));
-				float rimMask = rimMaskAndBias[(0.0 /*_RimMaskChannel*/)];
-				float rimBias = rimMaskAndBias.a;
-				#else
-				float rimMask = 1;
-				float rimBias = 0;
-				#endif
-				if ((0.0 /*_RimMaskInvert*/))
-				{
-					rimMask = 1 - rimMask;
-				}
-				#if defined(PROP_RIMTEX) || !defined(OPTIMIZER_ENABLED)
-				float4 rimColor = POI2D_SAMPLER_PAN(_RimTex, _MainTex, poiUV(poiMesh.uv[(0.0 /*_RimTexUV*/)], float4(1,1,0,0)), float4(0,0,0,0));
-				#else
-				float4 rimColor = 1;
-				#endif
-				half AudioLinkRimWidthBand = 0;
-				float2 AudioLinkRimWidthAdd = 0;
-				half AudioLinkRimEmissionBand = 0;
-				float2 AudioLinkRimEmissionAdd = 0;
-				half AudioLinkRimBrightnessBand = 0;
-				float2 AudioLinkRimBrightnessAdd = 0;
-				#ifdef POI_AUDIOLINK
-				AudioLinkRimWidthBand = (0.0 /*_AudioLinkRimWidthBand*/);
-				AudioLinkRimWidthAdd = float4(0,0,0,0);
-				AudioLinkRimEmissionBand = (0.0 /*_AudioLinkRimEmissionBand*/);
-				AudioLinkRimEmissionAdd = float4(0,0,0,0);
-				AudioLinkRimBrightnessBand = (0.0 /*_AudioLinkRimBrightnessBand*/);
-				AudioLinkRimBrightnessAdd = float4(0,0,0,0);
-				#endif
-				ApplyPoiyomiRimLighting(poiFragData, poiMesh, poiCam, poiLight, poiMods, (1.0 /*_Is_NormalMapToRimLight*/), (0.0 /*_RimLightingInvert*/), (0.74 /*_RimPower*/), (12.6 /*_RimStrength*/), (0.0 /*_RimShadowWidth*/), (0.0 /*_RimShadowToggle*/), (0.0 /*_RimWidth*/), (1.0 /*_RimBlendStrength*/), rimMask, (0.0 /*_RimGlobalMask*/), (2.0 /*_RimGlobalMaskBlendType*/), rimColor, float4(1,1,1,1), (0.0 /*_RimLightColorThemeIndex*/), (0.0 /*_RimHueShiftEnabled*/), (0.0 /*_RimHueShift*/), (0.0 /*_RimHueShiftColorSpace*/), (0.0 /*_RimHueShiftSpeed*/),  (0.25 /*_RimSharpness*/), (0.0 /*_RimShadowMaskRampType*/), (0.0 /*_RimShadowMaskInvert*/), (1.0 /*_RimShadowMaskStrength*/), float4(0,0,0,1), (0.0 /*_RimApplyGlobalMaskIndex*/), (2.0 /*_RimApplyGlobalMaskBlendType*/), (0.0 /*_RimBaseColorMix*/), (1.0 /*_RimBrightness*/), (0.0 /*_RimPoiBlendMode*/), AudioLinkRimWidthBand, AudioLinkRimWidthAdd, AudioLinkRimEmissionBand, AudioLinkRimEmissionAdd, AudioLinkRimBrightnessBand, AudioLinkRimBrightnessAdd, rimBias, (0.0 /*_RimBiasIntensity*/), (0 /*_RimApplyAlpha*/), (1.0 /*_RimApplyAlphaBlend*/));
-				#endif
-				#endif
-				#ifdef _SUNDISK_SIMPLE
-				applyGlitter(poiFragData, poiMesh, poiCam, poiLight, poiMods);
+				#ifdef POI_VORONOI
+				ApplyVoronoi(poiFragData, poiMesh, poiMods);
 				#endif
 				if ((0.0 /*_AlphaPremultiply*/))
 				{
@@ -7643,8 +7043,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				}
 				poiFragData.finalColor = poiFragData.baseColor;
 				poiFragData.finalColor = poiFragData.baseColor * poiLight.finalLighting;
-				#ifdef _GLOSSYREFLECTIONS_OFF
-				#endif
 				if ((0.0 /*_IgnoreFog*/) == 0)
 				{
 					UNITY_APPLY_FOG(i.fogCoord, poiFragData.finalColor);
@@ -7655,7 +7053,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				{
 					poiFragData.alpha = 1;
 				}
-				clip(poiFragData.alpha - (0.545 /*_Cutoff*/));
+				clip(poiFragData.alpha - (0.5 /*_Cutoff*/));
 				if ((0.0 /*_Mode*/) == POI_MODE_CUTOUT && !(0.0 /*_AlphaToCoverage*/))
 				{
 					poiFragData.alpha = 1;
@@ -7693,13 +7091,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 			BlendOp [_OutlineBlendOp], [_OutlineBlendOpAlpha]
 			Blend [_OutlineSrcBlend] [_OutlineDstBlend], [_OutlineSrcBlendAlpha] [_OutlineDstBlendAlpha]
 			CGPROGRAM
+ #define POI_VORONOI 
  #define VIGNETTE_MASKED 
- #define _GLOSSYREFLECTIONS_OFF 
  #define _LIGHTINGMODE_FLAT 
- #define _RIM2STYLE_POIYOMI 
- #define _RIMSTYLE_POIYOMI 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
- #define _SUNDISK_SIMPLE 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma skip_variants LIGHTMAP_ON DYNAMICLIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK DIRLIGHTMAP_COMBINED _MIXED_LIGHTING_SUBTRACTIVE
@@ -7986,6 +7381,57 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 			float _PPLightingAddition;
 			float _PPEmissionMultiplier;
 			float _PPFinalColorMultiplier;
+			#ifdef POI_VORONOI
+			#if defined(PROP_VORONOIMASK) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _VoronoiMask;
+			float4 _VoronoiMask_ST;
+			float2 _VoronoiMaskPan;
+			float _VoronoiMaskUV;
+			int _VoronoiMaskChannel;
+			#endif
+			#if defined(PROP_VORONOINOISE) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _VoronoiNoise;
+			float4 _VoronoiNoise_ST;
+			float2 _VoronoiNoisePan;
+			float _VoronoiNoiseUV;
+			int _VoronoiNoiseChannel;
+			#endif
+			int _VoronoiSpace;
+			int _VoronoiBlend;
+			int _VoronoiType;
+			float4 _VoronoiOuterColor;
+			float _VoronoiOuterEmissionStrength;
+			float4 _VoronoiInnerColor;
+			float _VoronoiInnerEmissionStrength;
+			float _VoronoiPower;
+			float2 _VoronoiGradient;
+			float _VoronoiScale;
+			float3 _VoronoiSpeed;
+			float _VoronoiEnableRandomCellColor;
+			float2 _VoronoiRandomMinMaxSaturation;
+			float2 _VoronoiRandomMinMaxBrightness;
+			float _VoronoiNoiseIntensity;
+			int _VoronoiAffectsMaterialAlpha;
+			float _VoronoiGlobalMask;
+			float _VoronoiGlobalMaskBlendType;
+			int _AudioLinkVoronoiInnerEmissionBand;
+			float2 _AudioLinkVoronoiInnerEmission;
+			int _AudioLinkVoronoiOuterEmissionBand;
+			float2 _AudioLinkVoronoiOuterEmission;
+			int _AudioLinkVoronoiGradientMinAddBand;
+			float _AudioLinkVoronoiGradientMinAdd;
+			int _AudioLinkVoronoiGradientMaxAddBand;
+			float _AudioLinkVoronoiGradientMaxAdd;
+			int _AudioLinkVoronoiChronoSpeedXType;
+			int _AudioLinkVoronoiChronoSpeedXBand;
+			float _AudioLinkVoronoiChronoSpeedXSpeed;
+			int _AudioLinkVoronoiChronoSpeedYType;
+			int _AudioLinkVoronoiChronoSpeedYBand;
+			float _AudioLinkVoronoiChronoSpeedYSpeed;
+			int _AudioLinkVoronoiChronoSpeedZType;
+			int _AudioLinkVoronoiChronoSpeedZBand;
+			float _AudioLinkVoronoiChronoSpeedZSpeed;
+			#endif
 			struct appdata
 			{
 				float4 vertex : POSITION;
@@ -9427,7 +8873,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				{
 					distanceOffset *= lerp(1.0, clamp((distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, o.localPos).xyz)), 0.0f, (1.0 /*_OutlinesMaxDistance*/)), (0.5 /*_OutlineFixWidth*/));
 				}
-				float lineWidth = (1.0 /*_LineWidth*/);
+				float lineWidth = (5.86 /*_LineWidth*/);
 				#ifdef POI_AUDIOLINK
 				if ((1.0 /*_AudioLinkAnimToggle*/))
 				{
@@ -9650,7 +9096,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				}
 				if ((0.0 /*_OutlineClipAtZeroWidth*/))
 				{
-					float lineWidth = (1.0 /*_LineWidth*/);
+					float lineWidth = (5.86 /*_LineWidth*/);
 					#ifdef POI_AUDIOLINK
 					if (poiMods.audioLinkAvailable)
 					{
@@ -9661,7 +9107,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				}
 				float4 col = POI2D_SAMPLER_PAN(_OutlineTexture, _MainTex, poiUV(poiMesh.uv[(0.0 /*_OutlineTextureUV*/)], float4(1,1,0,0)), float4(0,0,0,0));
 				poiFragData.baseColor = lerp(col, col * poiFragData.baseColor * lerp(1, poiFragData.baseColor, (0.0 /*_PoiUTSStyleOutlineBlend*/)), (0.0 /*_OutlineTintMix*/));
-				float4 outlineColor = float4(1,1,1,1);
+				float4 outlineColor = float4(0.1507121,0.01934636,0.000154992,1);
 				#ifdef POI_AUDIOLINK
 				if ((0.0 /*_OutlineALColorEnabled*/) && poiMods.audioLinkAvailable)
 				{
@@ -9693,7 +9139,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 					float3 position = (1.0 /*_OutlineAlphaDistanceFadeType*/) ? poiMesh.worldPos : poiMesh.objectPosition;
 					poiFragData.alpha *= lerp((0.0 /*_OutlineAlphaDistanceFadeMinAlpha*/), (1.0 /*_OutlineAlphaDistanceFadeMaxAlpha*/), smoothstep((0.0 /*_OutlineAlphaDistanceFadeMin*/), (0.0 /*_OutlineAlphaDistanceFadeMax*/), distance(position, poiCam.worldPos)));
 				}
-				float emission = (20.0 /*_OutlineEmission*/);
+				float emission = (0.0 /*_OutlineEmission*/);
 				#ifdef POI_AUDIOLINK
 				if (poiMods.audioLinkAvailable)
 				{
@@ -9906,6 +9352,269 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 					poiLight.finalLighting = max(vertexLighting, poiLight.finalLighting);
 					#endif
 				}
+			}
+			#endif
+			#ifdef POI_VORONOI
+			#define VoronoiK 0.142857142857
+			#define VoronoiKo 0.428571428571
+			float3 Permutation(float3 x)
+			{
+				return glsl_mod((34.0 * x + 1.0) * x, 289.0);
+			}
+			float3 inoise(float3 P, float jitter, out float3 randomPoint)
+			{
+				P *= 0.7f; // Scale adjustment
+				float3 Pi = glsl_mod(floor(P), 289.0);
+				float3 Pf = frac(P);
+				float3 oi = float3(-1.0, 0.0, 1.0);
+				float3 of = float3(-0.5, 0.5, 1.5);
+				float3 px = Permutation(Pi.x + oi);
+				float3 py = Permutation(Pi.y + oi);
+				float3 pz = Permutation(Pi.z + oi);
+				float3 p, ox, oy, oz, dx, dy, dz;
+				float3 F = 1e6;
+				[unroll(3)]
+				for (int i = 0; i < 3; i++)
+				{
+					[unroll(3)]
+					for (int j = 0; j < 3; j++)
+					{
+						[unroll(3)]
+						for (int k = 0; k < 3; k++)
+						{
+							p = Permutation(px[i] + py[j] + pz[k] + oi); // pij1, pij2, pij3
+							float3 ogp = p;
+							ox = frac(p * VoronoiK) - VoronoiKo;
+							oy = glsl_mod(floor(p * VoronoiK), 7.0) * VoronoiK - VoronoiKo;
+							p = Permutation(p);
+							oz = frac(p * VoronoiK) - VoronoiKo;
+							dx = Pf.x - of[i] + jitter * ox;
+							dy = Pf.y - of[j] + jitter * oy;
+							dz = Pf.z - of[k] + jitter * oz;
+							float3 d = dx * dx + dy * dy + dz * dz; // dij1, dij2 and dij3, squared
+							for (int n = 0; n < 3; n++)
+							{
+								if (d[n] < F[0])
+								{
+									F[1] = F[0];
+									F[0] = d[n];
+									randomPoint = p;
+								}
+								else if (d[n] < F[1])
+								{
+									F[1] = d[n];
+								}
+							}
+						}
+					}
+				}
+				return F;
+			}
+			float voronoi2D(in float2 x, float scale, float2 speed, out float2 randomPoint)
+			{
+				x *= scale;
+				x += speed * _Time.x;
+				float2 n = floor(x);
+				float2 f = frac(x);
+				float2 mg, mr;
+				float md = 8.0;
+				for (int j = -1; j <= 1; j++)
+				{
+					for (int i = -1; i <= 1; i++)
+					{
+						float2 g = float2(float(i), float(j));
+						float2 o = random2(n + g);
+						float2 currentPoint = o;
+						float2 r = g + o - f;
+						float d = dot(r, r);
+						if (d < md)
+						{
+							md = d;
+							mr = r;
+							mg = g;
+							randomPoint.xy = currentPoint;
+						}
+					}
+				}
+				md = 8.0;
+				for (int r = -2; r <= 2; r++)
+				{
+					for (int q = -2; q <= 2; q++)
+					{
+						float2 g = mg + float2(float(q), float(r));
+						float2 o = random2(n + g);
+						float2 r = g + o - f;
+						if (dot(mr - r, mr - r) > 0.00001)
+						{
+							md = min(md, dot(0.5 * (mr + r), normalize(r - mr)));
+						}
+					}
+				}
+				return md;
+			}
+			float voronoi3D(in float3 x, float scale, float3 speed, out float3 randomPoint)
+			{
+				x *= scale;
+				x += speed * _Time.x;
+				float3 n = floor(x);
+				float3 f = frac(x);
+				float3 mg, mr;
+				float md = 8.0;
+				for (int j = -1; j <= 1; j++)
+				{
+					for (int i = -1; i <= 1; i++)
+					{
+						for (int h = -1; h <= 1; h++)
+						{
+							float3 g = float3(float(h), float(i), float(j));
+							float3 o = random3(n + g);
+							float3 currentPoint = o;
+							float3 r = g + o - f;
+							float d = dot(r, r);
+							if (d < md)
+							{
+								md = d;
+								mr = r;
+								mg = g;
+								randomPoint = currentPoint;
+							}
+						}
+					}
+				}
+				md = 8.0;
+				for (int r = -2; r <= 2; r++)
+				{
+					for (int q = -2; q <= 2; q++)
+					{
+						for (int p = -2; p <= 2; p++)
+						{
+							float3 g = mg + float3(float(p), float(q), float(r));
+							float3 o = random3(n + g);
+							float3 r = g + o - f;
+							if (dot(mr - r, mr - r) > 0.00001)
+							{
+								md = min(md, dot(0.5 * (mr + r), normalize(r - mr)));
+							}
+						}
+					}
+				}
+				return md;
+			}
+			float VoronoiNoise_Octaves(float3 p, float scale, float3 speed, int octaveNumber, float octaveScale, float octaveAttenuation, float jitter, float time, out float3 randomPoint)
+			{
+				float freq = scale;
+				float weight = 1.0f;
+				float sum = 0;
+				float3 F = inoise(p * freq + time * speed, jitter, randomPoint) * weight;
+				sum += sqrt(F[0]);
+				return sum;
+			}
+			float VoronoiNoiseDiff_Octaves(float3 p, float scale, float3 speed, int octaveNumber, float octaveScale, float octaveAttenuation, float jitter, float time, out float3 randomPoint)
+			{
+				float freq = scale;
+				float weight = 1.0f;
+				float sum = 0;
+				float3 F = inoise(p * freq + time * speed, jitter, randomPoint) * weight;
+				sum += sqrt(F[1]) - sqrt(F[0]);
+				return sum;
+			}
+			void ApplyVoronoi(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiMods poiMods)
+			{
+				float voronoiOctaveNumber = 1;
+				float voronoiOctaveScale = 1;
+				float voronoiOctaveAttenuation = 1;
+				float3 randomPoint = 0;
+				float voronoi = 0;
+				float3 position = 0;
+				
+				if ((0 /*_VoronoiSpace*/) == 0)
+				{
+					position = poiMesh.localPos;
+				}
+				
+				if ((0 /*_VoronoiSpace*/) == 1)
+				{
+					position = poiMesh.worldPos;
+				}
+				
+				if ((0 /*_VoronoiSpace*/) == 2)
+				{
+					position = float3(poiMesh.uv[0].x, poiMesh.uv[0].y, 0);
+				}
+				#if defined(PROP_VORONOIMASK) || !defined(OPTIMIZER_ENABLED)
+				float mask = POI2D_SAMPLER_PAN(_VoronoiMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_VoronoiMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0 /*_VoronoiMaskChannel*/)];
+				#else
+				float mask = 1;
+				#endif
+				if ((0.0 /*_VoronoiGlobalMask*/) > 0)
+				{
+					mask = maskBlend(mask, poiMods.globalMask[(0.0 /*_VoronoiGlobalMask*/) - 1], (2.0 /*_VoronoiGlobalMaskBlendType*/));
+				}
+				#if defined(PROP_VORONOINOISE) || !defined(OPTIMIZER_ENABLED)
+				float edgeNoise = POI2D_SAMPLER_PAN(_VoronoiNoise, _MainTex, poiUV(poiMesh.uv[(0.0 /*_VoronoiNoiseUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0 /*_VoronoiNoiseChannel*/)];
+				#else
+				float edgeNoise = 0;
+				#endif
+				edgeNoise *= (0.1 /*_VoronoiNoiseIntensity*/);
+				float3 voronoiSpeed = float4(0,0,0,1) * 10;
+				#ifdef POI_AUDIOLINK
+				if (poiMods.audioLinkAvailable)
+				{
+					position.x += AudioLinkGetChronoTime((0 /*_AudioLinkVoronoiChronoSpeedXType*/), (0 /*_AudioLinkVoronoiChronoSpeedXBand*/)) * (0.0 /*_AudioLinkVoronoiChronoSpeedXSpeed*/) * 0.01;
+					position.y += AudioLinkGetChronoTime((0 /*_AudioLinkVoronoiChronoSpeedYType*/), (0 /*_AudioLinkVoronoiChronoSpeedYBand*/)) * (0.0 /*_AudioLinkVoronoiChronoSpeedYSpeed*/) * 0.01;
+					position.z += AudioLinkGetChronoTime((0 /*_AudioLinkVoronoiChronoSpeedZType*/), (0 /*_AudioLinkVoronoiChronoSpeedZBand*/)) * (0.0 /*_AudioLinkVoronoiChronoSpeedZSpeed*/) * 0.01;
+				}
+				#endif
+				if ((0 /*_VoronoiType*/) == 0) // Basic
+				{
+					voronoi = voronoi2D(position.xy, (1.32 /*_VoronoiScale*/), voronoiSpeed, randomPoint.xy);
+					voronoi *= 1.55; // Range adjustment
+				}
+				if ((0 /*_VoronoiType*/) == 1) // Diff
+				{
+					voronoi = VoronoiNoiseDiff_Octaves(position, (1.32 /*_VoronoiScale*/), voronoiSpeed, voronoiOctaveNumber, voronoiOctaveScale, voronoiOctaveAttenuation, 1, _Time.x, randomPoint);
+				}
+				if ((0 /*_VoronoiType*/) == 2) // Fixed Border
+				{
+					voronoi = voronoi3D(position, (1.32 /*_VoronoiScale*/), voronoiSpeed, randomPoint);
+					voronoi *= 1.8; // Range adjustment
+				}
+				float4 outerColor = float4(0.009166719,0.00278998,0.0008610645,1);
+				float4 innerColor = float4(0.05672633,0.01392266,0.007321635,1);
+				if ((1.0 /*_VoronoiEnableRandomCellColor*/) == 1)
+				{
+					float3 rando = random3(randomPoint);
+					fixed hue = rando.x;
+					fixed saturation = lerp(float4(0,0.1,0,1).x, float4(0,0.1,0,1).y, rando.y);
+					fixed value = lerp(float4(0,0.1,0,1).x, float4(0,0.1,0,1).y, rando.z);
+					float3 hsv = float3(hue, saturation, value);
+					innerColor.rgb = HSVtoRGB(hsv);
+				}
+				voronoi = pow(voronoi, (0.5 /*_VoronoiPower*/));
+				float2 voronoiGradient = float4(0,1,0,0).xy + edgeNoise;
+				#ifdef POI_AUDIOLINK
+				voronoiGradient.x += (0.0 /*_AudioLinkVoronoiGradientMinAdd*/) * poiMods.audioLink[(0 /*_AudioLinkVoronoiGradientMinAddBand*/)];
+				voronoiGradient.y -= (0.0 /*_AudioLinkVoronoiGradientMaxAdd*/) * poiMods.audioLink[(0 /*_AudioLinkVoronoiGradientMaxAddBand*/)];
+				#endif
+				float ramp = smoothstep(voronoiGradient.x, voronoiGradient.y, voronoi);
+				if ((0 /*_VoronoiBlend*/) == 0)
+				{
+					float4 voronoiColor = lerp(outerColor, innerColor, ramp);
+					poiFragData.baseColor.rgb = lerp(poiFragData.baseColor.rgb, voronoiColor, min(mask * voronoiColor.a, 0.99999));
+					if ((0 /*_VoronoiAffectsMaterialAlpha*/))
+					{
+						poiFragData.alpha = lerp(poiFragData.alpha, voronoiColor.a, min(mask, 0.99999));
+					}
+				}
+				float outerEmissionStrength = (0.0 /*_VoronoiOuterEmissionStrength*/);
+				float innerEmissionStrength = (0.0 /*_VoronoiInnerEmissionStrength*/);
+				#ifdef POI_AUDIOLINK
+				outerEmissionStrength += lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[(0 /*_AudioLinkVoronoiOuterEmissionBand*/)]);
+				innerEmissionStrength += lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[(0 /*_AudioLinkVoronoiInnerEmissionBand*/)]);
+				#endif
+				float4 voronoiEmissionColor = lerp(outerColor, innerColor, ramp);
+				voronoiEmissionColor.rgb *= lerp(outerEmissionStrength, innerEmissionStrength, ramp);
+				poiFragData.emission += voronoiEmissionColor.rgb * mask * voronoiEmissionColor.a;
 			}
 			#endif
 			float4 frag(VertexOut i, uint facing : SV_IsFrontFace) : SV_Target
@@ -10289,12 +9998,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				poiLight.indirectColor = max(poiLight.indirectColor, 0.0001);
 				if ((0.0 /*_LightingColorMode*/) == 3)
 				{
-					poiLight.directColor = max(poiLight.directColor, (1.0 /*_LightingMinLightBrightness*/));
+					poiLight.directColor = max(poiLight.directColor, (0.0 /*_LightingMinLightBrightness*/));
 				}
 				else
 				{
-					poiLight.directColor = max(poiLight.directColor, poiLight.directColor * min(10000, ((1.0 /*_LightingMinLightBrightness*/) * rcp(calculateluminance(poiLight.directColor)))));
-					poiLight.indirectColor = max(poiLight.indirectColor, poiLight.indirectColor * min(10000, ((1.0 /*_LightingMinLightBrightness*/) * rcp(calculateluminance(poiLight.indirectColor)))));
+					poiLight.directColor = max(poiLight.directColor, poiLight.directColor * min(10000, ((0.0 /*_LightingMinLightBrightness*/) * rcp(calculateluminance(poiLight.directColor)))));
+					poiLight.indirectColor = max(poiLight.indirectColor, poiLight.indirectColor * min(10000, ((0.0 /*_LightingMinLightBrightness*/) * rcp(calculateluminance(poiLight.indirectColor)))));
 				}
 				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), (0.0 /*_LightingMonochromatic*/));
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), (0.0 /*_LightingMonochromatic*/));
@@ -10373,8 +10082,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				poiLight.lightMapNoAttenuation = poiLight.lightMap;
 				poiLight.lightMap *= lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
-				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(0,0,0,1).rgb, (0.0 /*_ColorThemeIndex*/));
-				poiFragData.alpha = mainTexture.a * float4(0,0,0,1).a;
+				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(0.2140411,0.06346862,0.0263546,1).rgb, (0.0 /*_ColorThemeIndex*/));
+				poiFragData.alpha = mainTexture.a * float4(0.2140411,0.06346862,0.0263546,1).a;
 				#if defined(PROP_ALPHAMASK) || !defined(OPTIMIZER_ENABLED)
 				if ((2.0 /*_MainAlphaMaskMode*/))
 				{
@@ -10423,6 +10132,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				#ifdef POI_PASS_OUTLINE
 				applyOutlineColor(poiFragData, poiMesh, poiLight, poiMods, poiCam);
 				#endif
+				#ifdef POI_VORONOI
+				ApplyVoronoi(poiFragData, poiMesh, poiMods);
+				#endif
 				
 				if ((0.0 /*_AlphaPremultiply*/))
 				{
@@ -10439,7 +10151,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				{
 					poiFragData.alpha = 1;
 				}
-				clip(poiFragData.alpha - (0.545 /*_Cutoff*/));
+				clip(poiFragData.alpha - (0.5 /*_Cutoff*/));
 				return float4(poiFragData.finalColor + poiFragData.emission * poiMods.globalEmission, poiFragData.alpha) + POI_SAFE_RGB0;
 			}
 			ENDCG
@@ -10467,13 +10179,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 			BlendOp [_BlendOp], [_BlendOpAlpha]
 			Blend [_SrcBlend] [_DstBlend], [_SrcBlendAlpha] [_DstBlendAlpha]
 			CGPROGRAM
+ #define POI_VORONOI 
  #define VIGNETTE_MASKED 
- #define _GLOSSYREFLECTIONS_OFF 
  #define _LIGHTINGMODE_FLAT 
- #define _RIM2STYLE_POIYOMI 
- #define _RIMSTYLE_POIYOMI 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
- #define _SUNDISK_SIMPLE 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma skip_variants LIGHTMAP_ON DYNAMICLIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK DIRLIGHTMAP_COMBINED _MIXED_LIGHTING_SUBTRACTIVE
@@ -10599,6 +10308,57 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 			float _UVModWorldPos1;
 			float _UVModLocalPos0;
 			float _UVModLocalPos1;
+			#ifdef POI_VORONOI
+			#if defined(PROP_VORONOIMASK) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _VoronoiMask;
+			float4 _VoronoiMask_ST;
+			float2 _VoronoiMaskPan;
+			float _VoronoiMaskUV;
+			int _VoronoiMaskChannel;
+			#endif
+			#if defined(PROP_VORONOINOISE) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _VoronoiNoise;
+			float4 _VoronoiNoise_ST;
+			float2 _VoronoiNoisePan;
+			float _VoronoiNoiseUV;
+			int _VoronoiNoiseChannel;
+			#endif
+			int _VoronoiSpace;
+			int _VoronoiBlend;
+			int _VoronoiType;
+			float4 _VoronoiOuterColor;
+			float _VoronoiOuterEmissionStrength;
+			float4 _VoronoiInnerColor;
+			float _VoronoiInnerEmissionStrength;
+			float _VoronoiPower;
+			float2 _VoronoiGradient;
+			float _VoronoiScale;
+			float3 _VoronoiSpeed;
+			float _VoronoiEnableRandomCellColor;
+			float2 _VoronoiRandomMinMaxSaturation;
+			float2 _VoronoiRandomMinMaxBrightness;
+			float _VoronoiNoiseIntensity;
+			int _VoronoiAffectsMaterialAlpha;
+			float _VoronoiGlobalMask;
+			float _VoronoiGlobalMaskBlendType;
+			int _AudioLinkVoronoiInnerEmissionBand;
+			float2 _AudioLinkVoronoiInnerEmission;
+			int _AudioLinkVoronoiOuterEmissionBand;
+			float2 _AudioLinkVoronoiOuterEmission;
+			int _AudioLinkVoronoiGradientMinAddBand;
+			float _AudioLinkVoronoiGradientMinAdd;
+			int _AudioLinkVoronoiGradientMaxAddBand;
+			float _AudioLinkVoronoiGradientMaxAdd;
+			int _AudioLinkVoronoiChronoSpeedXType;
+			int _AudioLinkVoronoiChronoSpeedXBand;
+			float _AudioLinkVoronoiChronoSpeedXSpeed;
+			int _AudioLinkVoronoiChronoSpeedYType;
+			int _AudioLinkVoronoiChronoSpeedYBand;
+			float _AudioLinkVoronoiChronoSpeedYSpeed;
+			int _AudioLinkVoronoiChronoSpeedZType;
+			int _AudioLinkVoronoiChronoSpeedZBand;
+			float _AudioLinkVoronoiChronoSpeedZSpeed;
+			#endif
 			struct appdata
 			{
 				float4 vertex : POSITION;
@@ -12040,7 +11800,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				{
 					distanceOffset *= lerp(1.0, clamp((distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, o.localPos).xyz)), 0.0f, (1.0 /*_OutlinesMaxDistance*/)), (0.5 /*_OutlineFixWidth*/));
 				}
-				float lineWidth = (1.0 /*_LineWidth*/);
+				float lineWidth = (5.86 /*_LineWidth*/);
 				#ifdef POI_AUDIOLINK
 				if ((1.0 /*_AudioLinkAnimToggle*/))
 				{
@@ -12332,6 +12092,269 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				float3 viewDirection = normalize(lerp(getCameraPosition().xyz, _WorldSpaceCameraPos.xyz, (1.0 /*_PanoUseBothEyes*/)) - poiMesh.worldPos.xyz) * - 1;
 				return lerp(MonoPanoProjection(viewDirection), StereoPanoProjection(viewDirection), (0.0 /*_StereoEnabled*/));
 			}
+			#ifdef POI_VORONOI
+			#define VoronoiK 0.142857142857
+			#define VoronoiKo 0.428571428571
+			float3 Permutation(float3 x)
+			{
+				return glsl_mod((34.0 * x + 1.0) * x, 289.0);
+			}
+			float3 inoise(float3 P, float jitter, out float3 randomPoint)
+			{
+				P *= 0.7f; // Scale adjustment
+				float3 Pi = glsl_mod(floor(P), 289.0);
+				float3 Pf = frac(P);
+				float3 oi = float3(-1.0, 0.0, 1.0);
+				float3 of = float3(-0.5, 0.5, 1.5);
+				float3 px = Permutation(Pi.x + oi);
+				float3 py = Permutation(Pi.y + oi);
+				float3 pz = Permutation(Pi.z + oi);
+				float3 p, ox, oy, oz, dx, dy, dz;
+				float3 F = 1e6;
+				[unroll(3)]
+				for (int i = 0; i < 3; i++)
+				{
+					[unroll(3)]
+					for (int j = 0; j < 3; j++)
+					{
+						[unroll(3)]
+						for (int k = 0; k < 3; k++)
+						{
+							p = Permutation(px[i] + py[j] + pz[k] + oi); // pij1, pij2, pij3
+							float3 ogp = p;
+							ox = frac(p * VoronoiK) - VoronoiKo;
+							oy = glsl_mod(floor(p * VoronoiK), 7.0) * VoronoiK - VoronoiKo;
+							p = Permutation(p);
+							oz = frac(p * VoronoiK) - VoronoiKo;
+							dx = Pf.x - of[i] + jitter * ox;
+							dy = Pf.y - of[j] + jitter * oy;
+							dz = Pf.z - of[k] + jitter * oz;
+							float3 d = dx * dx + dy * dy + dz * dz; // dij1, dij2 and dij3, squared
+							for (int n = 0; n < 3; n++)
+							{
+								if (d[n] < F[0])
+								{
+									F[1] = F[0];
+									F[0] = d[n];
+									randomPoint = p;
+								}
+								else if (d[n] < F[1])
+								{
+									F[1] = d[n];
+								}
+							}
+						}
+					}
+				}
+				return F;
+			}
+			float voronoi2D(in float2 x, float scale, float2 speed, out float2 randomPoint)
+			{
+				x *= scale;
+				x += speed * _Time.x;
+				float2 n = floor(x);
+				float2 f = frac(x);
+				float2 mg, mr;
+				float md = 8.0;
+				for (int j = -1; j <= 1; j++)
+				{
+					for (int i = -1; i <= 1; i++)
+					{
+						float2 g = float2(float(i), float(j));
+						float2 o = random2(n + g);
+						float2 currentPoint = o;
+						float2 r = g + o - f;
+						float d = dot(r, r);
+						if (d < md)
+						{
+							md = d;
+							mr = r;
+							mg = g;
+							randomPoint.xy = currentPoint;
+						}
+					}
+				}
+				md = 8.0;
+				for (int r = -2; r <= 2; r++)
+				{
+					for (int q = -2; q <= 2; q++)
+					{
+						float2 g = mg + float2(float(q), float(r));
+						float2 o = random2(n + g);
+						float2 r = g + o - f;
+						if (dot(mr - r, mr - r) > 0.00001)
+						{
+							md = min(md, dot(0.5 * (mr + r), normalize(r - mr)));
+						}
+					}
+				}
+				return md;
+			}
+			float voronoi3D(in float3 x, float scale, float3 speed, out float3 randomPoint)
+			{
+				x *= scale;
+				x += speed * _Time.x;
+				float3 n = floor(x);
+				float3 f = frac(x);
+				float3 mg, mr;
+				float md = 8.0;
+				for (int j = -1; j <= 1; j++)
+				{
+					for (int i = -1; i <= 1; i++)
+					{
+						for (int h = -1; h <= 1; h++)
+						{
+							float3 g = float3(float(h), float(i), float(j));
+							float3 o = random3(n + g);
+							float3 currentPoint = o;
+							float3 r = g + o - f;
+							float d = dot(r, r);
+							if (d < md)
+							{
+								md = d;
+								mr = r;
+								mg = g;
+								randomPoint = currentPoint;
+							}
+						}
+					}
+				}
+				md = 8.0;
+				for (int r = -2; r <= 2; r++)
+				{
+					for (int q = -2; q <= 2; q++)
+					{
+						for (int p = -2; p <= 2; p++)
+						{
+							float3 g = mg + float3(float(p), float(q), float(r));
+							float3 o = random3(n + g);
+							float3 r = g + o - f;
+							if (dot(mr - r, mr - r) > 0.00001)
+							{
+								md = min(md, dot(0.5 * (mr + r), normalize(r - mr)));
+							}
+						}
+					}
+				}
+				return md;
+			}
+			float VoronoiNoise_Octaves(float3 p, float scale, float3 speed, int octaveNumber, float octaveScale, float octaveAttenuation, float jitter, float time, out float3 randomPoint)
+			{
+				float freq = scale;
+				float weight = 1.0f;
+				float sum = 0;
+				float3 F = inoise(p * freq + time * speed, jitter, randomPoint) * weight;
+				sum += sqrt(F[0]);
+				return sum;
+			}
+			float VoronoiNoiseDiff_Octaves(float3 p, float scale, float3 speed, int octaveNumber, float octaveScale, float octaveAttenuation, float jitter, float time, out float3 randomPoint)
+			{
+				float freq = scale;
+				float weight = 1.0f;
+				float sum = 0;
+				float3 F = inoise(p * freq + time * speed, jitter, randomPoint) * weight;
+				sum += sqrt(F[1]) - sqrt(F[0]);
+				return sum;
+			}
+			void ApplyVoronoi(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiMods poiMods)
+			{
+				float voronoiOctaveNumber = 1;
+				float voronoiOctaveScale = 1;
+				float voronoiOctaveAttenuation = 1;
+				float3 randomPoint = 0;
+				float voronoi = 0;
+				float3 position = 0;
+				
+				if ((0 /*_VoronoiSpace*/) == 0)
+				{
+					position = poiMesh.localPos;
+				}
+				
+				if ((0 /*_VoronoiSpace*/) == 1)
+				{
+					position = poiMesh.worldPos;
+				}
+				
+				if ((0 /*_VoronoiSpace*/) == 2)
+				{
+					position = float3(poiMesh.uv[0].x, poiMesh.uv[0].y, 0);
+				}
+				#if defined(PROP_VORONOIMASK) || !defined(OPTIMIZER_ENABLED)
+				float mask = POI2D_SAMPLER_PAN(_VoronoiMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_VoronoiMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0 /*_VoronoiMaskChannel*/)];
+				#else
+				float mask = 1;
+				#endif
+				if ((0.0 /*_VoronoiGlobalMask*/) > 0)
+				{
+					mask = maskBlend(mask, poiMods.globalMask[(0.0 /*_VoronoiGlobalMask*/) - 1], (2.0 /*_VoronoiGlobalMaskBlendType*/));
+				}
+				#if defined(PROP_VORONOINOISE) || !defined(OPTIMIZER_ENABLED)
+				float edgeNoise = POI2D_SAMPLER_PAN(_VoronoiNoise, _MainTex, poiUV(poiMesh.uv[(0.0 /*_VoronoiNoiseUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0 /*_VoronoiNoiseChannel*/)];
+				#else
+				float edgeNoise = 0;
+				#endif
+				edgeNoise *= (0.1 /*_VoronoiNoiseIntensity*/);
+				float3 voronoiSpeed = float4(0,0,0,1) * 10;
+				#ifdef POI_AUDIOLINK
+				if (poiMods.audioLinkAvailable)
+				{
+					position.x += AudioLinkGetChronoTime((0 /*_AudioLinkVoronoiChronoSpeedXType*/), (0 /*_AudioLinkVoronoiChronoSpeedXBand*/)) * (0.0 /*_AudioLinkVoronoiChronoSpeedXSpeed*/) * 0.01;
+					position.y += AudioLinkGetChronoTime((0 /*_AudioLinkVoronoiChronoSpeedYType*/), (0 /*_AudioLinkVoronoiChronoSpeedYBand*/)) * (0.0 /*_AudioLinkVoronoiChronoSpeedYSpeed*/) * 0.01;
+					position.z += AudioLinkGetChronoTime((0 /*_AudioLinkVoronoiChronoSpeedZType*/), (0 /*_AudioLinkVoronoiChronoSpeedZBand*/)) * (0.0 /*_AudioLinkVoronoiChronoSpeedZSpeed*/) * 0.01;
+				}
+				#endif
+				if ((0 /*_VoronoiType*/) == 0) // Basic
+				{
+					voronoi = voronoi2D(position.xy, (1.32 /*_VoronoiScale*/), voronoiSpeed, randomPoint.xy);
+					voronoi *= 1.55; // Range adjustment
+				}
+				if ((0 /*_VoronoiType*/) == 1) // Diff
+				{
+					voronoi = VoronoiNoiseDiff_Octaves(position, (1.32 /*_VoronoiScale*/), voronoiSpeed, voronoiOctaveNumber, voronoiOctaveScale, voronoiOctaveAttenuation, 1, _Time.x, randomPoint);
+				}
+				if ((0 /*_VoronoiType*/) == 2) // Fixed Border
+				{
+					voronoi = voronoi3D(position, (1.32 /*_VoronoiScale*/), voronoiSpeed, randomPoint);
+					voronoi *= 1.8; // Range adjustment
+				}
+				float4 outerColor = float4(0.009166719,0.00278998,0.0008610645,1);
+				float4 innerColor = float4(0.05672633,0.01392266,0.007321635,1);
+				if ((1.0 /*_VoronoiEnableRandomCellColor*/) == 1)
+				{
+					float3 rando = random3(randomPoint);
+					fixed hue = rando.x;
+					fixed saturation = lerp(float4(0,0.1,0,1).x, float4(0,0.1,0,1).y, rando.y);
+					fixed value = lerp(float4(0,0.1,0,1).x, float4(0,0.1,0,1).y, rando.z);
+					float3 hsv = float3(hue, saturation, value);
+					innerColor.rgb = HSVtoRGB(hsv);
+				}
+				voronoi = pow(voronoi, (0.5 /*_VoronoiPower*/));
+				float2 voronoiGradient = float4(0,1,0,0).xy + edgeNoise;
+				#ifdef POI_AUDIOLINK
+				voronoiGradient.x += (0.0 /*_AudioLinkVoronoiGradientMinAdd*/) * poiMods.audioLink[(0 /*_AudioLinkVoronoiGradientMinAddBand*/)];
+				voronoiGradient.y -= (0.0 /*_AudioLinkVoronoiGradientMaxAdd*/) * poiMods.audioLink[(0 /*_AudioLinkVoronoiGradientMaxAddBand*/)];
+				#endif
+				float ramp = smoothstep(voronoiGradient.x, voronoiGradient.y, voronoi);
+				if ((0 /*_VoronoiBlend*/) == 0)
+				{
+					float4 voronoiColor = lerp(outerColor, innerColor, ramp);
+					poiFragData.baseColor.rgb = lerp(poiFragData.baseColor.rgb, voronoiColor, min(mask * voronoiColor.a, 0.99999));
+					if ((0 /*_VoronoiAffectsMaterialAlpha*/))
+					{
+						poiFragData.alpha = lerp(poiFragData.alpha, voronoiColor.a, min(mask, 0.99999));
+					}
+				}
+				float outerEmissionStrength = (0.0 /*_VoronoiOuterEmissionStrength*/);
+				float innerEmissionStrength = (0.0 /*_VoronoiInnerEmissionStrength*/);
+				#ifdef POI_AUDIOLINK
+				outerEmissionStrength += lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[(0 /*_AudioLinkVoronoiOuterEmissionBand*/)]);
+				innerEmissionStrength += lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[(0 /*_AudioLinkVoronoiInnerEmissionBand*/)]);
+				#endif
+				float4 voronoiEmissionColor = lerp(outerColor, innerColor, ramp);
+				voronoiEmissionColor.rgb *= lerp(outerEmissionStrength, innerEmissionStrength, ramp);
+				poiFragData.emission += voronoiEmissionColor.rgb * mask * voronoiEmissionColor.a;
+			}
+			#endif
 			float4 frag(VertexOut i, uint facing : SV_IsFrontFace) : SV_Target
 			{
 				UNITY_SETUP_INSTANCE_ID(i);
@@ -12467,8 +12490,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				poiCam.vDotN = abs(dot(poiCam.viewDir, poiMesh.normals[1]));
 				poiCam.worldDirection.xyz = poiMesh.worldPos.xyz - poiCam.worldPos;
 				poiCam.worldDirection.w = dot(poiCam.clipPos, CalculateFrustumCorrection());
-				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(0,0,0,1).rgb, (0.0 /*_ColorThemeIndex*/));
-				poiFragData.alpha = mainTexture.a * float4(0,0,0,1).a;
+				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(0.2140411,0.06346862,0.0263546,1).rgb, (0.0 /*_ColorThemeIndex*/));
+				poiFragData.alpha = mainTexture.a * float4(0.2140411,0.06346862,0.0263546,1).a;
 				#if defined(PROP_ALPHAMASK) || !defined(OPTIMIZER_ENABLED)
 				if ((2.0 /*_MainAlphaMaskMode*/))
 				{
@@ -12482,6 +12505,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				}
 				#endif
 				applyAlphaOptions(poiFragData, poiMesh, poiCam, poiMods);
+				#ifdef POI_VORONOI
+				ApplyVoronoi(poiFragData, poiMesh, poiMods);
+				#endif
 				poiFragData.finalColor = poiFragData.baseColor;
 				if ((0.0 /*_IgnoreFog*/) == 0)
 				{
@@ -12492,7 +12518,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d76df3f27dd505d4199f414c63e1e681"
 				{
 					poiFragData.alpha = 1;
 				}
-				clip(poiFragData.alpha - (0.545 /*_Cutoff*/));
+				clip(poiFragData.alpha - (0.5 /*_Cutoff*/));
 				return float4(poiFragData.finalColor, poiFragData.alpha) + POI_SAFE_RGB0;
 			}
 			ENDCG
