@@ -2124,8 +2124,8 @@ Material:
     - _VertexGlitchMapPanSpeed: 10
     - _VertexGlitchMirror: 0
     - _VertexGlitchMirrorEnable: 0
-    - _VertexGlitchStrength: 1
-    - _VertexGlitchThreshold: 1
+    - _VertexGlitchStrength: 10
+    - _VertexGlitchThreshold: 0.023
     - _VertexGlitchingAudioLinkBand: 0
     - _VertexGlitchingAudioLinkEnabled: 0
     - _VertexGlitchingAudiolinkOverride: 1
@@ -2860,7 +2860,7 @@ Material:
     - s_start_VertexBarrelMode: 0
     - s_start_VertexColors: 0
     - s_start_VertexGlitchMirror: 0
-    - s_start_VertexGlitchTexture: 1
+    - s_start_VertexGlitchTexture: 0
     - s_start_VertexManipulationHeight: 1
     - s_start_VertexScale: 0
     - s_start_VertexSphereMode: 0

@@ -26,6 +26,8 @@ public class SpaceInvController : MonoBehaviour
     public AudioSource SoundSource;
     //DeathParticle
     public ParticleSystem DeathParticle,HurtParticle;
+    //ScoreStuff
+    public EnemySpanwerBase Score;
 
     void Start(){
         //HealthStuff
@@ -120,6 +122,8 @@ public class SpaceInvController : MonoBehaviour
         IsDestructable = true;
         DeathParticle.Play();
         SoundSource.PlayOneShot(DeathSound);
+        Score.UpdateScore();
+        Score.WaveReset();
         Invoke("StartRespawn",2f);
     }
     private void StartRespawn(){
