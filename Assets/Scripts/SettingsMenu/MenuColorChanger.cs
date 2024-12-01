@@ -1,14 +1,18 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class MenuColorChanger : MonoBehaviour
 {
+    [Header("THESE LISTS IS DEPRICATED!!! \nUse MenuColorApplier to set renderer/image color instead!!!")]
     public Renderer[] ColorRenderers;
     public Image[] ColorImage;
     public Slider slider1;
     public string PlayerPref;
 
     public Color[] customColors;
+
+    public static UnityEvent<Color> onColorChange = new(); 
 
     private void Start()
     {
@@ -49,6 +53,8 @@ public class MenuColorChanger : MonoBehaviour
             {
                 i.color = new Color32((byte)(newColor1.r * 255),(byte)(newColor1.g * 255),(byte)(newColor1.b * 255),255);
             }
+
+            onColorChange.Invoke(newColor1);
         }
     }
 
@@ -68,7 +74,8 @@ public class MenuColorChanger : MonoBehaviour
             i.color = new Color(newColor.r, newColor.g, newColor.b, i.color.a);
             //i.color = new Color32((byte)(newColor.r * 255),(byte)(newColor.g * 255),(byte)(newColor.b * 255),255);
         }
-
+        
+        onColorChange.Invoke(newColor);
     }
 
     private Color GetCustomColor(float value)
