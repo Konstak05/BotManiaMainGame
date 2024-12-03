@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0041847215, g: 0.0035808152, b: 0.0059743864, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -21163,6 +21163,10 @@ PrefabInstance:
     - target: {fileID: 6878950752537979842, guid: 3c8cf47c930bdd64fb74d299143be7c6, type: 3}
       propertyPath: m_Name
       value: Skip fade in black
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878950752537979842, guid: 3c8cf47c930bdd64fb74d299143be7c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6878950752537979843, guid: 3c8cf47c930bdd64fb74d299143be7c6, type: 3}
       propertyPath: m_RootOrder
@@ -47853,6 +47857,10 @@ PrefabInstance:
     - target: {fileID: 6878950752537979842, guid: 3c8cf47c930bdd64fb74d299143be7c6, type: 3}
       propertyPath: m_Name
       value: start fade in black
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878950752537979842, guid: 3c8cf47c930bdd64fb74d299143be7c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6878950752537979843, guid: 3c8cf47c930bdd64fb74d299143be7c6, type: 3}
       propertyPath: m_RootOrder
