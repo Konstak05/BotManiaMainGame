@@ -30,7 +30,6 @@ public class Spawner : MonoBehaviour
             SpawnSource.volume = audioVolume * masterVolume;
             SpawnSource.PlayOneShot(Spawnclip);
             Instantiate(prefabsToSpawn[index], spawnPosition.position, spawnPosition.rotation);
-            PlayerPrefs.SetInt("BotBouncerBots", PlayerPrefs.GetInt("BotBouncerBots", 0) + 1);
             botCount++;
         }
     }

@@ -762,7 +762,7 @@ GameObject:
   - component: {fileID: 7804456070328629240}
   - component: {fileID: 7804456070328629241}
   - component: {fileID: 7804456070328629243}
-  - component: {fileID: -6900319775545157536}
+  - component: {fileID: 7076297606418932041}
   m_Layer: 7
   m_Name: Bush model 1
   m_TagString: Untagged
@@ -3029,16 +3029,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &-6900319775545157536
-MonoBehaviour:
+--- !u!33 &7076297606418932041
+MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7804456070328629236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f3fcd34da431144ab1889296f50e99f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Bushes
+  m_Mesh: {fileID: 0}

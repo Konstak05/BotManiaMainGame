@@ -58,10 +58,5 @@ public class Freemodespawner : MonoBehaviour
 
             Instantiate(prefabsToSpawn[index], spawnPosition, spawnRotation);
         }
-
-        if (IsBot == true)
-        {
-            PlayerPrefs.SetInt("BotBouncerBots", PlayerPrefs.GetInt("BotBouncerBots", 0) + 1);
-        }
     }
 }

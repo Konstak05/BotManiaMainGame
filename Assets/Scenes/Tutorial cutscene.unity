@@ -389,7 +389,7 @@ MonoBehaviour:
   Text3: {fileID: 1470497175}
   Text4: {fileID: 885462801}
   Text5: {fileID: 1707998522}
-  SceneName: Tutorial Level
+  SceneName: 0-0
 --- !u!82 &141727718
 AudioSource:
   m_ObjectHideFlags: 0

@@ -14,14 +14,13 @@ public class BasicSceneChanger : MonoBehaviour
 
     public void IsPressed()
     {
-    transition.SetTrigger("Start"); 
-    Invoke("MoveScene", 1);
-    HasStarted = 1;
+        transition.SetTrigger("Start"); 
+        Invoke("MoveScene", 1);
+        HasStarted = 1;
     }
 
     void MoveScene()
     {
-    SceneManager.LoadScene(SceneName);
-
+        SceneManager.LoadScene(SceneName);
     }
 }
