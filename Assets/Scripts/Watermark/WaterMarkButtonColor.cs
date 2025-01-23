@@ -18,21 +18,22 @@ public class WaterMarkButtonColor : MonoBehaviour
     }
 
 
-    public void OnMouseEnter()
+    public void ColorEnter()
     {
     
         ButtonRenderer.material.color = ColorIn;
     }
 
-    public void OnMouseExit()
+    public void ColorExit()
     {
         ButtonRenderer.material.color = ColorOut;
     }
 
-    public void OnMouseDown()
+    public void ButtonClick()
     {
         Debug.Log("Test");
         Instantiate(Bot, Spawner.position, Spawner.rotation);
         BoopButton.Play();
     }
+
 }

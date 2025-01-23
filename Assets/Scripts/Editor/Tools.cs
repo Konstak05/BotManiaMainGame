@@ -13,7 +13,6 @@ public class Tools : EditorWindow
             Collider[] cols = FindObjectsOfType<Collider>();
             foreach (Collider col in cols)
             {
-                if (col.GetComponent<DragObject>() != null) continue;
                 DestroyImmediate(col);
             }
         }
@@ -22,7 +21,6 @@ public class Tools : EditorWindow
             Rigidbody[] rbs = FindObjectsOfType<Rigidbody>();
             foreach (Rigidbody rb in rbs)
             {
-                if (rb.GetComponent<DragObject>() != null) continue;
                 DestroyImmediate(rb);
             }
         }
