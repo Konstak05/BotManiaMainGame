@@ -6,7 +6,7 @@ using TMPro;
 public class GameObjectSelectorIN : MonoBehaviour
 {
     public int Index;
-    public TextMeshProUGUI MapText;
+    public TextMeshPro MapText;
     public string[] MapNames;
     public string PlayerPrefID;
     public int PlayerprefIDindex;
