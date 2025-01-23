@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: b874f94905400b0498b424ad847c8107
   - enabled: 1
     path: Assets/Scenes/PressStartMenu.unity
-    guid: 75baadb6fa06f204e93dd89ecc3eb0aa
+    guid: 992d3b5bedbb04047ae60d2dc9d644c7
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 11f78284b851a0741a6747cf1024a877
