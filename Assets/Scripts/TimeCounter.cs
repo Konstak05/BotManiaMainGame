@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 
 public class TimeCounter : MonoBehaviour
 {
-    public TextMeshProUGUI HourText;
+    public TextMeshPro HourText;
 
     void Start(){Invoke("Updatetime", 0f);}
 
