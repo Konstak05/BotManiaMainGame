@@ -40630,7 +40630,7 @@ GameObject:
   - component: {fileID: 1918527008}
   - component: {fileID: 1918527009}
   m_Layer: 3
-  m_Name: Intro
+  m_Name: Starting intro Canvas
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
