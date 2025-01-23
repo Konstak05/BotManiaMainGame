@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3717375042242108083}
   - component: {fileID: 9034651384150085543}
   - component: {fileID: 2977130693094166512}
-  - component: {fileID: -6710088914520066649}
   - component: {fileID: 1364107036714061694}
   m_Layer: 7
   m_Name: Bush model 2
@@ -2108,19 +2107,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-6710088914520066649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1600809889762731676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f3fcd34da431144ab1889296f50e99f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Bushes
 --- !u!33 &1364107036714061694
 MeshFilter:
   m_ObjectHideFlags: 0

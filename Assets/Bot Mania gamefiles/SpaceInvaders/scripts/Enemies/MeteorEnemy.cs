@@ -23,7 +23,6 @@ public class MeteorEnemy : MonoBehaviour
         Score = GameObject.Find("EnemySpawnerPosition").GetComponent<EnemySpanwerBase>();
 
         //HealthStuff
-        lifepoints = lifepoints;
         HPslider.maxValue = lifepoints;
         HPslider.value = lifepoints;
         IsDestructable = true;

@@ -1519,7 +1519,6 @@ GameObject:
   - component: {fileID: 5985012975760359274}
   - component: {fileID: 1295865755705217180}
   - component: {fileID: 6201453486596538194}
-  - component: {fileID: 4007349231644420340}
   m_Layer: 7
   m_Name: Snow tree big
   m_TagString: Untagged
@@ -2590,19 +2589,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &4007349231644420340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3605612635354280154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f3fcd34da431144ab1889296f50e99f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Trees
 --- !u!1 &3744088819181850198
 GameObject:
   m_ObjectHideFlags: 0
